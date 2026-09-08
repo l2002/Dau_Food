@@ -1,0 +1,6 @@
+{
+  "name": "Review & Cảnh báo: Công ty TNHH Đậu Food",
+  "description": "Review Đậu Food và cảnh báo rủi ro: Tổng hợp bằng chứng thực tế, phân tích pháp lý lao động vụ việc Công ty TNHH Đậu Food phốt không trả tiền công part-time cho người lao động.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
