@@ -56,10 +56,10 @@ Kính gửi:
 
 Tôi tên là: LƯ KIM VÀNG
 Sinh ngày: 04/08/2004
-Số CCCD: 089304013108  Ngày cấp: 11/05/2021  Nơi cấp: Cục trưởng Cục Cảnh sát quản lý hành chính về trật tự xã hội
-Hộ khẩu thường trú: Số 57, Tổ 9, Khóm Long Hưng, Phường Long Phú, Tỉnh An Giang
-Chỗ ở hiện tại: 2/3 Cây Keo, Khu phố 4, Phường Phú Thạnh, Thành phố Hồ Chí Minh
-Số điện thoại liên hệ: 0374903127
+Số CCCD: [Đã che thông tin cá nhân]  Ngày cấp: 11/05/2021  Nơi cấp: Cục trưởng Cục Cảnh sát quản lý hành chính về trật tự xã hội
+Hộ khẩu thường trú: [Đã che thông tin], Phường Long Phú, Tỉnh An Giang
+Chỗ ở hiện tại: [Đã che thông tin], Phường Phú Thạnh, Thành phố Hồ Chí Minh
+Số điện thoại liên hệ: [Đã che thông tin]
 
 Tôi làm đơn này đề nghị cơ quan có thẩm quyền cử Hòa giải viên lao động tổ chức hòa giải tranh chấp lao động cá nhân giữa tôi và người sử dụng lao động về việc không thanh toán tiền lương/tiền công cho thời gian tôi đã làm việc thực tế, đồng thời tự ý quy kết “nghỉ ngang”, “gây thiệt hại” để chiếm dụng/không trả công sức lao động của tôi.
 
@@ -164,13 +164,13 @@ LƯ KIM VÀNG
         <div className="text-center max-w-3xl mx-auto mb-8">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-red-950/60 border border-red-500/30 text-red-400 text-xs font-semibold uppercase tracking-wider mb-3">
             <Paperclip className="w-3.5 h-3.5" />
-            <span>Hồ Sơ Gốc Toàn Văn 8 Trang Kèm Chứng Cứ</span>
+            <span>Hồ Sơ PDF Đã Che Thông Tin Cá Nhân (8 Trang)</span>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight">
-            Đơn đề nghị hòa giải & 5 Tệp chứng cứ hình ảnh thực tế
+            Đơn đề nghị hòa giải (File PDF đã che thông tin)
           </h2>
           <p className="mt-3 text-sm sm:text-base text-zinc-400">
-            Xem toàn bộ 8 trang văn bản và hình ảnh chụp thực tế từ các cuộc hội thoại Zalo giữa người lao động Lư Kim Vàng và đại diện Công ty TNHH Đậu Food.
+            Xem toàn bộ 8 trang file PDF đã được che các thông tin cá nhân (CCCD, địa chỉ, số điện thoại) của người lao động Lư Kim Vàng kèm 5 tệp chứng cứ thực tế.
           </p>
         </div>
 
@@ -213,7 +213,7 @@ LƯ KIM VÀNG
                     {REAL_DOCUMENT_INFO.fileName}
                   </h3>
                   <span className="text-[10px] bg-red-950/80 text-red-300 border border-red-800/40 px-2 py-0.5 rounded font-mono">
-                    8 TRANG PDF
+                    8 TRANG PDF (ĐÃ CHE THÔNG TIN)
                   </span>
                 </div>
                 <p className="text-xs text-zinc-400 mt-0.5">
@@ -263,7 +263,7 @@ LƯ KIM VÀNG
                 }`}
               >
                 <FileText className="w-4 h-4 text-red-400" />
-                <span>Tài liệu gốc (8 Trang PDF)</span>
+                <span>File PDF đã che thông tin (8 Trang)</span>
               </button>
 
               <button

@@ -27,7 +27,7 @@ export const MediationDocumentModal: React.FC<MediationDocumentModalProps> = ({
 ───────────────────
 TPHCM, ngày 08 tháng 09 năm 2026
 
-ĐƠN ĐỀ NGHỊ HÒA GIẢI TRANH CHẤP LAO ĐỘNG
+ĐƠN ĐỀ NGHỊ HÒA GIẢI TRANH CHẤP LAO ĐỘNG (ĐÃ CHE THÔNG TIN CÁ NHÂN)
 
 Kính gửi:
 – Cơ quan có thẩm quyền cử Hòa giải viên lao động tại Thành phố Hồ Chí Minh.
@@ -36,10 +36,10 @@ Kính gửi:
 
 Tôi tên là: LƯ KIM VÀNG
 Sinh ngày: 04/08/2004
-Số CCCD: 089304013108  Ngày cấp: 11/05/2021  Nơi cấp: Cục trưởng Cục Cảnh sát QLHC về TTXH
-Hộ khẩu: Số 57, Tổ 9, Khóm Long Hưng, Phường Long Phú, Tỉnh An Giang
-Chỗ ở hiện tại: 2/3 Cây Keo, Khu phố 4, Phường Phú Thạnh, TP.HCM
-SĐT: 0374903127
+Số CCCD: [Đã che thông tin]  Ngày cấp: 11/05/2021  Nơi cấp: Cục trưởng Cục Cảnh sát QLHC về TTXH
+Hộ khẩu: [Đã che thông tin], Phường Long Phú, Tỉnh An Giang
+Chỗ ở hiện tại: [Đã che thông tin], TP.HCM
+SĐT: [Đã che thông tin]
 
 Bên bị yêu cầu: CÔNG TY TNHH ĐẬU FOOD (296 Võ Thành Trang, P11, Tân Bình)
 Quản lý: Chị Lan Anh
@@ -50,13 +50,13 @@ Tổng tiền lương: 153.000 đồng.
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = 'Don_de_nghi_hoa_giai_tranh_chap_lao_dong_8_trang.txt';
+    link.download = 'Don_de_nghi_hoa_giai_tranh_chap_lao_dong_che_thong_tin.txt';
     link.click();
     URL.revokeObjectURL(url);
   };
 
   const pageLabels = [
-    'Trang 1: Đơn (P1)',
+    'Trang 1: Đơn (P1 - Đã che TT)',
     'Trang 2: Đơn (P2)',
     'Trang 3: Đơn (P3 & Ký)',
     'Trang 4: Hình 1 (Xin nghỉ & Chấp thuận)',
@@ -77,7 +77,7 @@ Tổng tiền lương: 153.000 đồng.
             </div>
             <div className="truncate">
               <h3 className="text-sm font-bold text-white truncate">
-                ĐƠN ĐỀ NGHỊ HÒA GIẢI TRANH CHẤP LAO ĐỘNG (8 TRANG)
+                ĐƠN ĐỀ NGHỊ HÒA GIẢI TRANH CHẤP LAO ĐỘNG (FILE PDF ĐÃ CHE THÔNG TIN)
               </h3>
               <p className="text-[11px] text-zinc-400">
                 Người làm đơn: <strong>LƯ KIM VÀNG</strong> • Bên bị yêu cầu: <strong>CÔNG TY TNHH ĐẬU FOOD</strong>
@@ -126,11 +126,11 @@ Tổng tiền lương: 153.000 đồng.
           <div className="flex items-center gap-2">
             <AlertTriangle className="w-4 h-4 text-amber-400 shrink-0" />
             <span>
-              <strong>Tình trạng:</strong> Chưa nộp cơ quan nhà nước. Đã gửi trực tiếp cho Đậu Food để giải quyết thiện chí trước.
+              <strong>Tình trạng:</strong> File PDF đã che thông tin cá nhân. Chưa nộp cơ quan nhà nước, đang gửi trực tiếp cho Đậu Food.
             </span>
           </div>
           <span className="text-[11px] font-mono text-red-400 hidden sm:inline">
-            Tổng cộng: 8 trang (3 trang đơn + 5 trang ảnh)
+            8 trang PDF (Đã che thông tin cá nhân)
           </span>
         </div>
 

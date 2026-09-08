@@ -64,10 +64,33 @@ export const DocumentEightPages: React.FC<DocumentEightPagesProps> = ({
               <p><strong>Tôi tên là:</strong> <span className="font-bold uppercase text-zinc-950 font-sans">LƯ KIM VÀNG</span></p>
               <p><strong>Sinh ngày:</strong> 04/08/2004</p>
             </div>
-            <p><strong>Số CCCD:</strong> <span className="font-mono font-semibold">089304013108</span> • <strong>Ngày cấp:</strong> 11/05/2021 • <strong>Nơi cấp:</strong> Cục trưởng Cục Cảnh sát quản lý hành chính về trật tự xã hội</p>
-            <p><strong>Hộ khẩu thường trú:</strong> Số 57, Tổ 9, Khóm Long Hưng, Phường Long Phú, Tỉnh An Giang</p>
-            <p><strong>Chỗ ở hiện tại:</strong> 2/3 Cây Keo, Khu phố 4, Phường Phú Thạnh, Thành phố Hồ Chí Minh</p>
-            <p><strong>Số điện thoại liên hệ:</strong> <span className="font-mono font-bold text-red-700">0374903127</span></p>
+            <p>
+              <strong>Số CCCD:</strong>{' '}
+              <span className="inline-block bg-black text-black px-8 py-0.5 rounded text-xs select-none shadow-xs" title="Đã che thông tin cá nhân">
+                ████████████
+              </span>{' '}
+              • <strong>Ngày cấp:</strong> :11/05/2021 • <strong>Nơi cấp:</strong> Cục trưởng Cục Cảnh sát quản lý hành chính về trật tự xã hội
+            </p>
+            <p>
+              <strong>Hộ khẩu thường trú:</strong>{' '}
+              <span className="inline-block bg-black text-black px-12 py-0.5 rounded text-xs select-none shadow-xs" title="Đã che thông tin cá nhân">
+                ████████████████
+              </span>
+              , Phường Long Phú, Tỉnh An Giang
+            </p>
+            <p>
+              <strong>Chỗ ở hiện tại:</strong>{' '}
+              <span className="inline-block bg-black text-black px-12 py-0.5 rounded text-xs select-none shadow-xs" title="Đã che thông tin cá nhân">
+                ████████████████
+              </span>
+              , Phường Phú Thạnh, Thành phố Hồ Chí Minh
+            </p>
+            <p>
+              <strong>Số điện thoại liên hệ:</strong>{' '}
+              <span className="inline-block bg-black text-black px-8 py-0.5 rounded text-xs select-none shadow-xs" title="Đã che thông tin cá nhân">
+                ██████████
+              </span>
+            </p>
           </div>
 
           <p className="text-justify indent-6">

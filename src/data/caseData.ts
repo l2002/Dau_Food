@@ -126,23 +126,23 @@ export interface DocumentPage {
 }
 
 export const REAL_DOCUMENT_INFO = {
-  documentTitle: 'ĐƠN ĐỀ NGHỊ HÒA GIẢI TRANH CHẤP LAO ĐỘNG',
+  documentTitle: 'ĐƠN ĐỀ NGHỊ HÒA GIẢI TRANH CHẤP LAO ĐỘNG (ĐÃ CHE THÔNG TIN)',
   fullDocumentHeading: 'CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nĐộc lập – Tự do – Hạnh phúc\n───────────────────\nTPHCM, ngày 08 tháng 09 năm 2026',
-  fileName: 'Don_de_nghi_hoa_giai_tranh_chap_lao_dong_Dau_Food.pdf',
-  fileSize: '8 trang (Bao gồm Đơn đề nghị & 5 trang hình ảnh chứng cứ thực tế)',
+  fileName: 'Don_de_nghi_hoa_giai_tranh_chap_lao_dong_che_thong_tin.pdf',
+  fileSize: '8 trang (File PDF đã che thông tin cá nhân)',
   totalPages: 8,
-  status: 'Đã hoàn thiện hồ sơ & Gửi trực tiếp cho Đậu Food (Bên người lao động chưa nộp cơ quan chức năng)',
-  submissionStatusNote: 'Bên mình chưa nộp lên cơ quan nhà nước, hiện đang gửi văn bản và bộ 5 hình ảnh chứng cứ này trực tiếp cho Đậu Food kèm thời hạn thiện chí để công ty tự giải quyết trước khi nộp chính thức.',
+  status: 'Đã hoàn thiện hồ sơ & Gửi trực tiếp cho Đậu Food (Đã che thông tin cá nhân)',
+  submissionStatusNote: 'Bên mình chưa nộp lên cơ quan nhà nước, hiện đang gửi văn bản PDF đã che thông tin cá nhân và bộ 5 hình ảnh chứng cứ này trực tiếp cho Đậu Food.',
   createdDate: 'TPHCM, ngày 08 tháng 09 năm 2026',
   claimant: {
     name: 'LƯ KIM VÀNG',
     dob: '04/08/2004',
-    cccd: '089304013108',
+    cccd: '████████████ (Đã che)',
     issueDate: '11/05/2021',
     issuePlace: 'Cục trưởng Cục Cảnh sát quản lý hành chính về trật tự xã hội',
-    permanentAddress: 'Số 57, Tổ 9, Khóm Long Hưng, Phường Long Phú, Tỉnh An Giang',
-    currentAddress: '2/3 Cây Keo, Khu phố 4, Phường Phú Thạnh, Thành phố Hồ Chí Minh',
-    phone: '0374903127'
+    permanentAddress: '████████████, Phường Long Phú, Tỉnh An Giang (Đã che)',
+    currentAddress: '████████████, Phường Phú Thạnh, Thành phố Hồ Chí Minh (Đã che)',
+    phone: '██████████ (Đã che)'
   },
   representative: 'Nguyễn Minh Luân (Chuyên viên SEO tại công ty MPF - Anh của Kim Vàng)',
   respondent: {
