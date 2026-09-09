@@ -476,17 +476,6 @@ export const LEGAL_CLAUSES: LegalClause[] = [
       'Nội dung trên trang được cung cấp trung thực dựa trên tài liệu trao đổi thực tế giữa các bên, không nhằm mục đích xúc phạm hay bôi nhọ uy tín tổ chức, cá nhân.'
   },
   {
-    article: 'Điều 11 & 584',
-    law: 'Bộ luật Dân sự 2015',
-    title: 'Bảo vệ quyền dân sự & Trách nhiệm bồi thường thiệt hại',
-    quote:
-      'Cá nhân, pháp nhân có quyền yêu cầu cơ quan có thẩm quyền bảo vệ quyền dân sự của mình... Người nào có hành vi xâm phạm danh dự, uy tín, tài sản của người khác mà gây thiệt hại thì phải bồi thường.',
-    plainExplanation:
-      'Mọi bên tham gia đều có quyền yêu cầu bảo vệ quyền lợi hợp pháp; nếu thông tin không đúng gây thiệt hại, doanh nghiệp có quyền yêu cầu đính chính, xin lỗi và bồi thường.',
-    applicationToCase:
-      'Doanh nghiệp có quyền gửi ý kiến phản hồi, tài liệu đối chứng để trang cập nhật thông tin hai chiều một cách khách quan nhất.'
-  },
-  {
     article: 'Điều 3 QĐ 1429/QĐ-UBND',
     law: 'Quyết định 1429/QĐ-UBND năm 2025 (TP.HCM)',
     title: 'Thẩm quyền tiếp nhận & Hướng dẫn hòa giải tranh chấp lao động',
@@ -554,7 +543,7 @@ export const INITIAL_COMMENTS: CommentItem[] = [
     role: 'Cựu nhân viên dịch vụ F&B',
     timestamp: '5 giờ trước',
     content:
-      'Đọc đoạn tin nhắn "cho vào blacklist của các doanh nghiệp" mà cười ra khùng. Một công ty tư nhân nhỏ lấy tư cách gì ra danh sách đen doanh nghiệp? Dọa các bạn sinh viên mới ra đời chưa hiểu luật thôi.',
+      'Đọc đoạn tin nhắn "cho vào blacklist của các doanh nghiệp" mà cười khùng. Một công ty tư nhân nhỏ lấy tư cách gì ra danh sách đen doanh nghiệp? Dọa các bạn sinh viên mới ra đời chưa hiểu luật thôi.',
     likes: 5,
     verified: true
   },
