@@ -215,23 +215,38 @@ export const DocumentViewerSection: React.FC<DocumentViewerSectionProps> = ({
 
         {/* Sub-toolbar: Pagination Buttons (when in single-page mode) */}
         {activeTab === 'pages' && !showAllPagesContinuous && (
-          <div className="bg-zinc-900 border-x border-b border-zinc-800 px-4 sm:px-6 py-3 flex flex-wrap items-center justify-between gap-2 text-xs">
-            <button
-              onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
-              disabled={currentPage === 1}
-              className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 disabled:opacity-30 disabled:cursor-not-allowed text-zinc-200 font-medium transition-colors cursor-pointer"
-            >
-              <ChevronLeft className="w-3.5 h-3.5" />
-              <span>Trang trước</span>
-            </button>
+          <div className="bg-zinc-900 border-x border-b border-zinc-800 px-3 sm:px-6 py-2.5 sm:py-3 flex flex-col xs:flex-row items-center justify-between gap-2 text-xs">
+            <div className="flex items-center justify-between w-full xs:w-auto gap-2">
+              <button
+                onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                disabled={currentPage === 1}
+                className="min-h-[38px] flex items-center gap-1 px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 disabled:opacity-30 disabled:cursor-not-allowed text-zinc-200 font-medium transition-colors cursor-pointer"
+              >
+                <ChevronLeft className="w-3.5 h-3.5" />
+                <span>Trang trước</span>
+              </button>
+
+              <div className="xs:hidden text-xs font-bold text-amber-400 font-mono">
+                {currentPage} / 8
+              </div>
+
+              <button
+                onClick={() => setCurrentPage((p) => Math.min(8, p + 1))}
+                disabled={currentPage === 8}
+                className="xs:hidden min-h-[38px] flex items-center gap-1 px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 disabled:opacity-30 disabled:cursor-not-allowed text-zinc-200 font-medium transition-colors cursor-pointer"
+              >
+                <span>Trang sau</span>
+                <ChevronRight className="w-3.5 h-3.5" />
+              </button>
+            </div>
 
             {/* Page number indicators */}
-            <div className="flex items-center gap-1 overflow-x-auto py-1">
+            <div className="flex items-center gap-1.5 overflow-x-auto max-w-full py-1 no-scrollbar">
               {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
                 <button
                   key={num}
                   onClick={() => setCurrentPage(num)}
-                  className={`w-7 h-7 rounded-lg text-xs font-mono font-bold transition-all cursor-pointer ${
+                  className={`min-w-[34px] h-[34px] rounded-lg text-xs font-mono font-bold transition-all cursor-pointer flex items-center justify-center shrink-0 ${
                     currentPage === num
                       ? 'bg-red-600 text-white shadow-md shadow-red-900/50'
                       : 'bg-zinc-800 text-zinc-400 hover:bg-zinc-700 hover:text-zinc-200'
@@ -246,7 +261,7 @@ export const DocumentViewerSection: React.FC<DocumentViewerSectionProps> = ({
             <button
               onClick={() => setCurrentPage((p) => Math.min(8, p + 1))}
               disabled={currentPage === 8}
-              className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 disabled:opacity-30 disabled:cursor-not-allowed text-zinc-200 font-medium transition-colors cursor-pointer"
+              className="hidden xs:flex min-h-[38px] items-center gap-1 px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 disabled:opacity-30 disabled:cursor-not-allowed text-zinc-200 font-medium transition-colors cursor-pointer"
             >
               <span>Trang sau</span>
               <ChevronRight className="w-3.5 h-3.5" />
@@ -255,27 +270,37 @@ export const DocumentViewerSection: React.FC<DocumentViewerSectionProps> = ({
         )}
 
         {/* DOCUMENT CONTAINER */}
-        <div className="bg-zinc-900 border-x border-b border-zinc-800 rounded-b-2xl p-4 sm:p-8 overflow-hidden shadow-2xl">
+        <div className="bg-zinc-900 border-x border-b border-zinc-800 rounded-b-2xl p-2.5 sm:p-6 md:p-8 overflow-hidden shadow-2xl">
           {activeTab === 'pages' ? (
             <div>
               {showAllPagesContinuous ? (
-                <div className="space-y-8">
+                <div className="space-y-6 sm:space-y-8">
                   {[1, 2, 3, 4, 5, 6, 7, 8].map((pageNumber) => (
                     <div
                       key={pageNumber}
-                      className="bg-white rounded-xl shadow-2xl p-6 sm:p-12 text-zinc-900 border border-zinc-300 relative transition-all"
+                      className="bg-white rounded-xl shadow-2xl p-3.5 sm:p-8 md:p-12 text-zinc-900 border border-zinc-300 relative transition-all"
                     >
-                      <div className="absolute top-4 right-6 text-xs font-mono font-semibold text-zinc-400 border border-zinc-200 bg-zinc-50 px-2 py-0.5 rounded">
-                        Trang {pageNumber} / 8
+                      <div className="flex items-center justify-between border-b border-zinc-200 pb-2 mb-4">
+                        <span className="text-[11px] font-mono text-zinc-400 font-semibold">
+                          Tệp PDF hòa giải đính kèm
+                        </span>
+                        <div className="text-[11px] font-mono font-semibold text-zinc-600 border border-zinc-200 bg-zinc-50 px-2 py-0.5 rounded">
+                          Trang {pageNumber} / 8
+                        </div>
                       </div>
                       <DocumentEightPages activePage={pageNumber} />
                     </div>
                   ))}
                 </div>
               ) : (
-                <div className="bg-white rounded-xl shadow-2xl p-6 sm:p-12 text-zinc-900 border border-zinc-300 relative min-h-[600px] transition-all">
-                  <div className="absolute top-4 right-6 text-xs font-mono font-semibold text-zinc-400 border border-zinc-200 bg-zinc-50 px-2.5 py-1 rounded">
-                    {pageLabels[currentPage - 1]}
+                <div className="bg-white rounded-xl shadow-2xl p-3.5 sm:p-8 md:p-12 text-zinc-900 border border-zinc-300 relative min-h-[500px] transition-all">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-zinc-200 pb-2 mb-4">
+                    <span className="text-[11px] font-mono font-semibold text-zinc-600">
+                      {pageLabels[currentPage - 1]}
+                    </span>
+                    <span className="text-[10px] font-mono text-zinc-400">
+                      8 trang PDF gốc (2.38 MB)
+                    </span>
                   </div>
                   <DocumentEightPages activePage={currentPage} />
                 </div>

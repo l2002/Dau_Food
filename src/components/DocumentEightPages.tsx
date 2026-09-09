@@ -64,30 +64,30 @@ export const DocumentEightPages: React.FC<DocumentEightPagesProps> = ({
               <p><strong>Tôi tên là:</strong> <span className="font-bold uppercase text-zinc-950 font-sans">LƯ KIM VÀNG</span></p>
               <p><strong>Sinh ngày:</strong> 04/08/2004</p>
             </div>
-            <p>
+            <p className="break-words">
               <strong>Số CCCD:</strong>{' '}
-              <span className="inline-block bg-black text-black px-8 py-0.5 rounded text-xs select-none shadow-xs" title="Đã che thông tin cá nhân">
+              <span className="inline-block bg-black text-black px-4 sm:px-8 py-0.5 rounded text-xs select-none" title="Đã che thông tin cá nhân">
                 ████████████
               </span>{' '}
-              • <strong>Ngày cấp:</strong> :11/05/2021 • <strong>Nơi cấp:</strong> Cục trưởng Cục Cảnh sát quản lý hành chính về trật tự xã hội
+              • <strong>Ngày cấp:</strong> 11/05/2021 • <strong>Nơi cấp:</strong> Cục trưởng Cục CSQLHC về TTXH
             </p>
-            <p>
+            <p className="break-words">
               <strong>Hộ khẩu thường trú:</strong>{' '}
-              <span className="inline-block bg-black text-black px-12 py-0.5 rounded text-xs select-none shadow-xs" title="Đã che thông tin cá nhân">
-                ████████████████
+              <span className="inline-block bg-black text-black px-4 sm:px-6 py-0.5 rounded text-xs select-none" title="Đã che thông tin cá nhân">
+                ████████████
               </span>
               , Phường Long Phú, Tỉnh An Giang
             </p>
-            <p>
+            <p className="break-words">
               <strong>Chỗ ở hiện tại:</strong>{' '}
-              <span className="inline-block bg-black text-black px-12 py-0.5 rounded text-xs select-none shadow-xs" title="Đã che thông tin cá nhân">
-                ████████████████
+              <span className="inline-block bg-black text-black px-4 sm:px-6 py-0.5 rounded text-xs select-none" title="Đã che thông tin cá nhân">
+                ████████████
               </span>
               , Phường Phú Thạnh, Thành phố Hồ Chí Minh
             </p>
-            <p>
+            <p className="break-words">
               <strong>Số điện thoại liên hệ:</strong>{' '}
-              <span className="inline-block bg-black text-black px-8 py-0.5 rounded text-xs select-none shadow-xs" title="Đã che thông tin cá nhân">
+              <span className="inline-block bg-black text-black px-4 sm:px-6 py-0.5 rounded text-xs select-none" title="Đã che thông tin cá nhân">
                 ██████████
               </span>
             </p>

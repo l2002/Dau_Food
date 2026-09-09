@@ -1,0 +1,44 @@
+{
+  "entities": {
+    "Comment": {
+      "title": "Comment",
+      "description": "Bình luận hoặc chia sẻ kinh nghiệm cộng đồng về trải nghiệm làm việc",
+      "type": "object",
+      "properties": {
+        "author": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 60,
+          "description": "Tên hoặc bí danh người gửi bình luận"
+        },
+        "role": {
+          "type": "string",
+          "maxLength": 80,
+          "description": "Vai trò hoặc vị trí làm việc part-time"
+        },
+        "content": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000,
+          "description": "Nội dung phản ánh hoặc kinh nghiệm chia sẻ"
+        },
+        "likes": {
+          "type": "number",
+          "description": "Số lượt đồng tình / thích bình luận"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Thời điểm gửi bình luận trên hệ thống"
+        }
+      },
+      "required": ["author", "role", "content", "likes", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/comments/{commentId}": {
+      "schema": "Comment",
+      "description": "Danh sách bình luận và phản hồi từ cộng đồng"
+    }
+  }
+}

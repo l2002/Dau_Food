@@ -1,0 +1,44 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 1. Global Catch-All Deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Primitive Helpers
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isValidComment(data) {
+      return data.keys().hasAll(['author', 'role', 'content', 'likes', 'createdAt']) &&
+        data.keys().size() == 5 &&
+        data.author is string && data.author.size() > 0 && data.author.size() <= 60 &&
+        data.role is string && data.role.size() <= 80 &&
+        data.content is string && data.content.size() > 0 && data.content.size() <= 2000 &&
+        data.likes is number && data.likes >= 0 && data.likes <= 10000 &&
+        data.createdAt is timestamp && data.createdAt == request.time;
+    }
+
+    // Comments Collection
+    match /comments/{commentId} {
+      allow read, list: if true;
+      allow create: if isValidId(commentId) && isValidComment(incoming());
+      allow update: if isValidId(commentId) &&
+        incoming().diff(existing()).affectedKeys().hasOnly(['likes']) &&
+        incoming().likes is number &&
+        incoming().likes == existing().likes + 1 &&
+        incoming().likes <= 10000;
+      allow delete: if false;
+    }
+  }
+}

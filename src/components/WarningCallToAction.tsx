@@ -74,7 +74,7 @@ export const WarningCallToAction: React.FC<WarningCallToActionProps> = ({ onOpen
         {/* 2-Column Grid: Checklist & Social Share */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-12">
           {/* Candidate Checklist */}
-          <div className="lg:col-span-7 bg-zinc-900 border border-zinc-800 rounded-2xl p-6 sm:p-7 flex flex-col justify-between">
+          <div className="lg:col-span-7 bg-zinc-900 border border-zinc-800 rounded-2xl p-4 sm:p-7 flex flex-col justify-between">
             <div>
               <div className="flex items-center gap-2 text-sm font-bold text-amber-400 uppercase tracking-wider mb-4">
                 <ShieldCheck className="w-5 h-5 text-emerald-400" />
@@ -139,7 +139,7 @@ export const WarningCallToAction: React.FC<WarningCallToActionProps> = ({ onOpen
           </div>
 
           {/* Social Share & Spread */}
-          <div className="lg:col-span-5 bg-zinc-900 border border-zinc-800 rounded-2xl p-6 sm:p-7 flex flex-col justify-between">
+          <div className="lg:col-span-5 bg-zinc-900 border border-zinc-800 rounded-2xl p-4 sm:p-7 flex flex-col justify-between">
             <div>
               <div className="flex items-center gap-2 text-sm font-bold text-white uppercase tracking-wider mb-2">
                 <Share2 className="w-5 h-5 text-amber-400" />
