@@ -15,9 +15,9 @@ export const Header: React.FC<HeaderProps> = ({
   return (
     <header className="sticky top-0 z-40 w-full border-b border-zinc-800 bg-zinc-950/90 backdrop-blur-md">
       {/* Top Banner Notice */}
-      <div className="bg-red-600 text-white text-xs font-semibold px-4 py-1.5 text-center flex items-center justify-center gap-2">
-        <AlertTriangle className="w-3.5 h-3.5 animate-pulse" />
-        <span>CẢNH BÁO TRANH CHẤP LAO ĐỘNG PART-TIME • HỒ SƠ THỰC TẾ CÔNG TY TNHH ĐẬU FOOD</span>
+      <div className="bg-red-700/90 text-white text-xs font-semibold px-4 py-1.5 text-center flex items-center justify-center gap-2">
+        <AlertTriangle className="w-3.5 h-3.5 text-amber-300" />
+        <span>THÔNG TIN REVIEW & PHẢN ÁNH TRANH CHẤP LAO ĐỘNG • TRẢI NGHIỆM THỰC TẾ TẠI CÔNG TY TNHH ĐẬU FOOD</span>
         <span className="hidden md:inline text-red-200">| Địa chỉ: 296 Võ Thành Trang, Phường Bảy Hiền, Thành phố Hồ Chí Minh, Việt Nam</span>
       </div>
 
@@ -30,14 +30,14 @@ export const Header: React.FC<HeaderProps> = ({
           <div>
             <div className="flex items-center gap-2">
               <span className="font-bold text-base tracking-tight text-white group-hover:text-red-400 transition-colors">
-                Cảnh Báo Đậu Food
+                Review Đậu Food
               </span>
               <span className="bg-red-500/20 text-red-400 border border-red-500/30 text-[10px] px-1.5 py-0.5 rounded font-mono font-medium">
-                SỰ THẬT & BẰNG CHỨNG
+                TRẢI NGHIỆM & ĐÁNH GIÁ
               </span>
             </div>
             <p className="text-[11px] text-zinc-400 hidden sm:block">
-              Hồ sơ chứng cứ & Văn bản đòi quyền lợi lao động
+              Hồ sơ chứng cứ & Tài liệu trao đổi tiền lương
             </p>
           </div>
         </a>

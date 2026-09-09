@@ -91,15 +91,15 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
   {
     id: 'step-6',
     date: 'Hiện tại (08/09/2026)',
-    time: 'Gửi văn bản cảnh báo',
-    title: 'Lập văn bản yêu cầu thanh toán & Chuẩn bị hồ sơ khiếu nại',
+    time: 'Gửi văn bản đề nghị',
+    title: 'Lập văn bản đề nghị thanh toán & Chuẩn bị hồ sơ khiếu nại',
     actor: 'laborer',
     badge: 'Chờ thiện chí của Đậu Food',
     description:
-      'Người lao động đã hoàn thành văn bản yêu cầu thanh toán tiền lương và hồ sơ bằng chứng thực tế gửi cho đại diện Đậu Food (chưa nộp cơ quan chức năng vì ưu tiên để công ty tự giải quyết). Nếu công ty tiếp tục thoái thác hoặc thách thức, hồ sơ này sẽ được chính thức nộp lên cơ quan có thẩm quyền.',
+      'Người lao động đã hoàn thành văn bản đề nghị thanh toán tiền lương và hồ sơ bằng chứng thực tế gửi cho đại diện Đậu Food (chưa nộp cơ quan chức năng vì ưu tiên để công ty tự giải quyết). Nếu công ty tiếp tục thoái thác hoặc không thanh toán, hồ sơ này sẽ được chính thức gửi lên cơ quan có thẩm quyền.',
     details: [
-      'Đã gửi văn bản kèm đầy đủ hình ảnh tin nhắn đối chất cho Đậu Food.',
-      'Sẵn sàng nộp cơ quan có thẩm quyền nếu Đậu Food không hoàn trả 150.000 VNĐ.'
+      'Đã gửi văn bản kèm đầy đủ hình ảnh tin nhắn trao đổi cho Đậu Food.',
+      'Sẵn sàng gửi cơ quan có thẩm quyền nếu Đậu Food không thanh toán 150.000 VNĐ.'
     ]
   }
 ];
@@ -192,7 +192,7 @@ export const REAL_DOCUMENT_INFO = {
     {
       pageNumber: 6,
       title: 'Trang 6: Danh sách chứng cứ kèm theo – Hình 3',
-      subtitle: 'Đánh đồng quên check-out với quỵt lương & So sánh shopping',
+      subtitle: 'Đánh đồng quên check-out với không trả lương & So sánh shopping',
       type: 'evidence_image' as const,
       evidenceFigureNumber: 3,
       evidenceTitle: 'Hình 3: Tin nhắn chị Lan Anh cố đánh đồng việc quên check-out (lỗi thủ tục của người lao động) với việc công ty không trả lương cho ngày đã làm (nghĩa vụ bắt buộc của người sử dụng lao động). Hai việc này hoàn toàn khác nhau. Liên tục đổ lỗi, lấy lý do rằng tôi nghỉ ngang nên trốn tránh việc thanh toán lương.',
@@ -344,9 +344,9 @@ export const EVIDENCE_ITEMS: EvidenceItem[] = [
   {
     id: 'evidence-3',
     number: 3,
-    title: 'Đánh đồng quên check-out với quỵt lương & Ngụy biện "thiệt hại hàng hóa"',
+    title: 'Đánh đồng quên check-out với việc không trả lương & Lý do "thiệt hại hàng hóa"',
     summary:
-      'Nhân sự cố tình lấy ví dụ cá nhân mình từng bị mất ngày lương do quên chụp ảnh check-out để ép người lao động chấp nhận mất 100% tiền công 2 ngày làm việc.',
+      'Nhân sự cố tình lấy ví dụ cá nhân mình từng bị mất ngày lương do quên chụp ảnh check-out để yêu cầu người lao động chấp nhận không nhận tiền công 2 ngày làm việc.',
     keyTakeaway: 'Quên chụp ảnh check-out (nếu có) chỉ là lỗi thủ tục hành chính, trong khi thực tế người lao động đã có mặt làm việc tại quầy, có camera và quản lý xác nhận.',
     lawViolationNote: 'Điều 102 BLLĐ 2019 cấm người sử dụng lao động tự ý khấu trừ tiền lương mà không qua quy trình và không chứng minh được lỗi gây thiệt hại trực tiếp.',
     messages: [
@@ -378,7 +378,7 @@ export const EVIDENCE_ITEMS: EvidenceItem[] = [
     summary:
       'Đại diện của người lao động đã gửi tin nhắn giải trình cặn kẽ, khách quan, phân tích điều luật và cho công ty thời hạn 24 giờ giải quyết trước khi nộp đơn hòa giải.',
     keyTakeaway: 'Người lao động hành xử văn minh, đúng trình tự pháp luật và có gửi kèm Đơn đề nghị hòa giải chính thức.',
-    lawViolationNote: 'Bảo vệ quyền khởi kiện và yêu cầu hòa giải tranh chấp lao động cá nhân theo quy định tại Chương XIV Bộ luật Lao động 2019.',
+    lawViolationNote: 'Bảo vệ quyền yêu cầu hòa giải tranh chấp lao động cá nhân theo quy định tại Chương XIV Bộ luật Lao động 2019.',
     messages: [
       {
         sender: 'representative',
@@ -390,7 +390,7 @@ export const EVIDENCE_ITEMS: EvidenceItem[] = [
         sender: 'representative',
         senderName: 'Đại diện người lao động (Nguyễn Minh Luân)',
         time: 'Trích dẫn pháp luật',
-        text: 'Công ty không được tự ý chiếm dụng hoặc trừ hết lương bằng cách tự tính thiệt hại hàng hóa khi chưa chứng minh được lỗi, mức thiệt hại thực tế và chưa đúng trình tự. Việc khấu trừ lương phải theo Điều 102 Bộ luật Lao động 2019. Đính kèm: Don_de_nghi...lao_dong.pdf',
+        text: 'Công ty không được tự ý trừ hết lương bằng cách tự tính thiệt hại hàng hóa khi chưa chứng minh được lỗi, mức thiệt hại thực tế và chưa đúng trình tự. Việc khấu trừ lương phải theo Điều 102 Bộ luật Lao động 2019. Đính kèm: Don_de_nghi...lao_dong.pdf',
         isHighlighted: true
       },
       {
@@ -404,11 +404,11 @@ export const EVIDENCE_ITEMS: EvidenceItem[] = [
   {
     id: 'evidence-5',
     number: 5,
-    title: 'Đe dọa đưa tên người lao động vào "Blacklist của các doanh nghiệp"',
+    title: 'Đề cập việc đưa tên người lao động vào "Blacklist của các doanh nghiệp"',
     summary:
-      'Khi bị nhắc nhở về vi phạm pháp luật và đơn thư hòa giải, đại diện công ty không những không giải quyết mà còn có lời lẽ đe dọa chèn ép con đường tìm việc của người lao động.',
-    keyTakeaway: 'Một doanh nghiệp sẵn sàng đe dọa "cho vào blacklist các doanh nghiệp" đối với một nhân viên part-time mới đi làm 2 ngày đòi 150.000đ tiền công.',
-    lawViolationNote: 'Hành vi đe dọa, xúc phạm uy tín người lao động vi phạm nghiêm trọng chuẩn mực ứng xử nghề nghiệp và đạo đức kinh doanh.',
+      'Khi được đề nghị giải quyết tiền lương và gửi kèm văn bản, đại diện công ty không thanh toán mà gửi tin nhắn đề cập việc đưa thông tin vào blacklist.',
+    keyTakeaway: 'Nhân sự đề cập việc "cho vào blacklist các doanh nghiệp" đối với nhân viên part-time thử việc 2 ngày yêu cầu thanh toán 150.000đ tiền công.',
+    lawViolationNote: 'Hành vi đe dọa, xúc phạm uy tín người lao động vi phạm chuẩn mực ứng xử nghề nghiệp và đạo đức kinh doanh.',
     messages: [
       {
         sender: 'hr',
@@ -447,9 +447,9 @@ export const LEGAL_CLAUSES: LegalClause[] = [
     quote:
       'Hợp đồng lao động là sự thỏa thuận giữa người lao động và người sử dụng lao động về việc làm có trả công, tiền lương... Trước khi nhận người lao động vào làm việc thì người sử dụng lao động phải giao kết hợp đồng lao động.',
     plainExplanation:
-      'Dù công ty không đưa hợp đồng bằng văn bản cho bạn ký, nhưng chỉ cần hai bên đã thỏa thuận công việc và mức lương (qua tin nhắn, lời nói), quan hệ lao động đã phát sinh. Người sử dụng lao động bắt buộc phải trả lương cho mọi giờ bạn đã làm việc.',
+      'Dù công ty không đưa hợp đồng bằng văn bản cho bạn ký, nhưng chỉ cần hai bên đã thỏa thuận công việc và mức lương (qua tin nhắn, lời nói), quan hệ lao động đã phát sinh. Người sử dụng lao động có nghĩa vụ thanh toán tiền lương cho thời gian bạn đã làm việc.',
     applicationToCase:
-      'Đậu Food không ký HĐLĐ bằng văn bản là lỗi và vi phạm của chính công ty, hoàn toàn không làm mất đi quyền nhận 150.000đ của người lao động.'
+      'Việc không ký HĐLĐ bằng văn bản không làm mất đi quyền được nhận 150.000đ tiền công đã làm việc của người lao động.'
   },
   {
     article: 'Điều 27',
@@ -458,20 +458,20 @@ export const LEGAL_CLAUSES: LegalClause[] = [
     quote:
       'Trong thời gian thử việc, mỗi bên có quyền hủy bỏ hợp đồng thử việc hoặc hợp đồng lao động đã giao kết mà không cần báo trước và không phải bồi thường.',
     plainExplanation:
-      'Khi đang trong thời gian thử việc (nhất là part-time), bạn có toàn quyền dừng làm việc nếu thấy không phù hợp mà KHÔNG phải bồi thường bất kỳ khoản tiền nào cho công ty. Công ty cũng không được vin vào đây để trừ lương.',
+      'Khi đang trong thời gian thử việc (nhất là part-time), bạn có toàn quyền dừng làm việc nếu thấy không phù hợp mà KHÔNG phải bồi thường bất kỳ khoản tiền nào cho công ty. Công ty cũng không được vin vào đây để từ chối trả lương.',
     applicationToCase:
-      'Người lao động mới thử việc 2 ngày, đã xin nghỉ lịch sự và nhân sự đã nhắn "oke em nha". Việc công ty gán tội "nghỉ đột xuất gây thiệt hại" là hoàn toàn trái luật.'
+      'Người lao động mới thử việc 2 ngày, đã xin nghỉ lịch sự và nhân sự đã nhắn "oke em nha". Việc công ty cho rằng "nghỉ đột xuất gây thiệt hại" để không trả lương là chưa đúng quy định.'
   },
   {
     article: 'Điều 102 & 129',
     law: 'Bộ luật Lao động 2019',
-    title: 'Nghiêm cấm tự ý khấu trừ tiền lương & Trách nhiệm bồi thường',
+    title: 'Quy định về khấu trừ tiền lương & Trách nhiệm bồi thường',
     quote:
       'Người sử dụng lao động chỉ được khấu trừ tiền lương của người lao động để bồi thường thiệt hại do làm hư hỏng dụng cụ, thiết bị, tài sản... theo quy định tại Điều 129 của Bộ luật này. Người lao động có quyền được biết lý do khấu trừ tiền lương của mình.',
     plainExplanation:
-      'Công ty không được phép "tự phán xét" rồi trừ sạch tiền lương của bạn. Muốn bắt đền tài sản hay hàng hóa, công ty phải thành lập biên bản, chứng minh lỗi trực tiếp của bạn, chứng minh thiệt hại thực tế và phải tuân thủ hạn mức khấu trừ (không quá 30% tiền lương hàng tháng).',
+      'Công ty không được phép tự ý khấu trừ hết tiền lương. Muốn xử lý bồi thường thiệt hại, phải có biên bản kiểm kê, xác định rõ lỗi trực tiếp và mức thiệt hại thực tế theo đúng trình tự pháp luật.',
     applicationToCase:
-      'Đậu Food tự nói mồm "tiền hàng thiệt hại đã sản xuất cao hơn lương" mà không có bất kỳ biên bản kiểm kê, không chứng minh hàng bị hỏng hay bán ế do lỗi của nhân sự thử việc, rồi chiếm giữ toàn bộ tiền lương là hành vi chiếm đoạt công sức lao động.'
+      'Việc nhân sự tự tính "tiền hàng thiệt hại đã sản xuất cao hơn lương" mà không có biên bản kiểm kê hay chứng minh lỗi cụ thể để từ chối thanh toán toàn bộ tiền công là không phù hợp với Điều 102 Bộ luật Lao động 2019.'
   }
 ];
 
@@ -481,7 +481,7 @@ export const REVIEW_CRITERIA: ReviewCriterion[] = [
     score: 1.0,
     maxScore: 5.0,
     critique:
-      'Từ chối thanh toán 150.000 VNĐ cho 2 ngày làm việc thực tế của nhân viên thử việc, lấy cớ tiền hàng sản xuất để quỵt lương.',
+      'Từ chối thanh toán 150.000 VNĐ cho 2 ngày làm việc thực tế của nhân viên thử việc, viện dẫn lý do tiền hàng sản xuất để không trả lương.',
     impact: 'critical'
   },
   {
@@ -497,7 +497,7 @@ export const REVIEW_CRITERIA: ReviewCriterion[] = [
     score: 1.0,
     maxScore: 5.0,
     critique:
-      'Bơ tin nhắn, kick nhân viên khỏi nhóm chat khi bị đòi lương, buông lời đe dọa "cho vào blacklist của các doanh nghiệp".',
+      'Chưa phản hồi thỏa đáng tin nhắn, xóa nhân viên khỏi nhóm chat khi trao đổi về tiền lương và đề cập việc "cho vào blacklist của các doanh nghiệp".',
     impact: 'critical'
   },
   {
@@ -505,7 +505,7 @@ export const REVIEW_CRITERIA: ReviewCriterion[] = [
     score: 1.5,
     maxScore: 5.0,
     critique:
-      'Không tuân thủ quy định về thử việc tại Điều 27 và khấu trừ tiền lương tại Điều 102 Bộ luật Lao động 2019.',
+      'Cần tuân thủ đầy đủ quy định về thử việc tại Điều 27 và khấu trừ tiền lương tại Điều 102 Bộ luật Lao động 2019.',
     impact: 'high'
   }
 ];
@@ -517,7 +517,7 @@ export const INITIAL_COMMENTS: CommentItem[] = [
     role: 'Sinh viên năm 2 - ĐH Kinh Tế TP.HCM',
     timestamp: '2 giờ trước',
     content:
-      'Mình từng đi làm part-time chuỗi đồ uống, nếu thử việc thấy không hợp quản lý cho nghỉ bình thường và cuối tháng vẫn chuyển khoản từng giờ công đã làm. Doanh nghiệp làm ăn mà 153k cũng tìm cớ đổ thừa hàng hóa để quỵt của sinh viên thì quá tệ!',
+      'Mình từng đi làm part-time chuỗi đồ uống, nếu thử việc thấy không hợp quản lý cho nghỉ bình thường và cuối tháng vẫn chuyển khoản từng giờ công đã làm. Doanh nghiệp làm việc mà khoản tiền công 153k cũng tìm cớ đổ thừa hàng hóa để không trả lương cho sinh viên thì rất thất vọng!',
     likes: 42,
     verified: true
   },
@@ -527,7 +527,7 @@ export const INITIAL_COMMENTS: CommentItem[] = [
     role: 'Cựu nhân viên dịch vụ F&B',
     timestamp: '5 giờ trước',
     content:
-      'Đọc đoạn tin nhắn "cho vào blacklist của các doanh nghiệp" mà cười ra nước mắt. Một công ty tư nhân nhỏ lấy tư cách gì ra danh sách đen doanh nghiệp? Dọa các bạn sinh viên mới ra đời chưa hiểu luật thôi. Ủng hộ bạn làm đơn hòa giải đến cùng!',
+      'Đọc đoạn tin nhắn "cho vào blacklist của các doanh nghiệp" mà thấy quá bất hợp lý. Một đơn vị tư nhân nhỏ lẻ lấy cơ sở gì ra danh sách đen doanh nghiệp? Dọa các bạn sinh viên mới đi làm thôi. Ủng hộ bạn làm rõ đến cùng theo đúng quy định pháp luật!',
     likes: 89,
     verified: true
   },
@@ -537,7 +537,7 @@ export const INITIAL_COMMENTS: CommentItem[] = [
     role: 'Cử nhân Luật Lao Động',
     timestamp: '1 ngày trước',
     content:
-      'Theo Điều 27 BLLĐ 2019, thử việc hai bên đều có quyền hủy bỏ mà không cần báo trước và không phải bồi thường. Công ty tự ý quy kết thiệt hại sản xuất mà không có biên bản kiểm kê, không chứng minh lỗi trực tiếp là vi phạm nghiêm trọng Điều 102 và Điều 129.',
+      'Theo Điều 27 BLLĐ 2019, thử việc hai bên đều có quyền hủy bỏ mà không cần báo trước và không phải bồi thường. Công ty tự ý quy kết thiệt hại sản xuất mà không có biên bản kiểm kê, không chứng minh lỗi trực tiếp là không phù hợp với quy định tại Điều 102 và Điều 129.',
     likes: 126,
     verified: true
   }

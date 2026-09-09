@@ -68,7 +68,7 @@ export default function App() {
           className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full bg-red-600 hover:bg-red-500 text-white shadow-xl shadow-red-950/60 text-xs font-bold transition-all hover:scale-105 active:scale-95"
         >
           <Share2 className="w-4 h-4" />
-          <span>Chia sẻ cảnh báo</span>
+          <span>Chia sẻ đánh giá</span>
         </button>
       </div>
 

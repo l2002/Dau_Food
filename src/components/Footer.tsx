@@ -20,19 +20,19 @@ export const Footer: React.FC<FooterProps> = ({ onOpenMediationDoc, onOpenExport
           <div className="md:col-span-7 space-y-3">
             <div className="flex items-center gap-2">
               <span className="font-bold text-white text-sm">
-                Cảnh Báo Lao Động: {COMPANY_INFO.name}
+                Đánh Giá & Phản Ánh Trải Nghiệm: {COMPANY_INFO.name}
               </span>
               <span className="text-[10px] bg-red-950 text-red-400 border border-red-800/50 px-1.5 py-0.5 rounded font-mono">
-                BẢO VỆ NGƯỜI LAO ĐỘNG
+                TÔN TRỌNG PHÁP LUẬT
               </span>
             </div>
 
             <p className="text-zinc-400 text-xs leading-relaxed max-w-lg">
-              Trang web này được thành lập với tinh thần thượng tôn pháp luật, dựa trên{' '}
+              Trang web này được xây dựng với tinh thần tôn trọng pháp luật, chia sẻ trải nghiệm thực tế và phản ánh trung thực dựa trên{' '}
               <strong className="text-zinc-200">
-                Văn bản yêu cầu thanh toán tiền lương và bộ hồ sơ hình ảnh chứng cứ thực tế
+                Văn bản đề nghị thanh toán tiền lương và bộ hồ sơ hình ảnh chứng cứ thực tế
               </strong>{' '}
-              gửi đại diện Công ty TNHH Đậu Food (bên người lao động chưa nộp cơ quan chức năng, ưu tiên tạo cơ hội giải quyết thiện chí).
+              gửi đại diện Công ty TNHH Đậu Food (thông tin mang tính chất phản ánh trải nghiệm cá nhân, hồ sơ chưa nộp cơ quan chức năng để ưu tiên giải quyết thiện chí).
             </p>
 
             {/* Mandatory Disclaimer from prompt */}
@@ -43,7 +43,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenMediationDoc, onOpenExport
                 <span className="text-amber-300 font-semibold">
                   KHÔNG ĐẠI DIỆN CHO BẤT KỲ CƠ QUAN NHÀ NƯỚC NÀO
                 </span>
-                . Mọi thông tin phản ánh được bảo lưu quyền khiếu nại, tố cáo và hòa giải theo đúng trình tự pháp luật của nước Cộng hòa Xã hội Chủ nghĩa Việt Nam.
+                . Mọi thông tin phản ánh được thực hiện đúng trình tự pháp luật của nước Cộng hòa Xã hội Chủ nghĩa Việt Nam.
               </div>
             </div>
           </div>
@@ -61,7 +61,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenMediationDoc, onOpenExport
                     className="hover:text-red-400 transition-colors flex items-center gap-1.5 text-zinc-300"
                   >
                     <FileText className="w-3.5 h-3.5 text-red-400" />
-                    <span>Xem văn bản yêu cầu & 5 tệp ảnh thực tế</span>
+                    <span>Xem văn bản đề nghị & 5 tệp ảnh thực tế</span>
                   </a>
                 </li>
                 <li>
@@ -108,18 +108,18 @@ export const Footer: React.FC<FooterProps> = ({ onOpenMediationDoc, onOpenExport
         <div className="py-4 border-b border-zinc-900 flex flex-wrap items-center gap-2 text-[11px] text-zinc-400">
           <span className="font-semibold text-zinc-300">Từ khóa SEO:</span>
           <span className="bg-zinc-900/80 px-2 py-0.5 rounded text-zinc-400 border border-zinc-800">review đậu food</span>
-          <span className="bg-zinc-900/80 px-2 py-0.5 rounded text-zinc-400 border border-zinc-800">đậu food phốt</span>
-          <span className="bg-zinc-900/80 px-2 py-0.5 rounded text-zinc-400 border border-zinc-800">phốt đậu food</span>
+          <span className="bg-zinc-900/80 px-2 py-0.5 rounded text-zinc-400 border border-zinc-800">đánh giá đậu food</span>
           <span className="bg-zinc-900/80 px-2 py-0.5 rounded text-zinc-400 border border-zinc-800">công ty tnhh đậu food</span>
-          <span className="bg-zinc-900/80 px-2 py-0.5 rounded text-zinc-400 border border-zinc-800">đậu food quỵt lương</span>
+          <span className="bg-zinc-900/80 px-2 py-0.5 rounded text-zinc-400 border border-zinc-800">đậu food không trả lương</span>
           <span className="bg-zinc-900/80 px-2 py-0.5 rounded text-zinc-400 border border-zinc-800">đậu food 296 võ thành trang</span>
+          <span className="bg-zinc-900/80 px-2 py-0.5 rounded text-zinc-400 border border-zinc-800">trải nghiệm làm việc đậu food</span>
           <span className="bg-zinc-900/80 px-2 py-0.5 rounded text-zinc-400 border border-zinc-800">bảo vệ người lao động part-time</span>
         </div>
 
         {/* Bottom copyright / date */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-zinc-500">
           <div>
-            © 2026 Hồ Sơ Tranh Chấp Lao Động Part-Time. Tôn trọng sự thật & pháp luật.
+            © 2026 Hồ Sơ Phản Ánh Tranh Chấp Lao Động Part-Time. Tôn trọng sự thật & pháp luật.
           </div>
           <div>
             Cập nhật mới nhất: Tháng 09/2026 (Hồ sơ tại TP.HCM)

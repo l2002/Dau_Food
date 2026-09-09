@@ -100,7 +100,7 @@ Tôi khẳng định: Việc không giao kết hợp đồng lao động bằng 
 1. Bản sao CCCD của người đề nghị;
 2. Hình 1: In/ảnh chụp toàn bộ tin nhắn Zalo với chị Lan Anh (gửi lịch, vị trí làm việc B16, phản hồi “Dạ chị”, tin xin nghỉ 19:55, phản hồi “oke em nha ❤️” lúc 13:03);
 3. Hình 2: Ảnh gửi STK VietQR đòi lương, bị lấy cớ và bị xóa khỏi nhóm SX-SALES: 06h00;
-4. Hình 3: Tin nhắn chị Lan Anh cố đánh đồng việc quên check-out với việc quỵt lương và so sánh shopping;
+4. Hình 3: Tin nhắn chị Lan Anh cố đánh đồng việc quên check-out với việc không trả lương và so sánh shopping;
 5. Hình 4: Tin nhắn yêu cầu thanh toán lương kèm tệp Don_de_nghi_lac_dong.pdf thời hạn 24h;
 6. Hình 5: Tin nhắn phía công ty bảo sẽ cho tên vào blacklist của các doanh nghiệp.
 

@@ -27,8 +27,8 @@ export const WarningCallToAction: React.FC<WarningCallToActionProps> = ({ onOpen
     setTimeout(() => setCopied(false), 2500);
   };
 
-  const hashtagsText = '#ReviewĐậuFood #ĐậuFoodPhốt #PhốtĐậuFood #CôngTyTNHHĐậuFood #QuỵtLươngPartTime';
-  const shareTitle = 'CẢNH BÁO: Công ty TNHH Đậu Food phốt không trả tiền công cho người lao động part-time';
+  const hashtagsText = '#ReviewĐậuFood #ĐánhGiáĐậuFood #CôngTyTNHHĐậuFood #TrảiNghiệmLaoĐộng #BảoVệNgườiLaoĐộng';
+  const shareTitle = 'Review Đậu Food: Phản ánh trải nghiệm và tranh chấp tiền công part-time tại Công ty TNHH Đậu Food';
   const currentUrl = typeof window !== 'undefined' ? window.location.href : '';
   const postTemplate = `${shareTitle}\nĐầy đủ bằng chứng và căn cứ pháp lý: ${currentUrl}\n\n${hashtagsText}`;
 
@@ -66,13 +66,13 @@ export const WarningCallToAction: React.FC<WarningCallToActionProps> = ({ onOpen
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-red-950/60 border border-red-500/30 text-red-400 text-xs font-semibold uppercase tracking-wider mb-3">
             <AlertTriangle className="w-3.5 h-3.5" />
-            <span>Cảnh Báo & Hành Động Cộng Đồng</span>
+            <span>Lưu Ý & Chia Sẻ Trải Nghiệm</span>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight">
-            Cảnh báo cho ứng viên & Lời kêu gọi chia sẻ
+            Lưu ý cho ứng viên & Chia sẻ thông tin đánh giá
           </h2>
           <p className="mt-3 text-sm sm:text-base text-zinc-400">
-            Hãy lan tỏa thông tin để bảo vệ các bạn trẻ, sinh viên đi làm thêm không trở thành nạn nhân tiếp theo.
+            Chia sẻ thông tin trải nghiệm thực tế để người lao động và các bạn sinh viên nắm rõ quyền lợi khi tìm việc làm thêm.
           </p>
         </div>
 
@@ -116,7 +116,7 @@ export const WarningCallToAction: React.FC<WarningCallToActionProps> = ({ onOpen
                     4
                   </span>
                   <span>
-                    <strong className="text-white">Từ chối "trừ tiền hàng" vô căn cứ:</strong> Công ty muốn trừ lương phải lập biên bản kiểm kê, chứng minh lỗi và thiệt hại cụ thể (Điều 102 BLLĐ 2019).
+                    <strong className="text-white">Từ chối "trừ tiền hàng" vô căn cứ:</strong> Doanh nghiệp muốn khấu trừ lương phải có biên bản kiểm kê, chứng minh lỗi và thiệt hại cụ thể (Điều 102 BLLĐ 2019).
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
@@ -131,7 +131,7 @@ export const WarningCallToAction: React.FC<WarningCallToActionProps> = ({ onOpen
             </div>
 
             <div className="mt-6 pt-4 border-t border-zinc-800 text-xs text-zinc-400">
-              * Ghi nhớ: Dù số tiền chỉ là vài trăm nghìn đồng (như 150.000đ), đó là mồ hôi công sức hợp pháp của bạn!
+              * Ghi nhớ: Dù số tiền chỉ là vài trăm nghìn đồng (như 150.000đ), đó là tiền công lao động chính đáng của bạn!
             </div>
           </div>
 
@@ -140,10 +140,10 @@ export const WarningCallToAction: React.FC<WarningCallToActionProps> = ({ onOpen
             <div>
               <div className="flex items-center gap-2 text-sm font-bold text-white uppercase tracking-wider mb-2">
                 <Share2 className="w-5 h-5 text-red-500" />
-                <span>Chia sẻ cảnh báo này</span>
+                <span>Chia sẻ thông tin này</span>
               </div>
               <p className="text-xs sm:text-sm text-zinc-400 mb-6">
-                Chỉ 1 lượt chia sẻ của bạn có thể giúp một người bạn hoặc sinh viên khác tránh được cảnh làm không công và bị đối xử thiếu tôn trọng.
+                Chỉ 1 lượt chia sẻ của bạn có thể giúp một người bạn hoặc sinh viên khác hiểu rõ quyền lợi khi đi làm thử việc part-time.
               </p>
 
               {/* Social Buttons */}
@@ -187,7 +187,7 @@ export const WarningCallToAction: React.FC<WarningCallToActionProps> = ({ onOpen
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-bold text-zinc-300 flex items-center gap-1.5">
                     <Hash className="w-3.5 h-3.5 text-red-500" />
-                    <span>Hashtags chiến dịch:</span>
+                    <span>Hashtags đánh giá:</span>
                   </span>
                   <button
                     onClick={handleCopyHashtags}
@@ -203,8 +203,7 @@ export const WarningCallToAction: React.FC<WarningCallToActionProps> = ({ onOpen
                 </div>
                 <div className="flex flex-wrap gap-1.5 text-[11px]">
                   <span className="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-700 text-red-400 font-mono">#ReviewĐậuFood</span>
-                  <span className="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-700 text-red-400 font-mono">#ĐậuFoodPhốt</span>
-                  <span className="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-700 text-zinc-300 font-mono">#PhốtĐậuFood</span>
+                  <span className="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-700 text-zinc-300 font-mono">#ĐánhGiáĐậuFood</span>
                   <span className="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-700 text-zinc-300 font-mono">#CôngTyTNHHĐậuFood</span>
                 </div>
                 <button

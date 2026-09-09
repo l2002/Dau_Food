@@ -4,11 +4,11 @@ export function generateStandaloneHtml(): string {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Review Đậu Food – CẢNH BÁO: Công ty TNHH Đậu Food phốt không trả lương part-time</title>
-  <meta name="description" content="Review Đậu Food thực tế: Tổng hợp bằng chứng, tin nhắn Zalo và phân tích pháp lý về vụ việc Công ty TNHH Đậu Food phốt không trả tiền công part-time, tự ý cấn trừ lương và dọa blacklist.">
-  <meta name="keywords" content="review đậu food, đậu food phốt, phốt đậu food, review cong ty dau food, cong ty tnhh dau food, dau food phot, dau food quyt luong, dau food khong tra luong, dau food 296 vo thanh trang, review dau food lua dao, bllđ 2019">
-  <meta property="og:title" content="Review Đậu Food – CẢNH BÁO: Công ty TNHH Đậu Food phốt không trả lương part-time">
-  <meta property="og:description" content="Review Đậu Food thực tế: Bằng chứng Zalo và hồ sơ hòa giải lao động vụ Công ty TNHH Đậu Food phốt quỵt tiền công.">
+  <title>Review Đậu Food – Đánh giá thực tế & Phản ánh việc không trả lương part-time</title>
+  <meta name="description" content="Review Đậu Food thực tế: Tổng hợp tài liệu chứng cứ, tin nhắn Zalo và phân tích quy định pháp luật về vụ việc người lao động thử việc part-time phản ánh việc chưa được trả tiền công tại Công ty TNHH Đậu Food.">
+  <meta name="keywords" content="review đậu food, đánh giá đậu food, review cong ty dau food, cong ty tnhh dau food, dau food khong tra luong, dau food 296 vo thanh trang, viec lam part time f&b, bllđ 2019">
+  <meta property="og:title" content="Review Đậu Food – Đánh giá thực tế & Phản ánh việc không trả lương part-time">
+  <meta property="og:description" content="Review Đậu Food thực tế: Tổng hợp tài liệu chứng cứ tin nhắn, văn bản trao đổi tiền công người lao động thử việc tại Công ty TNHH Đậu Food.">
   
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -34,8 +34,8 @@ export function generateStandaloneHtml(): string {
 <body class="bg-zinc-950 text-zinc-100 antialiased selection:bg-red-600 selection:text-white">
 
   <!-- Top Alert Banner -->
-  <div class="bg-red-600 text-white text-xs font-semibold px-4 py-1.5 text-center flex items-center justify-center gap-2">
-    <span>⚠️ CẢNH BÁO TRANH CHẤP TIỀN LƯƠNG LAO ĐỘNG • HỒ SƠ CÔNG TY TNHH ĐẬU FOOD (296 Võ Thành Trang, Phường Bảy Hiền, Thành phố Hồ Chí Minh, Việt Nam)</span>
+  <div class="bg-red-700/90 text-white text-xs font-semibold px-4 py-1.5 text-center flex items-center justify-center gap-2">
+    <span>THÔNG TIN REVIEW & PHẢN ÁNH TRANH CHẤP LAO ĐỘNG • TRẢI NGHIỆM THỰC TẾ TẠI CÔNG TY TNHH ĐẬU FOOD (296 Võ Thành Trang, Phường Bảy Hiền, TP.HCM)</span>
   </div>
 
   <!-- Header -->
@@ -43,11 +43,11 @@ export function generateStandaloneHtml(): string {
     <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
       <div class="flex items-center gap-3">
         <div class="w-9 h-9 rounded-lg bg-red-600/20 border border-red-500/40 flex items-center justify-center text-red-500 font-bold">
-          !
+          ★
         </div>
         <div>
-          <span class="font-bold text-white text-base">Cảnh Báo Đậu Food</span>
-          <span class="ml-2 text-[10px] bg-red-500/20 text-red-400 border border-red-500/30 px-1.5 py-0.5 rounded font-mono">CHỨNG CỨ THỰC TẾ</span>
+          <span class="font-bold text-white text-base">Review Đậu Food</span>
+          <span class="ml-2 text-[10px] bg-red-500/20 text-red-400 border border-red-500/30 px-1.5 py-0.5 rounded font-mono">TRẢI NGHIỆM & ĐÁNH GIÁ</span>
         </div>
       </div>
       <nav class="hidden md:flex items-center gap-6 text-xs sm:text-sm font-medium text-zinc-300">
@@ -56,7 +56,7 @@ export function generateStandaloneHtml(): string {
         <a href="#evidence" class="hover:text-red-400 transition-colors">Bằng chứng Zalo</a>
         <a href="#legal" class="hover:text-red-400 transition-colors">Căn cứ pháp lý</a>
         <a href="#scorecard" class="hover:text-red-400 transition-colors">Đánh giá</a>
-        <a href="#action" class="hover:text-red-400 transition-colors">Cảnh báo</a>
+        <a href="#action" class="hover:text-red-400 transition-colors">Chia sẻ</a>
       </nav>
       <a href="#action" class="px-3.5 py-1.5 rounded-lg text-xs font-bold bg-red-600 hover:bg-red-500 text-white transition-all">
         Chia sẻ
@@ -68,25 +68,25 @@ export function generateStandaloneHtml(): string {
   <section class="relative overflow-hidden pt-12 pb-16 md:pt-20 md:pb-24 border-b border-zinc-800 bg-zinc-950">
     <div class="max-w-4xl mx-auto px-4 text-center">
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-950/80 border border-red-500/40 text-red-300 text-xs font-semibold uppercase mb-6">
-        Cảnh Báo Quyền Lợi Lao Động Part-Time
+        Review & Đánh Giá Trải Nghiệm Lao Động Part-Time
       </div>
 
       <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight mb-6">
-        CẢNH BÁO: <span class="text-red-500">Công ty TNHH Đậu Food</span><br>
-        – Không trả lương cho người lao động part-time?
+        Review & Đánh Giá: <span class="text-red-500">Công ty TNHH Đậu Food</span><br>
+        – Phản ánh việc không trả lương cho người lao động part-time
       </h1>
 
       <p class="text-sm sm:text-base md:text-lg text-zinc-300 max-w-2xl mx-auto leading-relaxed mb-6">
-        Phơi bày trải nghiệm làm việc thực tế của người lao động part-time bị doanh nghiệp từ chối trả 150.000đ tiền công sau khi đã làm việc, tự ý quy kết “nghỉ ngang”, lấy cớ “tiền hàng thiệt hại cao hơn lương”, kick khỏi group và đe dọa đưa vào blacklist.
+        Phản ánh trải nghiệm làm việc thực tế của người lao động thử việc part-time về việc doanh nghiệp từ chối thanh toán 150.000đ tiền công sau khi đã làm việc, tự ý quy kết “nghỉ ngang”, lấy cớ “tiền hàng thiệt hại cao hơn lương”, xóa khỏi nhóm chat và đề cập đưa vào blacklist.
       </p>
 
       <!-- Trending Hashtags -->
       <div class="inline-flex flex-wrap items-center justify-center gap-2 mb-8 max-w-xl mx-auto p-2.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs">
         <span class="text-red-400 font-bold">Hashtags:</span>
         <span class="px-2 py-0.5 rounded bg-zinc-950 text-red-300 font-mono">#ReviewĐậuFood</span>
-        <span class="px-2 py-0.5 rounded bg-zinc-950 text-red-300 font-mono">#ĐậuFoodPhốt</span>
-        <span class="px-2 py-0.5 rounded bg-zinc-950 text-zinc-300 font-mono">#PhốtĐậuFood</span>
+        <span class="px-2 py-0.5 rounded bg-zinc-950 text-zinc-300 font-mono">#ĐánhGiáĐậuFood</span>
         <span class="px-2 py-0.5 rounded bg-zinc-950 text-zinc-300 font-mono">#CôngTyTNHHĐậuFood</span>
+        <span class="px-2 py-0.5 rounded bg-zinc-950 text-zinc-300 font-mono">#TrảiNghiệmLaoĐộng</span>
       </div>
 
       <div class="flex flex-wrap items-center justify-center gap-3 mb-12">
@@ -116,9 +116,9 @@ export function generateStandaloneHtml(): string {
           <div class="text-xs text-zinc-400 mt-1">Mức thỏa thuận: 25.000đ/giờ</div>
         </div>
         <div class="p-4 rounded-xl bg-zinc-900 border border-zinc-800">
-          <div class="text-xs font-bold text-zinc-400 uppercase mb-1">Pháp lý vi phạm</div>
+          <div class="text-xs font-bold text-zinc-400 uppercase mb-1">Cơ sở pháp lý</div>
           <div class="text-sm font-bold text-white">Điều 27 & 102 BLLĐ 2019</div>
-          <div class="text-xs text-zinc-400 mt-1">Tự ý khấu trừ 100% tiền công</div>
+          <div class="text-xs text-zinc-400 mt-1">Quy định về thử việc và khấu trừ lương</div>
         </div>
       </div>
     </div>
@@ -137,7 +137,7 @@ export function generateStandaloneHtml(): string {
           <span class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-emerald-500 ring-4 ring-zinc-950"></span>
           <div class="text-xs font-mono text-zinc-400">20/08 – 21/08/2026</div>
           <h3 class="text-base font-bold text-white mt-1">Làm việc 2 ngày (mỗi ngày 3 tiếng)</h3>
-          <p class="text-xs sm:text-sm text-zinc-300 mt-1">Mức lương thỏa thuận 25.000đ/giờ. Người lao động hoàn thành nghiêm túc 6 giờ làm việc tại quầy Đậu Food (Tổng tiền công: 150.000đ).</p>
+          <p class="text-xs sm:text-sm text-zinc-300 mt-1">Mức lương thỏa thuận 25.000đ/giờ. Người lao động hoàn thành 6 giờ làm việc tại quầy Đậu Food (Tổng tiền công: 150.000đ).</p>
         </div>
 
         <div class="relative group">
@@ -151,21 +151,21 @@ export function generateStandaloneHtml(): string {
           <span class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-emerald-400 ring-4 ring-zinc-950"></span>
           <div class="text-xs font-mono text-zinc-400">24/08/2026 (13:03)</div>
           <h3 class="text-base font-bold text-white mt-1">Nhân sự Đậu Food phản hồi chấp thuận: "oke em nha"</h3>
-          <p class="text-xs sm:text-sm text-zinc-300 mt-1">Đại diện quản lý nhắn rõ ràng: "oke em nha". Thể hiện công ty đã tiếp nhận và đồng thuận cho nghỉ việc trong thời gian thử việc theo đúng luật.</p>
+          <p class="text-xs sm:text-sm text-zinc-300 mt-1">Đại diện quản lý nhắn rõ ràng: "oke em nha". Thể hiện hai bên đã thống nhất kết thúc quan hệ thử việc.</p>
         </div>
 
         <div class="relative group">
           <span class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-red-500 ring-4 ring-zinc-950"></span>
           <div class="text-xs font-mono text-zinc-400">Sau đó</div>
           <h3 class="text-base font-bold text-white mt-1">Yêu cầu trả lương nhiều lần → Công ty từ chối, đổ lỗi & đe dọa</h3>
-          <p class="text-xs sm:text-sm text-zinc-300 mt-1">Khi được gửi số tài khoản đòi lương, công ty không thanh toán mà quy kết "nghỉ ngang", lấy cớ "tiền hàng thiệt hại cao hơn lương", đề nghị "50/50", kick khỏi group chat và dọa "cho tên vào blacklist của các doanh nghiệp".</p>
+          <p class="text-xs sm:text-sm text-zinc-300 mt-1">Khi được gửi số tài khoản đề nghị thanh toán lương, công ty không giải quyết mà quy kết "nghỉ ngang", lấy cớ "tiền hàng thiệt hại cao hơn lương", xóa khỏi nhóm chat và đề cập "cho tên vào blacklist của các doanh nghiệp".</p>
         </div>
 
         <div class="relative group">
           <span class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-amber-500 ring-4 ring-zinc-950"></span>
           <div class="text-xs font-mono text-zinc-400">Hiện tại (08/09/2026)</div>
-          <h3 class="text-base font-bold text-white mt-1">Lập văn bản yêu cầu thanh toán & Chuẩn bị hồ sơ khiếu nại</h3>
-          <p class="text-xs sm:text-sm text-zinc-300 mt-1">Người lao động hoàn thiện hồ sơ kèm 5 hình ảnh bằng chứng thực tế gửi đến đại diện Đậu Food (chưa nộp cơ quan chức năng, ưu tiên giải quyết thiện chí). Nếu công ty tiếp tục thoái thác, hồ sơ này sẽ được nộp lên cơ quan nhà nước có thẩm quyền.</p>
+          <h3 class="text-base font-bold text-white mt-1">Lập văn bản đề nghị thanh toán & Chuẩn bị hồ sơ</h3>
+          <p class="text-xs sm:text-sm text-zinc-300 mt-1">Người lao động hoàn thiện hồ sơ kèm 5 hình ảnh bằng chứng thực tế gửi đến đại diện Đậu Food (chưa nộp cơ quan chức năng, ưu tiên giải quyết thiện chí). Nếu công ty tiếp tục thoái thác, hồ sơ này sẽ được gửi lên cơ quan nhà nước có thẩm quyền.</p>
         </div>
       </div>
     </div>
@@ -182,10 +182,10 @@ export function generateStandaloneHtml(): string {
 
       <!-- Real status notice -->
       <div class="p-4 rounded-xl bg-amber-950/40 border border-amber-500/40 text-xs sm:text-sm text-zinc-300 mb-8 flex items-start gap-3">
-        <span class="text-amber-400 font-bold text-base mt-0.5">⚠️</span>
+        <span class="text-amber-400 font-bold text-base mt-0.5">ℹ️</span>
         <div>
           <strong class="text-white font-semibold">Tình trạng hồ sơ thực tế:</strong>
-          <span> Bên người lao động <span class="text-amber-300 font-bold underline">chưa nộp đơn lên cơ quan nhà nước</span>. Bản PDF đã che thông tin cá nhân và 5 tệp hình ảnh dưới đây hiện đang được lưu hành và gửi trực tiếp cho đại diện Công ty TNHH Đậu Food kèm thời hạn thiện chí thanh toán trước khi nộp chính thức.</span>
+          <span> Bên người lao động <span class="text-amber-300 font-bold underline">chưa nộp đơn lên cơ quan nhà nước</span>. Bản PDF đã che thông tin cá nhân và 5 tệp hình ảnh dưới đây hiện đang được lưu hành và gửi trực tiếp cho đại diện Công ty TNHH Đậu Food kèm thời hạn thiện chí thanh toán trước khi gửi chính thức.</span>
         </div>
       </div>
 
@@ -205,8 +205,8 @@ export function generateStandaloneHtml(): string {
           <p>• <strong>Bên yêu cầu:</strong> Lư Kim Vàng (Sinh năm 2004) - [Số CCCD, Hộ khẩu & SĐT đã được che bảo mật]</p>
           <p>• <strong>Bên bị yêu cầu:</strong> Công ty TNHH Đậu Food (296 Võ Thành Trang, Phường Bảy Hiền, Thành phố Hồ Chí Minh, Việt Nam)</p>
           <p>• <strong>Thời gian làm việc:</strong> 20/08 - 21/08/2026 (6 giờ thực tế x 25.000 đ/giờ = 150.000 VNĐ)</p>
-          <p>• <strong>Căn cứ:</strong> Điều 13, 27, 102 Bộ luật Lao động 2019 (Nghiêm cấm tự ý cấn trừ tiền lương, thử việc có quyền nghỉ không cần báo trước)</p>
-          <p>• <strong>Tài liệu đính kèm:</strong> 5 tệp hình ảnh thực tế trích xuất từ tin nhắn đối chất.</p>
+          <p>• <strong>Căn cứ:</strong> Điều 13, 27, 102 Bộ luật Lao động 2019 (Quy định về trả tiền lương, thử việc có quyền nghỉ không cần báo trước)</p>
+          <p>• <strong>Tài liệu đính kèm:</strong> 5 tệp hình ảnh thực tế trích xuất từ tin nhắn trao đổi.</p>
         </div>
       </div>
 
@@ -253,7 +253,7 @@ export function generateStandaloneHtml(): string {
           <div class="p-2.5 bg-zinc-950 rounded text-xs text-zinc-300 font-mono">
             "tiền hàng thiệt hại đã sản xuất cao hơn lương..."
           </div>
-          <p class="text-xs text-zinc-400">Tự quy chụp thiệt hại không biên bản để né tránh trả lương.</p>
+          <p class="text-xs text-zinc-400">Tự quy chụp thiệt hại không biên bản để từ chối trả lương.</p>
         </div>
 
         <div class="p-4 rounded-xl bg-zinc-900 border border-zinc-800 space-y-2">
@@ -264,7 +264,7 @@ export function generateStandaloneHtml(): string {
           <div class="p-2.5 bg-zinc-950 rounded text-xs text-rose-400 font-bold font-mono">
             "cho vào blacklist của các doanh nghiệp..."
           </div>
-          <p class="text-xs text-zinc-400">Đe dọa quyền làm việc của nhân sự part-time để quỵt 153k.</p>
+          <p class="text-xs text-zinc-400">Đề cập blacklist đối tác khi nhân sự yêu cầu thanh toán tiền công.</p>
         </div>
       </div>
     </div>
@@ -281,7 +281,7 @@ export function generateStandaloneHtml(): string {
       <!-- Legal highlight -->
       <div class="p-4 rounded-xl bg-red-950/60 border border-red-500/50 mb-8 text-xs sm:text-sm text-zinc-200">
         <strong class="text-white font-bold block mb-1">📌 NGUYÊN TẮC QUAN TRỌNG:</strong>
-        Việc không có hợp đồng lao động bằng văn bản là trách nhiệm thuộc về người sử dụng lao động. Người lao động vẫn tuyệt đối có quyền được hưởng đầy đủ tiền công cho thời gian đã làm việc thực tế!
+        Việc không có hợp đồng lao động bằng văn bản là trách nhiệm thuộc về người sử dụng lao động. Người lao động vẫn có quyền được hưởng đầy đủ tiền công cho thời gian đã làm việc thực tế!
       </div>
 
       <div class="space-y-6">
@@ -295,13 +295,13 @@ export function generateStandaloneHtml(): string {
             <div class="text-zinc-400"><strong class="text-zinc-200">23/08 (19:55) Vàng:</strong> "Chị ơi em xin phép báo chị là em muốn xin nghỉ việc ạ... em thấy địa điểm hiện tại hơi xa... mong chị thông cảm giúp em nha."</div>
             <div class="text-zinc-400"><strong class="text-red-400">24/08 (13:03) Lan Anhh (Đậu Food):</strong> "oke em nha ❤️"</div>
           </div>
-          <p class="text-xs text-zinc-400 mt-2">→ Chứng minh hai bên đã đồng thuận chấm dứt thử việc. Công ty không thể lật lọng quy kết bỏ ngang.</p>
+          <p class="text-xs text-zinc-400 mt-2">→ Chứng minh hai bên đã đồng thuận chấm dứt thử việc. Công ty không thể quy kết bỏ ngang.</p>
         </div>
 
         <!-- Evidence 2 -->
         <div class="p-5 rounded-2xl bg-zinc-950 border border-zinc-800">
           <div class="flex items-center justify-between mb-3">
-            <h3 class="font-bold text-white text-sm sm:text-base">Hình 2 & 3: Bơ tin nhắn đòi lương, kick khỏi group & đổ thừa thiệt hại</h3>
+            <h3 class="font-bold text-white text-sm sm:text-base">Hình 2 & 3: Lấy cớ thiệt hại hàng hóa & Xóa khỏi group khi đòi lương</h3>
             <span class="text-[11px] text-red-400 bg-red-950 px-2 py-0.5 rounded border border-red-800">Né tránh nghĩa vụ</span>
           </div>
           <div class="p-3.5 bg-zinc-900 rounded-xl space-y-2 text-xs">
@@ -309,20 +309,20 @@ export function generateStandaloneHtml(): string {
             <div class="text-zinc-400"><strong class="text-red-400">Lan Anhh:</strong> "Bữa đó em nghỉ chị tính tiền hàng thiệt hại đã sản xuất cao hơn lương của em á Vàng ơi. Chị chưa duyệt mà em nghỉ đột xuất như vậy."</div>
             <div class="text-amber-400 italic">Quản trị viên đã xóa Lư Kim Vàng ra khỏi nhóm trò chuyện SX-SALES: 06h00...</div>
           </div>
-          <p class="text-xs text-zinc-400 mt-2">→ Tự ý cấn trừ tiền lương khi không có biên bản kiểm kê, không chứng minh lỗi thực tế là trái pháp luật.</p>
+          <p class="text-xs text-zinc-400 mt-2">→ Tự ý cấn trừ tiền lương khi không có biên bản kiểm kê, không chứng minh lỗi thực tế là chưa đúng quy định.</p>
         </div>
 
         <!-- Evidence 3 -->
         <div class="p-5 rounded-2xl bg-zinc-950 border border-zinc-800">
           <div class="flex items-center justify-between mb-3">
-            <h3 class="font-bold text-white text-sm sm:text-base">Hình 4 & 5: Đe dọa "cho vào blacklist của các doanh nghiệp"</h3>
-            <span class="text-[11px] text-red-400 bg-red-950 px-2 py-0.5 rounded border border-red-800">Ứng xử sai trái</span>
+            <h3 class="font-bold text-white text-sm sm:text-base">Hình 4 & 5: Đề cập "cho vào blacklist của các doanh nghiệp"</h3>
+            <span class="text-[11px] text-red-400 bg-red-950 px-2 py-0.5 rounded border border-red-800">Ứng xử thiếu chuyên nghiệp</span>
           </div>
           <div class="p-3.5 bg-zinc-900 rounded-xl space-y-2 text-xs">
             <div class="text-zinc-400"><strong class="text-zinc-200">Đại diện người lao động:</strong> Trích dẫn Điều 102 BLLĐ 2019 và gửi kèm văn bản Đơn đề nghị hòa giải tranh chấp lao động.</div>
             <div class="text-zinc-400"><strong class="text-red-400">Lan Anhh (Đậu Food):</strong> "bạn hăm dọa mình thì mình cũng cho tên bạn kia vào blacklist của các doanh nghiệp được nhé. ko nói chứ ko phải ko có cách nhé bạn"</div>
           </div>
-          <p class="text-xs text-zinc-400 mt-2">→ Hành vi đe dọa chèn ép quyền tìm việc của người lao động nhằm mục đích quỵt 150.000đ tiền công.</p>
+          <p class="text-xs text-zinc-400 mt-2">→ Đề cập blacklist đối tác khi nhân sự yêu cầu thanh toán 150.000đ tiền công.</p>
         </div>
       </div>
     </div>
@@ -346,12 +346,12 @@ export function generateStandaloneHtml(): string {
         <div class="p-5 rounded-xl bg-zinc-900 border border-zinc-800">
           <div class="text-xs font-bold text-red-400 mb-1">Điều 27 BLLĐ 2019</div>
           <h3 class="font-bold text-white mb-2">Thử việc được quyền nghỉ không cần báo trước</h3>
-          <p class="text-zinc-400 text-xs">Trong thời gian thử việc, mỗi bên có quyền hủy bỏ thỏa thuận mà không cần báo trước và không phải bồi thường. Công ty gán tội "nghỉ ngang gây thiệt hại" để trừ lương là hoàn toàn vi hiến và trái luật.</p>
+          <p class="text-zinc-400 text-xs">Trong thời gian thử việc, mỗi bên có quyền hủy bỏ thỏa thuận mà không cần báo trước và không phải bồi thường. Công ty gán tội "nghỉ ngang gây thiệt hại" để không trả lương là chưa đúng quy định.</p>
         </div>
 
         <div class="p-5 rounded-xl bg-zinc-900 border border-zinc-800">
           <div class="text-xs font-bold text-red-400 mb-1">Điều 102 & 129 BLLĐ 2019</div>
-          <h3 class="font-bold text-white mb-2">Nghiêm cấm tự ý khấu trừ tiền lương</h3>
+          <h3 class="font-bold text-white mb-2">Quy định về khấu trừ tiền lương</h3>
           <p class="text-zinc-400 text-xs">Doanh nghiệp không được tự trừ tiền công lấy cớ "hàng đã sản xuất" khi chưa lập biên bản, chưa chứng minh lỗi trực tiếp và mức thiệt hại thực tế theo đúng trình tự pháp luật.</p>
         </div>
       </div>
@@ -406,8 +406,8 @@ export function generateStandaloneHtml(): string {
         </div>
 
         <div class="p-4 rounded-xl bg-red-950/60 border border-red-500/40 text-center mt-6">
-          <span class="text-red-400 font-bold uppercase block text-xs mb-1">KẾT LUẬN CUỐI CÙNG</span>
-          <p class="text-white font-bold text-sm">KHÔNG KHUYẾN KHÍCH ỨNG TUYỂN</p>
+          <span class="text-red-400 font-bold uppercase block text-xs mb-1">KẾT LUẬN & ĐÁNH GIÁ</span>
+          <p class="text-white font-bold text-sm">KHÔNG KHUYẾN NGHỊ ỨNG TUYỂN</p>
           <p class="text-zinc-300 text-xs mt-1">Đặc biệt đối với học sinh, sinh viên và người làm thời vụ nếu bạn coi trọng công sức và quyền lợi của mình.</p>
         </div>
       </div>
@@ -417,10 +417,10 @@ export function generateStandaloneHtml(): string {
   <!-- Action & Sharing -->
   <section id="action" class="py-16 border-b border-zinc-800 bg-zinc-950">
     <div class="max-w-4xl mx-auto px-4 text-center">
-      <span class="text-xs font-bold text-red-500 uppercase tracking-widest">HÀNH ĐỘNG CỘNG ĐỒNG</span>
-      <h2 class="text-2xl sm:text-3xl font-bold text-white mt-1 mb-4">Chia sẻ để cảnh báo ứng viên khác</h2>
+      <span class="text-xs font-bold text-red-500 uppercase tracking-widest">CHIA SẺ THÔNG TIN</span>
+      <h2 class="text-2xl sm:text-3xl font-bold text-white mt-1 mb-4">Chia sẻ đánh giá & trải nghiệm</h2>
       <p class="text-xs sm:text-sm text-zinc-400 max-w-xl mx-auto mb-8">
-        Hãy lan tỏa thông điệp này đến các hội nhóm sinh viên, tìm việc làm thêm để không ai phải chịu cảnh đi làm không được trả công.
+        Lan tỏa thông tin đánh giá thực tế để các bạn sinh viên, người tìm việc hiểu rõ quyền lợi khi đi làm thêm.
       </p>
 
       <div class="flex flex-wrap items-center justify-center gap-3 mb-6">
@@ -430,7 +430,7 @@ export function generateStandaloneHtml(): string {
         <button onclick="window.open('https://zalo.me/share?url=' + encodeURIComponent(window.location.href), '_blank')" class="px-5 py-2.5 rounded-xl text-xs font-bold bg-[#0068FF] text-white hover:opacity-90">
           Gửi qua Zalo
         </button>
-        <button onclick="navigator.clipboard.writeText('CẢNH BÁO: Công ty TNHH Đậu Food phốt quỵt lương part-time ' + window.location.href + ' #ReviewĐậuFood #ĐậuFoodPhốt #CôngTyTNHHĐậuFood'); alert('Đã sao chép nội dung bài đăng kèm hashtag!');" class="px-5 py-2.5 rounded-xl text-xs font-bold bg-red-600 hover:bg-red-500 text-white shadow-lg">
+        <button onclick="navigator.clipboard.writeText('Review Đậu Food: Phản ánh trải nghiệm và việc không trả lương part-time ' + window.location.href + ' #ReviewĐậuFood #ĐánhGiáĐậuFood #CôngTyTNHHĐậuFood'); alert('Đã sao chép nội dung bài đăng kèm hashtag!');" class="px-5 py-2.5 rounded-xl text-xs font-bold bg-red-600 hover:bg-red-500 text-white shadow-lg">
           Sao chép bài đăng + Hashtags
         </button>
         <button onclick="navigator.clipboard.writeText(window.location.href); alert('Đã sao chép liên kết trang!');" class="px-5 py-2.5 rounded-xl text-xs font-bold bg-zinc-800 border border-zinc-700 text-white hover:bg-zinc-700">
@@ -447,7 +447,7 @@ export function generateStandaloneHtml(): string {
         Trang này được tạo dựa trên Đơn đề nghị hòa giải tranh chấp lao động (ngày 08/09/2026) và các bằng chứng tin nhắn trao đổi thực tế.
       </p>
       <p class="text-zinc-500">
-        Trang thông tin mang tính chất khách quan, bảo vệ quyền lợi người lao động và không đại diện cho bất kỳ cơ quan nhà nước nào.
+        Trang thông tin mang tính chất đánh giá trải nghiệm thực tế, tôn trọng pháp luật và không đại diện cho bất kỳ cơ quan nhà nước nào.
       </p>
     </div>
   </footer>

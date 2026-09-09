@@ -14,8 +14,8 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   const currentUrl = typeof window !== 'undefined' ? window.location.href : '';
-  const shareTitle = 'CẢNH BÁO: Công ty TNHH Đậu Food phốt không trả lương cho người lao động part-time';
-  const hashtags = '#ReviewĐậuFood #ĐậuFoodPhốt #PhốtĐậuFood #CôngTyTNHHĐậuFood #QuỵtLươngPartTime';
+  const shareTitle = 'Review Đậu Food: Phản ánh trải nghiệm và tranh chấp tiền công part-time tại Công ty TNHH Đậu Food';
+  const hashtags = '#ReviewĐậuFood #ĐánhGiáĐậuFood #CôngTyTNHHĐậuFood #TrảiNghiệmLaoĐộng #BảoVệNgườiLaoĐộng';
   const fullShareText = `${shareTitle}\nXem chi tiết bằng chứng và căn cứ pháp lý: ${currentUrl}\n\n${hashtags}`;
 
   const handleCopyLink = () => {
@@ -39,8 +39,8 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose }) => {
               <Share2 className="w-4 h-4" />
             </div>
             <div>
-              <h3 className="text-sm font-bold text-white">Lan Tỏa Cảnh Báo</h3>
-              <p className="text-[11px] text-zinc-400">Giúp cộng đồng và sinh viên tránh rủi ro</p>
+              <h3 className="text-sm font-bold text-white">Lan Tỏa Thông Tin Đánh Giá</h3>
+              <p className="text-[11px] text-zinc-400">Chia sẻ trải nghiệm thực tế để cùng nắm rõ quyền lợi</p>
             </div>
           </div>
           <button

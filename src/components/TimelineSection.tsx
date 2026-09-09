@@ -121,7 +121,7 @@ export const TimelineSection: React.FC = () => {
               Đối chiếu: Lời quy kết của Đậu Food vs Sự thật khách quan
             </h3>
             <p className="text-xs text-zinc-400 mt-1">
-              Phân tích logic bóc trần lý do vô lý nhằm quỵt 150.000đ tiền công
+              Phân tích khách quan về việc không thanh toán 150.000đ tiền công
             </p>
           </div>
 

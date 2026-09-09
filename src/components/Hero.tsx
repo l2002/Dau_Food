@@ -27,15 +27,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenShareModal, onOpenMediationDoc
 
   const hashtags = [
     '#ReviewĐậuFood',
-    '#ĐậuFoodPhốt',
-    '#PhốtĐậuFood',
+    '#ĐánhGiáĐậuFood',
     '#CôngTyTNHHĐậuFood',
-    '#QuỵtLươngPartTime',
-    '#BảoVệNgườiLaoĐộng'
+    '#TrảiNghiệmLaoĐộng',
+    '#BảoVệNgườiLaoĐộng',
+    '#ReviewDauFood'
   ];
 
   const handleCopyAllTags = () => {
-    const allTagsText = '#ReviewĐậuFood #ĐậuFoodPhốt #PhốtĐậuFood #CôngTyTNHHĐậuFood #QuỵtLươngPartTime #BảoVệNgườiLaoĐộng #DauFoodPhot #ReviewDauFood';
+    const allTagsText = '#ReviewĐậuFood #ĐánhGiáĐậuFood #CôngTyTNHHĐậuFood #TrảiNghiệmLaoĐộng #BảoVệNgườiLaoĐộng #ReviewDauFood';
     navigator.clipboard.writeText(allTagsText);
     setCopiedTag('all');
     setTimeout(() => setCopiedTag(null), 2500);
@@ -56,9 +56,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenShareModal, onOpenMediationDoc
         {/* Warning Indicator Pill */}
         <div className="flex flex-wrap items-center justify-center gap-2 mb-6">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-red-950/80 border border-red-500/40 text-red-300 text-xs font-semibold tracking-wide uppercase shadow-lg shadow-red-950/50">
-            <span className="w-2 h-2 rounded-full bg-red-500 animate-ping" />
-            <AlertOctagon className="w-4 h-4 text-red-400" />
-            <span>Cảnh Báo Quyền Lợi Lao Động Part-Time</span>
+            <span className="w-2 h-2 rounded-full bg-amber-500" />
+            <AlertOctagon className="w-4 h-4 text-amber-400" />
+            <span>Review & Đánh Giá Trải Nghiệm Lao Động Part-Time</span>
           </div>
           <a href="#document" className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-zinc-900 border border-zinc-800 hover:border-zinc-700 text-zinc-300 text-xs font-medium transition-colors">
             <FileCheck className="w-3.5 h-3.5 text-emerald-400" />
@@ -68,19 +68,19 @@ export const Hero: React.FC<HeroProps> = ({ onOpenShareModal, onOpenMediationDoc
 
         {/* Main Headline */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white text-center leading-[1.15] tracking-tight mb-6">
-          CẢNH BÁO:{' '}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-400 to-rose-300">
+          Review & Đánh Giá:{' '}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-400 to-amber-300">
             Công ty TNHH Đậu Food
           </span>
           <br className="hidden sm:inline" />
           <span className="text-zinc-100 text-2xl sm:text-3xl md:text-4xl block sm:inline mt-2 sm:mt-0">
-            {' '}– Không trả lương cho người lao động part-time?
+            {' '}– Phản ánh việc không trả lương cho người lao động part-time
           </span>
         </h1>
 
         {/* Subtitle / Case Brief */}
         <p className="text-base sm:text-lg md:text-xl text-zinc-300 text-center max-w-3xl mx-auto leading-relaxed mb-6">
-          Phơi bày trải nghiệm làm việc thực tế của người lao động thử việc part-time bị doanh nghiệp từ chối trả tiền công sau 2 ca làm việc, tự ý quy kết <span className="text-red-400 font-semibold">“nghỉ ngang gây thiệt hại”</span>, kick khỏi nhóm chat và đe dọa <span className="text-red-400 font-semibold">“đưa vào blacklist của các doanh nghiệp”</span>.
+          Phản ánh trải nghiệm làm việc thực tế của người lao động thử việc part-time về việc doanh nghiệp từ chối thanh toán tiền công sau 2 ca làm việc (150.000đ), tự ý quy kết <span className="text-red-400 font-semibold">“nghỉ ngang gây thiệt hại”</span>, xóa khỏi nhóm chat và đề cập đến việc <span className="text-red-400 font-semibold">“đưa vào blacklist của các doanh nghiệp”</span>.
         </p>
 
         {/* Trending Hashtags & SEO Tag Bar */}
@@ -88,7 +88,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenShareModal, onOpenMediationDoc
           <div className="flex items-center justify-between gap-2 mb-2 px-1">
             <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-300">
               <Hash className="w-3.5 h-3.5 text-red-500" />
-              <span>Từ khóa cộng đồng & Hashtags thịnh hành:</span>
+              <span>Từ khóa cộng đồng & Hashtags đánh giá:</span>
             </div>
             <button
               onClick={handleCopyAllTags}
@@ -206,11 +206,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenShareModal, onOpenMediationDoc
           <div className="p-4 rounded-xl bg-zinc-900/80 border border-zinc-800 hover:border-zinc-700 transition-colors">
             <div className="flex items-center gap-2 text-xs font-semibold text-zinc-400 uppercase tracking-wider mb-2">
               <ShieldAlert className="w-4 h-4 text-rose-400" />
-              <span>Vi phạm pháp lý chính</span>
+              <span>Cơ sở pháp lý theo BLLĐ 2019</span>
             </div>
             <div className="text-sm font-bold text-white mb-1">Điều 27 & 102 BLLĐ 2019</div>
             <div className="text-xs text-zinc-400">
-              Tự ý khấu trừ 100% lương, đe dọa blacklist nhân sự part-time.
+              Quy định về thử việc và điều kiện khấu trừ tiền lương.
             </div>
           </div>
         </div>

@@ -52,7 +52,7 @@ export const EvidenceSection: React.FC = () => {
                 <span className="text-xs text-zinc-400 hidden sm:inline">Bộ luật Lao động Việt Nam 2019</span>
               </div>
               <h3 className="text-base sm:text-lg font-bold text-white mb-2 leading-snug">
-                Không có hợp đồng bằng văn bản không đồng nghĩa với việc doanh nghiệp được quỵt tiền công!
+                Không có hợp đồng bằng văn bản không đồng nghĩa với việc doanh nghiệp được quyền không trả tiền công!
               </h3>
               <p className="text-sm text-zinc-300 leading-relaxed">
                 Người sử dụng lao động có trách nhiệm phải ký kết hợp đồng bằng văn bản. Việc công ty không giao kết hợp đồng là vi phạm của chính công ty. 
