@@ -517,7 +517,7 @@ export const INITIAL_COMMENTS: CommentItem[] = [
     role: 'Sinh viên năm 2 - ĐH Kinh Tế TP.HCM',
     timestamp: '2 giờ trước',
     content:
-      'Mình từng đi làm part-time chuỗi đồ uống, nếu thử việc thấy không hợp quản lý cho nghỉ bình thường và cuối tháng vẫn chuyển khoản từng giờ công đã làm. Doanh nghiệp làm việc mà khoản tiền công 153k cũng tìm cớ đổ thừa hàng hóa để không trả lương cho sinh viên thì rất thất vọng!',
+      'Mình từng đi làm part-time chuỗi đồ uống, nếu thử việc thấy không hợp quản lý cho nghỉ bình thường và cuối tháng vẫn chuyển khoản từng giờ công đã làm. Doanh nghiệp làm việc mà khoản tiền công 150k cũng tìm cớ đổ thừa hàng hóa để không trả lương cho sinh viên thì rất thất vọng!',
     likes: 42,
     verified: true
   },
