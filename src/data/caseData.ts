@@ -544,8 +544,8 @@ export const INITIAL_COMMENTS: CommentItem[] = [
     role: 'Sinh viên năm 2 - ĐH Kinh Tế TP.HCM',
     timestamp: '2 giờ trước',
     content:
-      'Mình từng đi làm part-time chuỗi đồ uống, nếu thử việc thấy không hợp quản lý cho nghỉ bình thường và cuối tháng vẫn chuyển khoản từng giờ công đã làm. Doanh nghiệp làm ăn mà 150k cũng tìm cớ đổ thừa hàng hóa để quy.t của sinh viên thì quá tệ!',
-    likes: 42,
+      'Mình từng đi làm part-time chuỗi đồ uống, nếu thử việc thấy không hợp quản lý cho nghỉ bình thường và cuối tháng vẫn chuyển khoản từng giờ công đã làm. Doanh nghiệp làm ăn mà 150k cũng tìm cớ đổ thừa hàng hóa để quỵt của sinh viên thì quá tệ!',
+    likes: 1,
     verified: true
   },
   {
@@ -554,8 +554,8 @@ export const INITIAL_COMMENTS: CommentItem[] = [
     role: 'Cựu nhân viên dịch vụ F&B',
     timestamp: '5 giờ trước',
     content:
-      'Đọc đoạn tin nhắn "cho vào blacklist của các doanh nghiệp" mà cười ra nước mắt. Một công ty tư nhân nhỏ lấy tư cách gì ra danh sách đen doanh nghiệp? Dọa các bạn sinh viên mới ra đời chưa hiểu luật thôi. Ủng hộ bạn làm đơn hòa giải đến cùng!',
-    likes: 89,
+      'Đọc đoạn tin nhắn "cho vào blacklist của các doanh nghiệp" mà cười ra khùng. Một công ty tư nhân nhỏ lấy tư cách gì ra danh sách đen doanh nghiệp? Dọa các bạn sinh viên mới ra đời chưa hiểu luật thôi.',
+    likes: 5,
     verified: true
   },
   {
@@ -565,7 +565,7 @@ export const INITIAL_COMMENTS: CommentItem[] = [
     timestamp: '1 ngày trước',
     content:
       'Theo Điều 27 BLLĐ 2019, thử việc hai bên đều có quyền hủy bỏ mà không cần báo trước và không phải bồi thường. Công ty tự ý quy kết thiệt hại sản xuất mà không có biên bản kiểm kê, không chứng minh lỗi trực tiếp là vi phạm nghiêm trọng Điều 102 và Điều 129.',
-    likes: 126,
+    likes: 10,
     verified: true
   }
 ];
