@@ -245,8 +245,8 @@ export const CommunityFeedback: React.FC = () => {
   };
 
   return (
-    <section id="community" className="py-12 sm:py-16 md:py-24 border-b border-zinc-800 bg-zinc-900/40">
-      <div className="max-w-4xl mx-auto px-3.5 sm:px-6 lg:px-8">
+    <section id="community" className="w-full max-w-full py-12 sm:py-16 md:py-24 border-b border-zinc-800 bg-zinc-900/40 overflow-hidden">
+      <div className="w-full max-w-4xl mx-auto px-3.5 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-zinc-800 border border-zinc-700 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-3">
@@ -254,23 +254,23 @@ export const CommunityFeedback: React.FC = () => {
             <span>Diễn Đàn Trao Đổi Cộng Đồng</span>
           </div>
 
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white tracking-tight leading-snug">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white tracking-tight leading-snug break-words">
             Góp ý & Chia sẻ kinh nghiệm làm việc part-time
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-zinc-400 leading-relaxed px-1">
+          <p className="mt-2 text-xs sm:text-sm text-zinc-400 leading-relaxed px-1 break-words">
             Hãy chia sẻ kinh nghiệm, góc nhìn hoặc ý kiến đóng góp xây dựng để cùng lan tỏa văn hóa làm việc minh bạch và tôn trọng pháp luật.
           </p>
 
           {/* Cloud Sync Status Indicator */}
           <div className="mt-3 flex items-center justify-center gap-2">
-            <div className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-medium border ${
+            <div className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-medium border max-w-full truncate ${
               isCloudConnected
                 ? 'bg-emerald-950/60 border-emerald-500/40 text-emerald-300'
                 : 'bg-zinc-900 border-zinc-700 text-zinc-400'
             }`}>
-              <span className={`w-2 h-2 rounded-full ${isCloudConnected ? 'bg-emerald-400 animate-pulse' : 'bg-amber-400'}`} />
-              <Cloud className="w-3 h-3 text-emerald-400" />
-              <span>{isCloudConnected ? 'Cloud Firestore Đã Kết Nối (Lưu Trực Tiếp Trên Đám Mây)' : 'Đang đồng bộ Cloud Database...'}</span>
+              <span className={`w-2 h-2 rounded-full shrink-0 ${isCloudConnected ? 'bg-emerald-400 animate-pulse' : 'bg-amber-400'}`} />
+              <Cloud className="w-3 h-3 text-emerald-400 shrink-0" />
+              <span className="truncate">{isCloudConnected ? 'Cloud Firestore Đã Kết Nối' : 'Đang đồng bộ Cloud Database...'}</span>
             </div>
           </div>
         </div>
@@ -430,7 +430,7 @@ export const CommunityFeedback: React.FC = () => {
                     </div>
                   </div>
 
-                  <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed pl-1 sm:pl-11 mb-3 whitespace-pre-line">
+                  <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed pl-1 sm:pl-11 mb-3 whitespace-pre-line break-words">
                     {cmt.content}
                   </p>
 

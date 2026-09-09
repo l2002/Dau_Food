@@ -49,16 +49,16 @@ export const MediationDocumentModal: React.FC<MediationDocumentModalProps> = ({
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 bg-black/85 backdrop-blur-md animate-fadeIn">
       <div className="relative w-full max-w-4xl max-h-[92vh] bg-zinc-950 border border-zinc-700 rounded-2xl shadow-2xl flex flex-col overflow-hidden">
         {/* Modal Top Bar */}
-        <div className="p-4 sm:p-5 border-b border-zinc-800 bg-zinc-900 flex items-center justify-between gap-3">
-          <div className="flex items-center gap-2.5 truncate">
-            <div className="w-9 h-9 rounded-lg bg-red-600/20 border border-red-500/40 flex items-center justify-center text-red-400 shrink-0">
-              <FileText className="w-5 h-5" />
+        <div className="p-3 sm:p-5 border-b border-zinc-800 bg-zinc-900 flex items-center justify-between gap-2 sm:gap-3">
+          <div className="flex items-center gap-2 sm:gap-2.5 min-w-0">
+            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-red-600/20 border border-red-500/40 flex items-center justify-center text-red-400 shrink-0">
+              <FileText className="w-4 h-4 sm:w-5 sm:h-5" />
             </div>
-            <div className="truncate">
-              <h3 className="text-sm font-bold text-white truncate">
+            <div className="min-w-0">
+              <h3 className="text-xs sm:text-sm font-bold text-white truncate">
                 ĐƠN ĐỀ NGHỊ HÒA GIẢI TRANH CHẤP LAO ĐỘNG (FILE PDF GỐC 8 TRANG)
               </h3>
-              <p className="text-[11px] text-zinc-400">
+              <p className="text-[10px] sm:text-[11px] text-zinc-400 truncate">
                 Người làm đơn: <strong>LƯ KIM VÀNG</strong> • Bên liên quan: <strong>CÔNG TY TNHH ĐẬU FOOD</strong>
               </p>
             </div>

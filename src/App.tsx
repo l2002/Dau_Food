@@ -20,7 +20,7 @@ export default function App() {
   const [isShareModalOpen, setIsShareModalOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-zinc-950 text-zinc-100 flex flex-col font-['Plus_Jakarta_Sans',sans-serif]">
+    <div className="min-h-screen bg-zinc-950 text-zinc-100 flex flex-col font-['Plus_Jakarta_Sans',sans-serif] w-full max-w-full overflow-x-hidden">
       {/* Header */}
       <Header
         onOpenMediationDoc={() => setIsMediationDocOpen(true)}
@@ -29,7 +29,7 @@ export default function App() {
       />
 
       {/* Main Page Sections */}
-      <main className="flex-1">
+      <main className="flex-1 w-full max-w-full overflow-x-hidden">
         <Hero
           onOpenShareModal={() => setIsShareModalOpen(true)}
           onOpenMediationDoc={() => setIsMediationDocOpen(true)}
