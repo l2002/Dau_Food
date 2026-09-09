@@ -49,13 +49,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenShareModal, onOpenMediationDoc
   };
 
   return (
-    <section className="relative overflow-hidden pt-8 pb-16 md:pt-14 md:pb-20 border-b border-zinc-800/80 bg-radial-[at_top_center] from-red-950/20 via-zinc-950 to-zinc-950">
+    <section className="relative overflow-hidden w-full max-w-full pt-8 pb-16 md:pt-14 md:pb-20 border-b border-zinc-800/80 bg-radial-[at_top_center] from-red-950/20 via-zinc-950 to-zinc-950">
       {/* Background Grid Pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#27272a15_1px,transparent_1px),linear-gradient(to_bottom,#27272a15_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
 
-      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative w-full max-w-5xl mx-auto px-3 sm:px-6 lg:px-8">
         {/* MANDATORY LEGAL DISCLAIMER BANNER */}
-        <div className="mb-6 p-4 rounded-2xl bg-amber-950/30 border border-amber-500/40 text-xs text-zinc-300 shadow-xl backdrop-blur-sm">
+        <div className="mb-6 p-3.5 sm:p-4 rounded-2xl bg-amber-950/30 border border-amber-500/40 text-xs text-zinc-300 shadow-xl backdrop-blur-sm break-words">
           <div className="flex items-start gap-3">
             <Info className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
             <div className="leading-relaxed">
@@ -70,21 +70,21 @@ export const Hero: React.FC<HeroProps> = ({ onOpenShareModal, onOpenMediationDoc
         </div>
 
         {/* Tag pills */}
-        <div className="flex flex-wrap items-center justify-center gap-2 mb-6">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-zinc-900 border border-zinc-700 text-zinc-200 text-xs font-semibold tracking-wide uppercase">
-            <span className="w-2 h-2 rounded-full bg-amber-400" />
-            <span>Phản Ánh Tranh Chấp Lao Động Part-Time</span>
+        <div className="flex flex-wrap items-center justify-center gap-2 mb-6 max-w-full">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-zinc-900 border border-zinc-700 text-zinc-200 text-xs font-semibold tracking-wide uppercase text-center">
+            <span className="w-2 h-2 rounded-full bg-amber-400 shrink-0" />
+            <span className="break-words">Phản Ánh Tranh Chấp Part-Time</span>
           </div>
-          <a href="#document" className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-zinc-900 border border-zinc-700 hover:border-zinc-500 text-zinc-300 text-xs font-medium transition-colors">
-            <FileCheck className="w-3.5 h-3.5 text-emerald-400" />
-            <span>Có Tệp PDF Gốc (8 Trang) & Bằng Chứng</span>
+          <a href="#document" className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-zinc-900 border border-zinc-700 hover:border-zinc-500 text-zinc-300 text-xs font-medium transition-colors text-center">
+            <FileCheck className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+            <span className="break-words">Tệp PDF Gốc (8 Trang) & Bằng Chứng</span>
           </a>
         </div>
 
         {/* Main Headline */}
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white text-center leading-[1.2] tracking-tight mb-5">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white text-center leading-[1.2] tracking-tight mb-5 break-words">
           Review & Đánh Giá:{' '}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-rose-300 to-amber-300">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-rose-300 to-amber-300 inline-block">
             Công ty TNHH Đậu Food
           </span>
           <br className="hidden sm:inline" />
@@ -94,20 +94,20 @@ export const Hero: React.FC<HeroProps> = ({ onOpenShareModal, onOpenMediationDoc
         </h1>
 
         {/* Subtitle / Case Brief */}
-        <p className="text-sm sm:text-base md:text-lg text-zinc-300 text-center max-w-3xl mx-auto leading-relaxed mb-6">
+        <p className="text-sm sm:text-base md:text-lg text-zinc-300 text-center max-w-3xl mx-auto leading-relaxed mb-6 break-words">
           Ghi nhận phản ánh trải nghiệm làm việc của người lao động thử việc part-time về khoản tiền công <span className="text-amber-300 font-semibold">150.000 đồng đang có tranh chấp</span> sau 2 ca làm việc thực tế (20/08 – 21/08/2026); quá trình trao đổi giữa hai bên về việc xin dừng việc, chi phí hàng đã sản xuất, địa điểm nhận tiền và phương thức thanh toán.
         </p>
 
         {/* Trending Hashtags & SEO Tag Bar */}
-        <div className="max-w-2xl mx-auto mb-8 p-3 sm:p-3.5 rounded-2xl bg-zinc-900/90 border border-zinc-800 shadow-xl backdrop-blur-sm">
-          <div className="flex items-center justify-between gap-2 mb-2 px-1">
-            <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-300">
-              <Hash className="w-3.5 h-3.5 text-red-500" />
-              <span>Từ khóa cộng đồng & Hashtags thảo luận:</span>
+        <div className="w-full max-w-2xl mx-auto mb-8 p-3 sm:p-3.5 rounded-2xl bg-zinc-900/90 border border-zinc-800 shadow-xl backdrop-blur-sm">
+          <div className="flex flex-wrap items-center justify-between gap-2 mb-2 px-1">
+            <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-300 min-w-0">
+              <Hash className="w-3.5 h-3.5 text-red-500 shrink-0" />
+              <span className="truncate">Từ khóa & Hashtags thảo luận:</span>
             </div>
             <button
               onClick={handleCopyAllTags}
-              className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-semibold bg-red-600/20 hover:bg-red-600/30 border border-red-500/30 text-red-300 hover:text-white transition-colors cursor-pointer"
+              className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-semibold bg-red-600/20 hover:bg-red-600/30 border border-red-500/30 text-red-300 hover:text-white transition-colors cursor-pointer shrink-0"
               title="Sao chép toàn bộ hashtag để đăng bài"
             >
               {copiedTag === 'all' ? (
@@ -149,38 +149,38 @@ export const Hero: React.FC<HeroProps> = ({ onOpenShareModal, onOpenMediationDoc
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-10">
+        <div className="w-full flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-4 mb-10">
           <a
             id="btn-cta-pdf-direct"
             href="/Don_de_nghi_hoa_giai_tranh_chap_lao_dong_che_thong_tin.pdf"
             download="Don_de_nghi_hoa_giai_tranh_chap_lao_dong_che_thong_tin.pdf"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm font-bold bg-red-600 hover:bg-red-500 text-white transition-all shadow-lg shadow-red-900/40 hover:scale-[1.02] active:scale-[0.98]"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-3 sm:py-3.5 rounded-xl text-xs sm:text-sm font-bold bg-red-600 hover:bg-red-500 text-white transition-all shadow-lg shadow-red-900/40 hover:scale-[1.02] active:scale-[0.98] text-center"
           >
-            <Download className="w-4 h-4" />
-            <span>Tải Tệp PDF Đơn Hòa Giải (8 Trang Gốc)</span>
+            <Download className="w-4 h-4 shrink-0" />
+            <span className="break-words">Tải Tệp PDF Đơn Hòa Giải (8 Trang Gốc)</span>
           </a>
 
           <a
             id="btn-cta-evidence"
             href="#evidence"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold bg-zinc-900 hover:bg-zinc-800 text-white border border-zinc-700 hover:border-zinc-500 transition-all hover:scale-[1.02] active:scale-[0.98]"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-3 sm:py-3.5 rounded-xl text-xs sm:text-sm font-semibold bg-zinc-900 hover:bg-zinc-800 text-white border border-zinc-700 hover:border-zinc-500 transition-all hover:scale-[1.02] active:scale-[0.98] text-center"
           >
             <span>Xem 5 tài liệu chứng cứ</span>
-            <ArrowDown className="w-4 h-4" />
+            <ArrowDown className="w-4 h-4 shrink-0" />
           </a>
 
           <button
             id="btn-cta-share"
             onClick={onOpenShareModal}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold bg-zinc-950 hover:bg-zinc-900 text-zinc-300 border border-zinc-700 hover:border-zinc-500 transition-all cursor-pointer"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-3 sm:py-3.5 rounded-xl text-xs sm:text-sm font-semibold bg-zinc-950 hover:bg-zinc-900 text-zinc-300 border border-zinc-700 hover:border-zinc-500 transition-all cursor-pointer text-center"
           >
-            <Share2 className="w-4 h-4 text-red-400" />
+            <Share2 className="w-4 h-4 text-red-400 shrink-0" />
             <span>Chia sẻ thông tin</span>
           </button>
         </div>
 
         {/* Highlight Quick Facts Bento Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-left">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-left">
           {/* Fact 1 */}
           <div className="p-4 rounded-xl bg-zinc-900/80 border border-zinc-800 hover:border-zinc-700 transition-colors">
             <div className="flex items-center gap-2 text-xs font-semibold text-zinc-400 uppercase tracking-wider mb-2">

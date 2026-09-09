@@ -58,7 +58,7 @@ export const EvidenceSection: React.FC = () => {
         </div>
 
         {/* Tab Filters */}
-        <div className="flex items-center sm:justify-center gap-1.5 sm:gap-2 mb-6 sm:mb-8 overflow-x-auto no-scrollbar py-1 px-1">
+        <div className="w-full max-w-full flex items-center sm:justify-center gap-1.5 sm:gap-2 mb-6 sm:mb-8 overflow-x-auto no-scrollbar py-1 px-1">
           <button
             onClick={() => setActiveTab(0)}
             className={`min-h-[38px] px-3 sm:px-3.5 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-all cursor-pointer shrink-0 ${
@@ -85,7 +85,7 @@ export const EvidenceSection: React.FC = () => {
         </div>
 
         {/* Evidence Cards List */}
-        <div className="space-y-6 sm:space-y-8">
+        <div className="space-y-6 sm:space-y-8 w-full max-w-full">
           {displayedEvidence.map((item) => (
             <div
               key={item.id}
@@ -93,15 +93,15 @@ export const EvidenceSection: React.FC = () => {
             >
               {/* Card Header */}
               <div className="p-4 sm:p-6 border-b border-zinc-800/80 bg-zinc-900/60 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3">
-                <div className="flex items-start sm:items-center gap-3">
+                <div className="flex items-start sm:items-center gap-3 min-w-0">
                   <span className="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 font-bold text-sm shrink-0 mt-0.5 sm:mt-0">
                     #{item.number}
                   </span>
-                  <div>
-                    <h3 className="text-sm sm:text-lg font-bold text-white">
+                  <div className="min-w-0 flex-1">
+                    <h3 className="text-sm sm:text-lg font-bold text-white break-words">
                       {item.title}
                     </h3>
-                    <p className="text-xs text-zinc-400 mt-0.5 leading-relaxed">{item.summary}</p>
+                    <p className="text-xs text-zinc-400 mt-0.5 leading-relaxed break-words">{item.summary}</p>
                   </div>
                 </div>
                 <div className="shrink-0 self-start sm:self-auto">

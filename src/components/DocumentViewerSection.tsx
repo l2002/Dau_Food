@@ -117,20 +117,20 @@ export const DocumentViewerSection: React.FC<DocumentViewerSectionProps> = ({
         {/* Action Bar / Tool Bar Above Document Viewer */}
         <div className="bg-zinc-900 border border-zinc-800 rounded-t-2xl p-4 sm:p-5 flex flex-wrap items-center justify-between gap-3 shadow-md">
           {/* File Meta Pill */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 min-w-0 max-w-full">
             <div className="w-10 h-10 rounded-xl bg-red-600/20 border border-red-500/40 flex items-center justify-center text-red-400 shrink-0">
               <FileText className="w-5 h-5" />
             </div>
-            <div>
-              <div className="flex items-center gap-2">
-                <span className="text-xs font-mono font-bold text-red-400 bg-red-950 px-2 py-0.5 rounded border border-red-800/40">
+            <div className="min-w-0 flex-1">
+              <div className="flex items-center gap-2 flex-wrap">
+                <span className="text-xs font-mono font-bold text-red-400 bg-red-950 px-2 py-0.5 rounded border border-red-800/40 shrink-0">
                   FILE PDF GỐC
                 </span>
-                <span className="font-bold text-xs sm:text-sm text-white">
+                <span className="font-bold text-xs sm:text-sm text-white break-all line-clamp-1">
                   {REAL_DOCUMENT_INFO.fileName}
                 </span>
               </div>
-              <div className="text-[11px] text-zinc-400 mt-0.5">
+              <div className="text-[11px] text-zinc-400 mt-0.5 truncate">
                 {REAL_DOCUMENT_INFO.fileSize} • Cập nhật: 08/09/2026
               </div>
             </div>
@@ -177,8 +177,8 @@ export const DocumentViewerSection: React.FC<DocumentViewerSectionProps> = ({
         </div>
 
         {/* Tab Controls: 8 Pages vs Upload Attachment */}
-        <div className="bg-zinc-900/90 border-x border-zinc-800 px-4 sm:px-6 py-2.5 flex items-center justify-between gap-3 text-xs">
-          <div className="flex items-center gap-2">
+        <div className="bg-zinc-900/90 border-x border-zinc-800 px-3 sm:px-6 py-2.5 flex flex-wrap items-center justify-between gap-2.5 text-xs">
+          <div className="flex flex-wrap items-center gap-2">
             <button
               onClick={() => setActiveTab('pages')}
               className={`px-3 py-1 rounded-lg font-semibold transition-colors cursor-pointer ${
@@ -205,7 +205,7 @@ export const DocumentViewerSection: React.FC<DocumentViewerSectionProps> = ({
           {activeTab === 'pages' && (
             <button
               onClick={() => setShowAllPagesContinuous(!showAllPagesContinuous)}
-              className="text-xs font-semibold text-amber-400 hover:text-amber-300 flex items-center gap-1 cursor-pointer"
+              className="text-xs font-semibold text-amber-400 hover:text-amber-300 flex items-center gap-1 cursor-pointer ml-auto sm:ml-0"
             >
               <Layers className="w-3.5 h-3.5" />
               <span>{showAllPagesContinuous ? 'Xem từng trang' : 'Cuộn liên tục 8 trang'}</span>
@@ -215,7 +215,7 @@ export const DocumentViewerSection: React.FC<DocumentViewerSectionProps> = ({
 
         {/* Sub-toolbar: Pagination Buttons (when in single-page mode) */}
         {activeTab === 'pages' && !showAllPagesContinuous && (
-          <div className="bg-zinc-900 border-x border-b border-zinc-800 px-3 sm:px-6 py-2.5 sm:py-3 flex flex-col xs:flex-row items-center justify-between gap-2 text-xs">
+          <div className="bg-zinc-900 border-x border-b border-zinc-800 px-3 sm:px-6 py-2.5 sm:py-3 flex flex-wrap items-center justify-between gap-2 text-xs">
             <div className="flex items-center justify-between w-full xs:w-auto gap-2">
               <button
                 onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}

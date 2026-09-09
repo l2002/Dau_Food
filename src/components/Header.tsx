@@ -40,30 +40,35 @@ export const Header: React.FC<HeaderProps> = ({
   return (
     <header className="sticky top-0 z-40 w-full border-b border-zinc-800 bg-zinc-950/95 backdrop-blur-md">
       {/* Top Banner Notice - Responsive & compact on mobile */}
-      <div className="bg-zinc-900 border-b border-zinc-800 text-zinc-300 text-[11px] sm:text-xs font-semibold px-3 py-1.5 text-center flex items-center justify-center gap-1.5 overflow-hidden text-ellipsis whitespace-nowrap">
+      <div className="w-full bg-zinc-900 border-b border-zinc-800 text-zinc-300 text-[11px] sm:text-xs font-semibold px-3 py-1.5 text-center flex items-center justify-center gap-1.5 overflow-hidden">
         <AlertTriangle className="w-3.5 h-3.5 text-amber-400 shrink-0" />
-        <span className="truncate">
+        <span className="truncate min-w-0">
           REVIEW & PHẢN ÁNH TRANH CHẤP LAO ĐỘNG • CÔNG TY TNHH ĐẬU FOOD
         </span>
-        <span className="hidden md:inline text-zinc-500 font-normal">| 296 Võ Thành Trang, P. Bảy Hiền, TP.HCM</span>
+        <span className="hidden md:inline text-zinc-500 font-normal shrink-0">| 296 Võ Thành Trang, P. Bảy Hiền, TP.HCM</span>
       </div>
 
-      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between gap-2 sm:gap-4">
+      <div className="w-full max-w-7xl mx-auto px-2.5 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between gap-1.5 sm:gap-4">
         {/* Brand/Logo */}
-        <a href="#" className="flex items-center gap-2.5 sm:gap-3 group shrink-0">
-          <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-red-600/20 border border-red-500/40 flex items-center justify-center text-red-500 group-hover:bg-red-600 group-hover:text-white transition-colors shrink-0">
-            <ShieldAlert className="w-4 h-4 sm:w-5 sm:h-5" />
+        <a href="#" className="flex items-center gap-2 group min-w-0">
+          <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-zinc-900 border border-amber-500/40 flex items-center justify-center group-hover:border-amber-400 transition-colors shrink-0 p-1">
+            <img 
+              src="/favicon.svg" 
+              alt="Cảnh báo Đậu Food" 
+              className="w-full h-full object-contain"
+              referrerPolicy="no-referrer"
+            />
           </div>
-          <div>
-            <div className="flex items-center gap-1.5 sm:gap-2">
-              <span className="font-bold text-sm sm:text-base tracking-tight text-white group-hover:text-amber-400 transition-colors">
+          <div className="min-w-0">
+            <div className="flex items-center gap-1.5">
+              <span className="font-bold text-xs sm:text-base tracking-tight text-white group-hover:text-amber-400 transition-colors truncate">
                 Review Đậu Food
               </span>
-              <span className="bg-zinc-800 text-amber-400 border border-zinc-700 text-[9px] sm:text-[10px] px-1.5 py-0.5 rounded font-mono font-medium">
+              <span className="bg-zinc-800 text-amber-400 border border-zinc-700 text-[9px] sm:text-[10px] px-1 py-0.5 rounded font-mono font-medium shrink-0">
                 THỰC TẾ
               </span>
             </div>
-            <p className="text-[10px] sm:text-[11px] text-zinc-400 hidden sm:block">
+            <p className="text-[10px] sm:text-[11px] text-zinc-400 hidden sm:block truncate">
               Hồ sơ đối chứng & Tài liệu trao đổi tiền công
             </p>
           </div>
@@ -87,11 +92,11 @@ export const Header: React.FC<HeaderProps> = ({
         </nav>
 
         {/* Action Controls */}
-        <div className="flex items-center gap-1.5 sm:gap-2.5">
+        <div className="flex items-center gap-1 sm:gap-2 shrink-0">
           <a
             href="/Don_de_nghi_hoa_giai_tranh_chap_lao_dong_che_thong_tin.pdf"
             download="Don_de_nghi_hoa_giai_tranh_chap_lao_dong_che_thong_tin.pdf"
-            className="min-h-[36px] sm:min-h-[38px] inline-flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-bold bg-red-600 hover:bg-red-500 active:bg-red-700 text-white shadow-sm shadow-red-950 transition-all cursor-pointer"
+            className="min-h-[34px] sm:min-h-[38px] inline-flex items-center gap-1 sm:gap-1.5 px-2 sm:px-3 py-1.5 rounded-lg text-xs font-bold bg-red-600 hover:bg-red-500 active:bg-red-700 text-white shadow-sm shadow-red-950 transition-all cursor-pointer shrink-0"
             title="Tải tệp PDF 8 trang gốc"
           >
             <Download className="w-3.5 h-3.5" />
@@ -121,7 +126,7 @@ export const Header: React.FC<HeaderProps> = ({
           <button
             id="btn-share-header"
             onClick={onOpenShareModal}
-            className="min-h-[36px] sm:min-h-[38px] inline-flex items-center gap-1.5 px-2.5 sm:px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-900 text-zinc-200 border border-zinc-700 transition-all cursor-pointer"
+            className="min-h-[34px] sm:min-h-[38px] inline-flex items-center gap-1 px-2 sm:px-3 py-1.5 rounded-lg text-xs font-semibold bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-900 text-zinc-200 border border-zinc-700 transition-all cursor-pointer shrink-0"
           >
             <Share2 className="w-3.5 h-3.5 text-amber-400" />
             <span className="hidden sm:inline">Chia sẻ</span>
@@ -130,16 +135,16 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Mobile menu hamburger toggle button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden min-h-[36px] min-w-[36px] p-2 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-300 hover:text-white transition-colors flex items-center justify-center cursor-pointer"
+            className="lg:hidden min-h-[34px] min-w-[34px] sm:min-h-[36px] sm:min-w-[36px] p-1.5 sm:p-2 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-300 hover:text-white transition-colors flex items-center justify-center cursor-pointer shrink-0"
             aria-label="Mở menu điều hướng"
           >
-            {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            {mobileMenuOpen ? <X className="w-4 h-4 sm:w-5 sm:h-5" /> : <Menu className="w-4 h-4 sm:w-5 sm:h-5" />}
           </button>
         </div>
       </div>
 
       {/* Mobile Horizontal Quick-Nav Bar */}
-      <div className="lg:hidden border-t border-zinc-800/80 bg-zinc-950/80 px-2.5 py-2 overflow-x-auto no-scrollbar">
+      <div className="lg:hidden w-full max-w-full border-t border-zinc-800/80 bg-zinc-950/80 px-2 py-1.5 overflow-x-auto no-scrollbar">
         <div className="flex items-center gap-1.5 w-max">
           {navLinks.map((link) => {
             const Icon = link.icon;
