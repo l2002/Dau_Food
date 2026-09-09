@@ -14,7 +14,7 @@ import { INITIAL_COMMENTS } from '../data/caseData';
 export const CommunityFeedback: React.FC = () => {
   const [comments, setComments] = useState<CommentItem[]>(() => {
     try {
-      const saved = localStorage.getItem('dau_food_comments');
+      const saved = localStorage.getItem('dau_food_comments_v3');
       if (saved) {
         return JSON.parse(saved);
       }
@@ -32,7 +32,7 @@ export const CommunityFeedback: React.FC = () => {
 
   useEffect(() => {
     try {
-      localStorage.setItem('dau_food_comments', JSON.stringify(comments));
+      localStorage.setItem('dau_food_comments_v3', JSON.stringify(comments));
     } catch (e) {
       // ignore
     }
@@ -76,23 +76,23 @@ export const CommunityFeedback: React.FC = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-10">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-red-950/60 border border-red-500/30 text-red-400 text-xs font-semibold uppercase tracking-wider mb-3">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-zinc-800 border border-zinc-700 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-3">
             <MessageSquare className="w-3.5 h-3.5" />
-            <span>Diễn Đàn Cộng Đồng</span>
+            <span>Diễn Đàn Trao Đổi Cộng Đồng</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-            Bạn cũng từng gặp tình trạng tương tự tại Đậu Food?
+            Góp ý & Chia sẻ kinh nghiệm làm việc part-time
           </h2>
           <p className="mt-2 text-sm text-zinc-400">
-            Hãy chia sẻ trải nghiệm thực tế hoặc ý kiến của bạn để cùng chung tay bảo vệ môi trường làm việc minh bạch, văn minh.
+            Hãy chia sẻ kinh nghiệm, góc nhìn hoặc ý kiến đóng góp xây dựng để cùng lan tỏa văn hóa làm việc minh bạch và tôn trọng pháp luật.
           </p>
         </div>
 
         {/* Comment Form Card */}
         <div className="bg-zinc-950 border border-zinc-800 rounded-2xl p-5 sm:p-7 mb-10 shadow-lg">
           <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-4 flex items-center gap-2">
-            <Send className="w-4 h-4 text-red-500" />
-            <span>Để lại câu chuyện hoặc bình luận của bạn</span>
+            <Send className="w-4 h-4 text-amber-400" />
+            <span>Gửi bình luận hoặc chia sẻ kinh nghiệm của bạn</span>
           </h3>
 
           {successMsg && (
@@ -111,49 +111,49 @@ export const CommunityFeedback: React.FC = () => {
                 <input
                   type="text"
                   required
-                  placeholder="VD: Tuấn Nguyễn / Cựu nhân viên..."
+                  placeholder="VD: Tuấn Nguyễn / Sinh viên..."
                   value={author}
                   onChange={(e) => setAuthor(e.target.value)}
-                  className="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-3.5 py-2 text-xs text-white placeholder:text-zinc-600 focus:outline-none focus:border-red-500"
+                  className="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-3.5 py-2 text-xs text-white placeholder:text-zinc-600 focus:outline-none focus:border-amber-500"
                 />
               </div>
 
               <div>
                 <label className="block text-xs font-medium text-zinc-300 mb-1">
-                  Vai trò / Công việc:
+                  Vai trò / Kinh nghiệm:
                 </label>
                 <input
                   type="text"
                   placeholder="VD: Sinh viên part-time, Cựu nhân viên F&B..."
                   value={role}
                   onChange={(e) => setRole(e.target.value)}
-                  className="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-3.5 py-2 text-xs text-white placeholder:text-zinc-600 focus:outline-none focus:border-red-500"
+                  className="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-3.5 py-2 text-xs text-white placeholder:text-zinc-600 focus:outline-none focus:border-amber-500"
                 />
               </div>
             </div>
 
             <div>
               <label className="block text-xs font-medium text-zinc-300 mb-1">
-                Nội dung chia sẻ (Khách quan, đúng sự thật, không xúc phạm):
+                Nội dung chia sẻ (Khách quan, trung thực, tôn trọng pháp luật):
               </label>
               <textarea
                 required
                 rows={3}
-                placeholder="Chia sẻ trải nghiệm làm việc, số tiền bị giữ (nếu có), hoặc lời khuyên cho các bạn chuẩn bị đi làm..."
+                placeholder="Chia sẻ kinh nghiệm làm việc, phương thức thỏa thuận quyền lợi, hoặc lời khuyên cho các bạn sinh viên..."
                 value={content}
                 onChange={(e) => setContent(e.target.value)}
-                className="w-full bg-zinc-900 border border-zinc-700 rounded-xl p-3 text-xs text-white placeholder:text-zinc-600 focus:outline-none focus:border-red-500"
+                className="w-full bg-zinc-900 border border-zinc-700 rounded-xl p-3 text-xs text-white placeholder:text-zinc-600 focus:outline-none focus:border-amber-500"
               />
             </div>
 
             <div className="flex items-center justify-between pt-1">
               <span className="text-[11px] text-zinc-500 hidden sm:inline">
-                * Bình luận được hiển thị công khai trên landing page.
+                * Tuân thủ quy định pháp luật về thông tin trên không gian mạng (Điều 7 Luật ANM 2018).
               </span>
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-red-600 hover:bg-red-500 text-white transition-all disabled:opacity-50"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-red-600 hover:bg-red-500 text-white transition-all disabled:opacity-50 cursor-pointer"
               >
                 <Send className="w-3.5 h-3.5" />
                 <span>{isSubmitting ? 'Đang gửi...' : 'Gửi bình luận'}</span>
@@ -165,7 +165,7 @@ export const CommunityFeedback: React.FC = () => {
         {/* Comments Feed */}
         <div className="space-y-4">
           <div className="flex items-center justify-between text-xs font-semibold text-zinc-400 px-1">
-            <span>Ý kiến đóng góp ({comments.length})</span>
+            <span>Ý kiến thảo luận ({comments.length})</span>
             <span>Mới nhất lên đầu</span>
           </div>
 
@@ -185,7 +185,7 @@ export const CommunityFeedback: React.FC = () => {
                       {cmt.verified && (
                         <span className="text-[10px] text-emerald-400 bg-emerald-950/80 border border-emerald-800/40 px-1.5 py-0.2 rounded flex items-center gap-1">
                           <CheckCircle2 className="w-2.5 h-2.5" />
-                          Đã xác minh
+                          Đã xác thực
                         </span>
                       )}
                     </div>
@@ -196,10 +196,10 @@ export const CommunityFeedback: React.FC = () => {
                 {/* Like Button */}
                 <button
                   onClick={() => handleLike(cmt.id)}
-                  className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs bg-zinc-900 hover:bg-zinc-800 text-zinc-400 hover:text-white border border-zinc-800 transition-colors"
+                  className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs bg-zinc-900 hover:bg-zinc-800 text-zinc-400 hover:text-white border border-zinc-800 transition-colors cursor-pointer"
                   title="Hữu ích"
                 >
-                  <ThumbsUp className="w-3 h-3 text-red-400" />
+                  <ThumbsUp className="w-3 h-3 text-amber-400" />
                   <span>{cmt.likes}</span>
                 </button>
               </div>

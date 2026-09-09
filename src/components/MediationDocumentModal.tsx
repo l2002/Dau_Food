@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, FileText, Download, Printer, AlertTriangle, ChevronLeft, ChevronRight, Layers } from 'lucide-react';
+import { X, FileText, Download, Printer, AlertTriangle, ChevronLeft, ChevronRight, Layers, ExternalLink } from 'lucide-react';
 import { REAL_DOCUMENT_INFO } from '../data/caseData';
 import { DocumentEightPages } from './DocumentEightPages';
 
@@ -21,49 +21,28 @@ export const MediationDocumentModal: React.FC<MediationDocumentModalProps> = ({
     window.print();
   };
 
-  const handleDownloadDoc = () => {
-    const docContent = `CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
-Độc lập – Tự do – Hạnh phúc
-───────────────────
-TPHCM, ngày 08 tháng 09 năm 2026
-
-ĐƠN ĐỀ NGHỊ HÒA GIẢI TRANH CHẤP LAO ĐỘNG (ĐÃ CHE THÔNG TIN CÁ NHÂN)
-
-Kính gửi:
-– Cơ quan có thẩm quyền cử Hòa giải viên lao động tại Thành phố Hồ Chí Minh.
-– Cơ quan chuyên môn thực hiện nhiệm vụ về lĩnh vực nội vụ thuộc Ủy ban nhân dân cấp xã;
-– Hòa giải viên lao động.
-
-Tôi tên là: LƯ KIM VÀNG
-Sinh ngày: 04/08/2004
-Số CCCD: [Đã che thông tin]  Ngày cấp: 11/05/2021  Nơi cấp: Cục trưởng Cục Cảnh sát QLHC về TTXH
-Hộ khẩu: [Đã che thông tin], Phường Long Phú, Tỉnh An Giang
-Chỗ ở hiện tại: [Đã che thông tin], TP.HCM
-SĐT: [Đã che thông tin]
-
-Bên bị yêu cầu: CÔNG TY TNHH ĐẬU FOOD (296 Võ Thành Trang, Phường Bảy Hiền, Thành phố Hồ Chí Minh, Việt Nam)
-Quản lý: Chị Lan Anh
-Mức lương: 25.000đ/giờ thử việc. Đã làm 2 ngày: 20/08 và 21/08/2026 (mỗi ngày 3h = 6h).
-Tổng tiền lương: 150.000 đồng.
-`;
-    const blob = new Blob([docContent], { type: 'text/plain;charset=utf-8' });
-    const url = URL.createObjectURL(blob);
+  const handleDownloadPdf = () => {
     const link = document.createElement('a');
-    link.href = url;
-    link.download = 'Don_de_nghi_hoa_giai_tranh_chap_lao_dong_che_thong_tin.txt';
+    link.href = '/Don_de_nghi_hoa_giai_tranh_chap_lao_dong_che_thong_tin.pdf';
+    link.download = 'Don_de_nghi_hoa_giai_tranh_chap_lao_dong_che_thong_tin.pdf';
+    document.body.appendChild(link);
     link.click();
-    URL.revokeObjectURL(url);
+    document.body.removeChild(link);
+  };
+
+  const handleOpenPdf = () => {
+    window.open('/Don_de_nghi_hoa_giai_tranh_chap_lao_dong_che_thong_tin.pdf', '_blank');
   };
 
   const pageLabels = [
-    'Trang 1: Đơn (P1 - Đã che TT)',
-    'Trang 2: Đơn (P2)',
-    'Trang 3: Đơn (P3 & Ký)',
+    'Trang 1: Đơn (P1 - Đã che TT cá nhân)',
+    'Trang 2: Đơn (P2 - Quá trình & Căn cứ)',
+    'Trang 3: Đơn (P3 - Yêu cầu & Ký tên)',
     'Trang 4: Hình 1 (Xin nghỉ & Chấp thuận)',
-    'Trang 5: Hình 2 (Đòi lương & Kick group)',
-    'Trang 6: Hình 3 (Quên checkout & Shopping)',
-    'Trang 7: Hình 4 (Văn bản 24h & File PDF)',
-    'Trang 8: Hình 5 (Đe dọa Blacklist)'
+    'Trang 5: Hình 2 (Đòi lương & Rời nhóm)',
+    'Trang 6: Hình 3 (Trao đổi checkout & Hàng hóa)',
+    'Trang 7: Hình 4 (Văn bản thiện chí & Tệp PDF)',
+    'Trang 8: Hình 5 (Trao đổi trực tiếp & Blacklist)'
   ];
 
   return (
@@ -77,10 +56,10 @@ Tổng tiền lương: 150.000 đồng.
             </div>
             <div className="truncate">
               <h3 className="text-sm font-bold text-white truncate">
-                ĐƠN ĐỀ NGHỊ HÒA GIẢI TRANH CHẤP LAO ĐỘNG (FILE PDF ĐÃ CHE THÔNG TIN)
+                ĐƠN ĐỀ NGHỊ HÒA GIẢI TRANH CHẤP LAO ĐỘNG (FILE PDF GỐC 8 TRANG)
               </h3>
               <p className="text-[11px] text-zinc-400">
-                Người làm đơn: <strong>LƯ KIM VÀNG</strong> • Bên bị yêu cầu: <strong>CÔNG TY TNHH ĐẬU FOOD</strong>
+                Người làm đơn: <strong>LƯ KIM VÀNG</strong> • Bên liên quan: <strong>CÔNG TY TNHH ĐẬU FOOD</strong>
               </p>
             </div>
           </div>
@@ -88,32 +67,40 @@ Tổng tiền lương: 150.000 đồng.
           <div className="flex items-center gap-2 shrink-0">
             <button
               onClick={() => setIsContinuous(!isContinuous)}
-              className={`px-2.5 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1 border transition-colors ${
+              className={`px-2.5 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1 border transition-colors cursor-pointer ${
                 isContinuous
-                  ? 'bg-red-950 border-red-500 text-red-300'
+                  ? 'bg-amber-950 border-amber-500 text-amber-300'
                   : 'bg-zinc-800 border-zinc-700 text-zinc-300 hover:bg-zinc-700'
               }`}
             >
               <Layers className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">{isContinuous ? 'Đang cuộn liên tục' : 'Xem cuộn 8 trang'}</span>
+              <span className="hidden sm:inline">{isContinuous ? 'Xem từng trang' : 'Cuộn 8 trang'}</span>
             </button>
             <button
-              onClick={handleDownloadDoc}
-              className="p-1.5 rounded-lg text-zinc-300 hover:text-white bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 transition-colors"
-              title="Tải văn bản"
+              onClick={handleDownloadPdf}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-red-600 hover:bg-red-500 transition-colors cursor-pointer"
+              title="Tải tệp PDF 8 trang gốc"
             >
-              <Download className="w-4 h-4" />
+              <Download className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">Tải PDF</span>
+            </button>
+            <button
+              onClick={handleOpenPdf}
+              className="p-1.5 rounded-lg text-zinc-300 hover:text-white bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 transition-colors cursor-pointer"
+              title="Mở PDF trong tab mới"
+            >
+              <ExternalLink className="w-4 h-4 text-amber-400" />
             </button>
             <button
               onClick={handlePrint}
-              className="p-1.5 rounded-lg text-zinc-300 hover:text-white bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 transition-colors"
+              className="p-1.5 rounded-lg text-zinc-300 hover:text-white bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 transition-colors cursor-pointer"
               title="In hoặc lưu PDF"
             >
               <Printer className="w-4 h-4" />
             </button>
             <button
               onClick={onClose}
-              className="p-1.5 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors"
+              className="p-1.5 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors cursor-pointer"
               title="Đóng cửa sổ"
             >
               <X className="w-5 h-5" />
@@ -122,15 +109,15 @@ Tổng tiền lương: 150.000 đồng.
         </div>
 
         {/* Status Callout Banner */}
-        <div className="p-3 bg-amber-950/30 border-b border-amber-500/30 px-5 flex items-center justify-between gap-3 text-xs text-zinc-300">
+        <div className="p-3 bg-zinc-900 border-b border-zinc-800 px-5 flex items-center justify-between gap-3 text-xs text-zinc-300">
           <div className="flex items-center gap-2">
             <AlertTriangle className="w-4 h-4 text-amber-400 shrink-0" />
             <span>
-              <strong>Tình trạng:</strong> File PDF đã che thông tin cá nhân. Chưa nộp cơ quan nhà nước, đang gửi trực tiếp cho Đậu Food.
+              <strong>Tình trạng hồ sơ:</strong> {REAL_DOCUMENT_INFO.submissionStatusNote}
             </span>
           </div>
-          <span className="text-[11px] font-mono text-red-400 hidden sm:inline">
-            8 trang PDF (Đã che thông tin cá nhân)
+          <span className="text-[11px] font-mono text-amber-400 hidden sm:inline">
+            8 trang PDF (2.38 MB)
           </span>
         </div>
 
@@ -140,7 +127,7 @@ Tổng tiền lương: 150.000 đồng.
             <button
               onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
               disabled={currentPage === 1}
-              className="flex items-center gap-1 px-2.5 py-1 rounded-md bg-zinc-800 hover:bg-zinc-700 disabled:opacity-30 text-zinc-200"
+              className="flex items-center gap-1 px-2.5 py-1 rounded-md bg-zinc-800 hover:bg-zinc-700 disabled:opacity-30 text-zinc-200 cursor-pointer"
             >
               <ChevronLeft className="w-3.5 h-3.5" />
               <span>Trang trước</span>
@@ -151,7 +138,7 @@ Tổng tiền lương: 150.000 đồng.
                 <button
                   key={num}
                   onClick={() => setCurrentPage(num)}
-                  className={`w-6 h-6 rounded text-xs font-mono font-bold transition-all ${
+                  className={`w-6 h-6 rounded text-xs font-mono font-bold transition-all cursor-pointer ${
                     currentPage === num
                       ? 'bg-red-600 text-white shadow'
                       : 'bg-zinc-800 text-zinc-400 hover:bg-zinc-700 hover:text-zinc-200'
@@ -166,7 +153,7 @@ Tổng tiền lương: 150.000 đồng.
             <button
               onClick={() => setCurrentPage((p) => Math.min(8, p + 1))}
               disabled={currentPage === 8}
-              className="flex items-center gap-1 px-2.5 py-1 rounded-md bg-zinc-800 hover:bg-zinc-700 disabled:opacity-30 text-zinc-200"
+              className="flex items-center gap-1 px-2.5 py-1 rounded-md bg-zinc-800 hover:bg-zinc-700 disabled:opacity-30 text-zinc-200 cursor-pointer"
             >
               <span>Trang sau</span>
               <ChevronRight className="w-3.5 h-3.5" />
@@ -174,7 +161,7 @@ Tổng tiền lương: 150.000 đồng.
           </div>
         )}
 
-        {/* Modal Body - Official Document Rendering on White Paper */}
+        {/* Modal Body */}
         <div className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-6 bg-zinc-900/60">
           <div className="max-w-3xl mx-auto">
             {isContinuous ? (
@@ -205,11 +192,11 @@ Tổng tiền lương: 150.000 đồng.
         {/* Modal Footer Controls */}
         <div className="p-3.5 border-t border-zinc-800 bg-zinc-900 flex items-center justify-between text-xs">
           <span className="text-zinc-400">
-            Hồ sơ pháp lý người lao động Lư Kim Vàng vs Đậu Food
+            Hồ sơ hòa giải tranh chấp lao động: Lư Kim Vàng vs Đậu Food (TP.HCM)
           </span>
           <button
             onClick={onClose}
-            className="px-4 py-1.5 rounded-lg text-xs font-bold bg-zinc-800 hover:bg-zinc-700 text-white transition-colors"
+            className="px-4 py-1.5 rounded-lg text-xs font-bold bg-zinc-800 hover:bg-zinc-700 text-white transition-colors cursor-pointer"
           >
             Đóng
           </button>

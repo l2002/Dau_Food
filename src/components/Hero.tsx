@@ -9,13 +9,14 @@ import {
   Clock, 
   DollarSign, 
   ShieldAlert, 
-  CheckCircle2, 
-  XCircle,
+  Scale,
   Hash,
   Copy,
-  Check
+  Check,
+  Info,
+  Download
 } from 'lucide-react';
-import { COMPANY_INFO } from '../data/caseData';
+import { COMPANY_INFO, LEGAL_DISCLAIMER } from '../data/caseData';
 
 interface HeroProps {
   onOpenShareModal: () => void;
@@ -48,51 +49,65 @@ export const Hero: React.FC<HeroProps> = ({ onOpenShareModal, onOpenMediationDoc
   };
 
   return (
-    <section className="relative overflow-hidden pt-12 pb-16 md:pt-20 md:pb-24 border-b border-zinc-800/80 bg-radial-[at_top_center] from-red-950/30 via-zinc-950 to-zinc-950">
-      {/* Background Subtle Grid Effect */}
+    <section className="relative overflow-hidden pt-8 pb-16 md:pt-14 md:pb-20 border-b border-zinc-800/80 bg-radial-[at_top_center] from-red-950/20 via-zinc-950 to-zinc-950">
+      {/* Background Grid Pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#27272a15_1px,transparent_1px),linear-gradient(to_bottom,#27272a15_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
 
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Warning Indicator Pill */}
-        <div className="flex flex-wrap items-center justify-center gap-2 mb-6">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-red-950/80 border border-red-500/40 text-red-300 text-xs font-semibold tracking-wide uppercase shadow-lg shadow-red-950/50">
-            <span className="w-2 h-2 rounded-full bg-amber-500" />
-            <AlertOctagon className="w-4 h-4 text-amber-400" />
-            <span>Review & Đánh Giá Trải Nghiệm Lao Động Part-Time</span>
+        {/* MANDATORY LEGAL DISCLAIMER BANNER */}
+        <div className="mb-6 p-4 rounded-2xl bg-amber-950/30 border border-amber-500/40 text-xs text-zinc-300 shadow-xl backdrop-blur-sm">
+          <div className="flex items-start gap-3">
+            <Info className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
+            <div className="leading-relaxed">
+              <span className="font-bold text-amber-300 uppercase tracking-wide block mb-1">
+                Lưu ý pháp lý & Miễn trừ trách nhiệm:
+              </span>
+              <p className="text-zinc-200 text-xs sm:text-[13px] leading-relaxed">
+                {LEGAL_DISCLAIMER}
+              </p>
+            </div>
           </div>
-          <a href="#document" className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-zinc-900 border border-zinc-800 hover:border-zinc-700 text-zinc-300 text-xs font-medium transition-colors">
+        </div>
+
+        {/* Tag pills */}
+        <div className="flex flex-wrap items-center justify-center gap-2 mb-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-zinc-900 border border-zinc-700 text-zinc-200 text-xs font-semibold tracking-wide uppercase">
+            <span className="w-2 h-2 rounded-full bg-amber-400" />
+            <span>Phản Ánh Tranh Chấp Lao Động Part-Time</span>
+          </div>
+          <a href="#document" className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-zinc-900 border border-zinc-700 hover:border-zinc-500 text-zinc-300 text-xs font-medium transition-colors">
             <FileCheck className="w-3.5 h-3.5 text-emerald-400" />
-            <span>Có Tệp Hồ Sơ & Hình Ảnh Thực Tế</span>
+            <span>Có Tệp PDF Gốc (8 Trang) & Bằng Chứng</span>
           </a>
         </div>
 
         {/* Main Headline */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white text-center leading-[1.15] tracking-tight mb-6">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white text-center leading-[1.2] tracking-tight mb-5">
           Review & Đánh Giá:{' '}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-400 to-amber-300">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-rose-300 to-amber-300">
             Công ty TNHH Đậu Food
           </span>
           <br className="hidden sm:inline" />
-          <span className="text-zinc-100 text-2xl sm:text-3xl md:text-4xl block sm:inline mt-2 sm:mt-0">
-            {' '}– Phản ánh việc không trả lương cho người lao động part-time
+          <span className="text-zinc-100 text-xl sm:text-2xl md:text-3xl block sm:inline mt-2 sm:mt-0 font-bold">
+            {' '}– Phản ánh tranh chấp về thanh toán tiền công
           </span>
         </h1>
 
         {/* Subtitle / Case Brief */}
-        <p className="text-base sm:text-lg md:text-xl text-zinc-300 text-center max-w-3xl mx-auto leading-relaxed mb-6">
-          Phản ánh trải nghiệm làm việc thực tế của người lao động thử việc part-time về việc doanh nghiệp từ chối thanh toán tiền công sau 2 ca làm việc (150.000đ), tự ý quy kết <span className="text-red-400 font-semibold">“nghỉ ngang gây thiệt hại”</span>, xóa khỏi nhóm chat và đề cập đến việc <span className="text-red-400 font-semibold">“đưa vào blacklist của các doanh nghiệp”</span>.
+        <p className="text-sm sm:text-base md:text-lg text-zinc-300 text-center max-w-3xl mx-auto leading-relaxed mb-6">
+          Ghi nhận phản ánh trải nghiệm làm việc của người lao động thử việc part-time về khoản tiền công <span className="text-amber-300 font-semibold">150.000 đồng đang có tranh chấp</span> sau 2 ca làm việc thực tế (20/08 – 21/08/2026); quá trình trao đổi giữa hai bên về việc xin dừng việc, chi phí hàng đã sản xuất, địa điểm nhận tiền và phương thức thanh toán.
         </p>
 
         {/* Trending Hashtags & SEO Tag Bar */}
-        <div className="max-w-2xl mx-auto mb-10 p-3 sm:p-3.5 rounded-2xl bg-zinc-900/90 border border-zinc-800 shadow-xl backdrop-blur-sm">
+        <div className="max-w-2xl mx-auto mb-8 p-3 sm:p-3.5 rounded-2xl bg-zinc-900/90 border border-zinc-800 shadow-xl backdrop-blur-sm">
           <div className="flex items-center justify-between gap-2 mb-2 px-1">
             <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-300">
               <Hash className="w-3.5 h-3.5 text-red-500" />
-              <span>Từ khóa cộng đồng & Hashtags đánh giá:</span>
+              <span>Từ khóa cộng đồng & Hashtags thảo luận:</span>
             </div>
             <button
               onClick={handleCopyAllTags}
-              className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-semibold bg-red-600/20 hover:bg-red-600/30 border border-red-500/30 text-red-300 hover:text-white transition-colors"
+              className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-semibold bg-red-600/20 hover:bg-red-600/30 border border-red-500/30 text-red-300 hover:text-white transition-colors cursor-pointer"
               title="Sao chép toàn bộ hashtag để đăng bài"
             >
               {copiedTag === 'all' ? (
@@ -114,7 +129,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenShareModal, onOpenMediationDoc
               <button
                 key={tag}
                 onClick={() => handleCopySingleTag(tag)}
-                className={`group px-2.5 py-1 rounded-lg text-xs font-medium transition-all flex items-center gap-1 border ${
+                className={`group px-2.5 py-1 rounded-lg text-xs font-medium transition-all flex items-center gap-1 border cursor-pointer ${
                   copiedTag === tag
                     ? 'bg-emerald-950 border-emerald-600 text-emerald-300'
                     : 'bg-zinc-950/80 hover:bg-zinc-800 border-zinc-700/80 text-zinc-300 hover:text-white hover:border-red-500/40'
@@ -134,33 +149,34 @@ export const Hero: React.FC<HeroProps> = ({ onOpenShareModal, onOpenMediationDoc
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-12">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-10">
+          <a
+            id="btn-cta-pdf-direct"
+            href="/Don_de_nghi_hoa_giai_tranh_chap_lao_dong_che_thong_tin.pdf"
+            download="Don_de_nghi_hoa_giai_tranh_chap_lao_dong_che_thong_tin.pdf"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm font-bold bg-red-600 hover:bg-red-500 text-white transition-all shadow-lg shadow-red-900/40 hover:scale-[1.02] active:scale-[0.98]"
+          >
+            <Download className="w-4 h-4" />
+            <span>Tải Tệp PDF Đơn Hòa Giải (8 Trang Gốc)</span>
+          </a>
+
           <a
             id="btn-cta-evidence"
             href="#evidence"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm font-bold bg-red-600 hover:bg-red-500 text-white transition-all shadow-lg shadow-red-900/40 hover:scale-[1.02] active:scale-[0.98]"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold bg-zinc-900 hover:bg-zinc-800 text-white border border-zinc-700 hover:border-zinc-500 transition-all hover:scale-[1.02] active:scale-[0.98]"
           >
-            <span>Xem toàn bộ bằng chứng</span>
+            <span>Xem 5 tài liệu chứng cứ</span>
             <ArrowDown className="w-4 h-4" />
           </a>
 
           <button
             id="btn-cta-share"
             onClick={onOpenShareModal}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold bg-zinc-900 hover:bg-zinc-800 text-white border border-zinc-700 hover:border-zinc-500 transition-all hover:scale-[1.02] active:scale-[0.98]"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold bg-zinc-950 hover:bg-zinc-900 text-zinc-300 border border-zinc-700 hover:border-zinc-500 transition-all cursor-pointer"
           >
             <Share2 className="w-4 h-4 text-red-400" />
-            <span>Chia sẻ để người khác biết</span>
+            <span>Chia sẻ thông tin</span>
           </button>
-
-          <a
-            id="btn-cta-mediation"
-            href="#document"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold bg-zinc-950 hover:bg-zinc-900 text-zinc-300 border border-red-500/30 hover:border-red-500/60 transition-all"
-          >
-            <ShieldAlert className="w-4 h-4 text-amber-400" />
-            <span>Xem tệp hồ sơ & ảnh thực tế</span>
-          </a>
         </div>
 
         {/* Highlight Quick Facts Bento Grid */}
@@ -169,7 +185,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenShareModal, onOpenMediationDoc
           <div className="p-4 rounded-xl bg-zinc-900/80 border border-zinc-800 hover:border-zinc-700 transition-colors">
             <div className="flex items-center gap-2 text-xs font-semibold text-zinc-400 uppercase tracking-wider mb-2">
               <Building2 className="w-4 h-4 text-red-400" />
-              <span>Doanh nghiệp bị phản ánh</span>
+              <span>Doanh nghiệp liên quan</span>
             </div>
             <div className="text-sm font-bold text-white mb-1">{COMPANY_INFO.name}</div>
             <div className="flex items-start gap-1.5 text-xs text-zinc-400">
@@ -182,7 +198,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenShareModal, onOpenMediationDoc
           <div className="p-4 rounded-xl bg-zinc-900/80 border border-zinc-800 hover:border-zinc-700 transition-colors">
             <div className="flex items-center gap-2 text-xs font-semibold text-zinc-400 uppercase tracking-wider mb-2">
               <Clock className="w-4 h-4 text-amber-400" />
-              <span>Thời gian làm thực tế</span>
+              <span>Thời gian làm việc thực tế</span>
             </div>
             <div className="text-sm font-bold text-white mb-1">20/08 – 21/08/2026</div>
             <div className="text-xs text-zinc-400">
@@ -194,40 +210,40 @@ export const Hero: React.FC<HeroProps> = ({ onOpenShareModal, onOpenMediationDoc
           <div className="p-4 rounded-xl bg-zinc-900/80 border border-zinc-800 hover:border-zinc-700 transition-colors">
             <div className="flex items-center gap-2 text-xs font-semibold text-zinc-400 uppercase tracking-wider mb-2">
               <DollarSign className="w-4 h-4 text-emerald-400" />
-              <span>Tiền công bị từ chối</span>
+              <span>Khoản tiền công tranh chấp</span>
             </div>
-            <div className="text-lg font-black text-red-400 mb-1">150.000 VNĐ</div>
+            <div className="text-lg font-black text-amber-400 mb-1">150.000 VNĐ</div>
             <div className="text-xs text-zinc-400">
-              Thỏa thuận 25.000đ/giờ. Đậu Food thanh toán: <span className="text-red-400 font-semibold">0 VNĐ</span>.
+              Mức thỏa thuận 25.000đ/giờ (chưa thống nhất phương thức nhận).
             </div>
           </div>
 
           {/* Fact 4 */}
           <div className="p-4 rounded-xl bg-zinc-900/80 border border-zinc-800 hover:border-zinc-700 transition-colors">
             <div className="flex items-center gap-2 text-xs font-semibold text-zinc-400 uppercase tracking-wider mb-2">
-              <ShieldAlert className="w-4 h-4 text-rose-400" />
-              <span>Cơ sở pháp lý theo BLLĐ 2019</span>
+              <Scale className="w-4 h-4 text-rose-400" />
+              <span>Căn cứ pháp lý viện dẫn</span>
             </div>
-            <div className="text-sm font-bold text-white mb-1">Điều 27 & 102 BLLĐ 2019</div>
+            <div className="text-sm font-bold text-white mb-1">Điều 27, 102 BLLĐ 2019</div>
             <div className="text-xs text-zinc-400">
-              Quy định về thử việc và điều kiện khấu trừ tiền lương.
+              Điều 7 Luật ANM 2018 & QĐ 1429/QĐ-UBND 2025.
             </div>
           </div>
         </div>
 
-        {/* Reality check banner */}
-        <div className="mt-4 p-3.5 rounded-xl bg-red-950/40 border border-red-500/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-zinc-300">
+        {/* Status note */}
+        <div className="mt-4 p-3.5 rounded-xl bg-zinc-900/80 border border-zinc-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-zinc-300">
           <div className="flex items-center gap-2.5">
-            <span className="w-2 h-2 rounded-full bg-red-500 shrink-0" />
-            <span className="font-medium text-zinc-200">
-              Ghi chú khách quan: Toàn bộ thông tin được đối chiếu trực tiếp từ văn bản yêu cầu và hồ sơ chứng cứ thực tế gửi Công ty TNHH Đậu Food (chưa nộp cơ quan chức năng, ưu tiên giải quyết thiện chí).
+            <span className="w-2 h-2 rounded-full bg-amber-400 shrink-0" />
+            <span className="font-medium text-zinc-300">
+              Hồ sơ hòa giải (PDF đã che thông tin cá nhân) hiện đang được lưu hành thiện chí gửi trực tiếp cho Đậu Food trước khi gửi đến cơ quan có thẩm quyền.
             </span>
           </div>
           <button
             onClick={onOpenMediationDoc}
-            className="text-red-400 hover:text-red-300 underline font-semibold whitespace-nowrap"
+            className="text-amber-400 hover:text-amber-300 underline font-semibold whitespace-nowrap cursor-pointer"
           >
-            Đọc trọn vẹn văn bản &rarr;
+            Xem tệp PDF 8 trang &rarr;
           </button>
         </div>
       </div>

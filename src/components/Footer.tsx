@@ -1,6 +1,6 @@
 import React from 'react';
-import { ShieldCheck, Scale, FileText, AlertCircle, ArrowUp } from 'lucide-react';
-import { COMPANY_INFO } from '../data/caseData';
+import { ShieldCheck, Scale, FileText, AlertCircle, ArrowUp, Download } from 'lucide-react';
+import { COMPANY_INFO, LEGAL_DISCLAIMER } from '../data/caseData';
 
 interface FooterProps {
   onOpenMediationDoc: () => void;
@@ -22,30 +22,25 @@ export const Footer: React.FC<FooterProps> = ({ onOpenMediationDoc, onOpenExport
               <span className="font-bold text-white text-sm">
                 Đánh Giá & Phản Ánh Trải Nghiệm: {COMPANY_INFO.name}
               </span>
-              <span className="text-[10px] bg-red-950 text-red-400 border border-red-800/50 px-1.5 py-0.5 rounded font-mono">
+              <span className="text-[10px] bg-zinc-800 text-amber-400 border border-zinc-700 px-1.5 py-0.5 rounded font-mono">
                 TÔN TRỌNG PHÁP LUẬT
               </span>
             </div>
 
-            <p className="text-zinc-400 text-xs leading-relaxed max-w-lg">
-              Trang web này được xây dựng với tinh thần tôn trọng pháp luật, chia sẻ trải nghiệm thực tế và phản ánh trung thực dựa trên{' '}
-              <strong className="text-zinc-200">
-                Văn bản đề nghị thanh toán tiền lương và bộ hồ sơ hình ảnh chứng cứ thực tế
-              </strong>{' '}
-              gửi đại diện Công ty TNHH Đậu Food (thông tin mang tính chất phản ánh trải nghiệm cá nhân, hồ sơ chưa nộp cơ quan chức năng để ưu tiên giải quyết thiện chí).
-            </p>
-
-            {/* Mandatory Disclaimer from prompt */}
-            <div className="p-3.5 rounded-xl bg-zinc-900 border border-zinc-800 text-[11px] text-zinc-400 flex items-start gap-2.5">
+            {/* MANDATORY LEGAL DISCLAIMER BANNER */}
+            <div className="p-4 rounded-xl bg-zinc-900 border border-zinc-800 text-xs text-zinc-300 flex items-start gap-3">
               <AlertCircle className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
-              <div>
-                <strong className="text-zinc-200">Tuyên bố miễn trừ:</strong> Trang này{' '}
-                <span className="text-amber-300 font-semibold">
-                  KHÔNG ĐẠI DIỆN CHO BẤT KỲ CƠ QUAN NHÀ NƯỚC NÀO
-                </span>
-                . Mọi thông tin phản ánh được thực hiện đúng trình tự pháp luật của nước Cộng hòa Xã hội Chủ nghĩa Việt Nam.
+              <div className="leading-relaxed">
+                <strong className="text-amber-300 block mb-1">Tuyên bố miễn trừ trách nhiệm & Lưu ý pháp lý:</strong>
+                <p className="text-zinc-300 text-xs leading-relaxed">
+                  {LEGAL_DISCLAIMER}
+                </p>
               </div>
             </div>
+
+            <p className="text-zinc-400 text-xs leading-relaxed max-w-lg">
+              Trang web được xây dựng với tinh thần tôn trọng pháp luật, chia sẻ trải nghiệm thực tế và phản ánh trung thực dựa trên tài liệu trao đổi thực tế giữa người lao động và đại diện {COMPANY_INFO.name}.
+            </p>
           </div>
 
           {/* Col 2: Quick Links & Tools */}
@@ -57,17 +52,27 @@ export const Footer: React.FC<FooterProps> = ({ onOpenMediationDoc, onOpenExport
               <ul className="space-y-2 text-xs">
                 <li>
                   <a
-                    href="#document"
-                    className="hover:text-red-400 transition-colors flex items-center gap-1.5 text-zinc-300"
+                    href="/Don_de_nghi_hoa_giai_tranh_chap_lao_dong_che_thong_tin.pdf"
+                    download="Don_de_nghi_hoa_giai_tranh_chap_lao_dong_che_thong_tin.pdf"
+                    className="hover:text-amber-400 transition-colors flex items-center gap-1.5 text-zinc-300"
                   >
-                    <FileText className="w-3.5 h-3.5 text-red-400" />
-                    <span>Xem văn bản đề nghị & 5 tệp ảnh thực tế</span>
+                    <Download className="w-3.5 h-3.5 text-red-400" />
+                    <span>Tải tệp PDF đơn hòa giải (8 trang gốc)</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#document"
+                    className="hover:text-amber-400 transition-colors flex items-center gap-1.5 text-zinc-300"
+                  >
+                    <FileText className="w-3.5 h-3.5 text-amber-400" />
+                    <span>Xem văn bản đề nghị & tài liệu đính kèm</span>
                   </a>
                 </li>
                 <li>
                   <button
                     onClick={onOpenExportHtml}
-                    className="hover:text-amber-400 transition-colors flex items-center gap-1.5 text-zinc-300"
+                    className="hover:text-amber-400 transition-colors flex items-center gap-1.5 text-zinc-300 cursor-pointer"
                   >
                     <Scale className="w-3.5 h-3.5 text-amber-400" />
                     <span>Tải mã nguồn HTML độc lập (Offline)</span>
@@ -78,7 +83,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenMediationDoc, onOpenExport
                     href="#timeline"
                     className="hover:text-white transition-colors text-zinc-400"
                   >
-                    Trình tự vụ việc: 20/08 – 08/09/2026
+                    Trình tự diễn biến: 20/08 – 08/09/2026
                   </a>
                 </li>
                 <li>
@@ -86,7 +91,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenMediationDoc, onOpenExport
                     href="#evidence"
                     className="hover:text-white transition-colors text-zinc-400"
                   >
-                    5 bộ bằng chứng tin nhắn xác thực
+                    5 tài liệu tin nhắn đối chứng
                   </a>
                 </li>
               </ul>
@@ -95,7 +100,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenMediationDoc, onOpenExport
             <div className="pt-2">
               <button
                 onClick={scrollToTop}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs bg-zinc-900 hover:bg-zinc-800 text-zinc-300 border border-zinc-700 transition-colors"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs bg-zinc-900 hover:bg-zinc-800 text-zinc-300 border border-zinc-700 transition-colors cursor-pointer"
               >
                 <ArrowUp className="w-3.5 h-3.5" />
                 <span>Về đầu trang</span>
@@ -110,7 +115,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenMediationDoc, onOpenExport
           <span className="bg-zinc-900/80 px-2 py-0.5 rounded text-zinc-400 border border-zinc-800">review đậu food</span>
           <span className="bg-zinc-900/80 px-2 py-0.5 rounded text-zinc-400 border border-zinc-800">đánh giá đậu food</span>
           <span className="bg-zinc-900/80 px-2 py-0.5 rounded text-zinc-400 border border-zinc-800">công ty tnhh đậu food</span>
-          <span className="bg-zinc-900/80 px-2 py-0.5 rounded text-zinc-400 border border-zinc-800">đậu food không trả lương</span>
+          <span className="bg-zinc-900/80 px-2 py-0.5 rounded text-zinc-400 border border-zinc-800">tranh chấp tiền công đậu food</span>
           <span className="bg-zinc-900/80 px-2 py-0.5 rounded text-zinc-400 border border-zinc-800">đậu food 296 võ thành trang</span>
           <span className="bg-zinc-900/80 px-2 py-0.5 rounded text-zinc-400 border border-zinc-800">trải nghiệm làm việc đậu food</span>
           <span className="bg-zinc-900/80 px-2 py-0.5 rounded text-zinc-400 border border-zinc-800">bảo vệ người lao động part-time</span>

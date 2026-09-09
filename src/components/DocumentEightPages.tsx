@@ -198,7 +198,7 @@ export const DocumentEightPages: React.FC<DocumentEightPagesProps> = ({
               <p>– Mức lương/công thỏa thuận: 25.000 đồng/giờ;</p>
               <p>– Số ngày đã làm: 2 ngày (mỗi ngày 3 tiếng);</p>
               <p>– Số tiền phải trả: <strong>2 x (25.000 x 3) = 150.000 đồng</strong></p>
-              <p><em>(Bằng chữ: Một trăm năm mươi ba nghìn đồng).</em></p>
+              <p><em>(Bằng chữ: Một trăm năm mươi nghìn đồng).</em></p>
             </div>
 
             <p><strong>2)</strong> Chấm dứt ngay việc trì hoãn, đùn đẩy, tự ý khấu trừ/chiếm dụng lương dưới danh nghĩa “thiệt hại hàng hóa” khi chưa chứng minh được lỗi, thiệt hại thực tế và chưa đúng trình tự, thủ tục theo pháp luật;</p>
@@ -346,7 +346,7 @@ export const DocumentEightPages: React.FC<DocumentEightPagesProps> = ({
                   </div>
                 </div>
                 <div className="text-center text-[10px] text-emerald-700 font-bold bg-emerald-100 rounded py-0.5">
-                  ✓ Nhân sự bơ đến trưa hôm sau mới phản hồi và chấp thuận rõ ràng
+                  ✓ Nhân sự phản hồi chấp thuận vào trưa hôm sau
                 </div>
               </div>
               <div className="p-2 bg-white border-t border-zinc-200 text-[11px] text-zinc-600">
@@ -369,7 +369,7 @@ export const DocumentEightPages: React.FC<DocumentEightPagesProps> = ({
 
           <div className="p-3 bg-red-50 border-l-4 border-red-600 rounded-r-lg">
             <h4 className="font-bold text-red-900 text-xs sm:text-sm font-sans">
-              Hình 2: Sau khi yêu cầu thanh toán lương cho những ngày đã làm việc, phía nhân sự không giải quyết mà liên tục bơ tin nhắn, đùn đẩy trách nhiệm, sau đó kick tôi khỏi group chat để tránh đối diện. Đây là hành vi né tránh nghĩa vụ trả lương.
+              Hình 2: Sau khi yêu cầu thanh toán tiền công, phía nhân sự trao đổi về thiệt hại hàng hóa, chưa thống nhất phương thức giải quyết và xóa khỏi nhóm chat
             </h4>
           </div>
 
@@ -401,8 +401,8 @@ export const DocumentEightPages: React.FC<DocumentEightPagesProps> = ({
                   <span className="text-[9px] text-zinc-400 block text-right">18:17</span>
                 </div>
               </div>
-              <div className="p-1.5 bg-red-100 text-red-800 text-[10px] text-center font-bold">
-                Tự quy kết thiệt hại cao hơn lương
+              <div className="p-1.5 bg-amber-100 text-amber-800 text-[10px] text-center font-bold">
+                Nêu lý do thiệt hại hàng hóa sản xuất
               </div>
             </div>
 
@@ -427,8 +427,8 @@ export const DocumentEightPages: React.FC<DocumentEightPagesProps> = ({
                   <p>Quản trị viên đã xóa Lư Kim Vàng ra khỏi nhóm trò chuyện</p>
                 </div>
               </div>
-              <div className="p-1.5 bg-red-100 text-red-800 text-[10px] text-center font-bold">
-                Kick khỏi nhóm chat để né tránh
+              <div className="p-1.5 bg-amber-100 text-amber-800 text-[10px] text-center font-bold">
+                Xóa khỏi nhóm chat SX-SALES
               </div>
             </div>
 
@@ -451,7 +451,7 @@ export const DocumentEightPages: React.FC<DocumentEightPagesProps> = ({
                 </div>
               </div>
               <div className="p-1.5 bg-zinc-200 text-zinc-700 text-[10px] text-center font-bold">
-                150.000 VNĐ tiền công mồ hôi nước mắt
+                Khoản tiền công 150.000 VNĐ đang tranh chấp
               </div>
             </div>
           </div>
@@ -470,7 +470,7 @@ export const DocumentEightPages: React.FC<DocumentEightPagesProps> = ({
 
           <div className="p-3 bg-red-50 border-l-4 border-red-600 rounded-r-lg">
             <h4 className="font-bold text-red-900 text-xs sm:text-sm font-sans">
-              Hình 3: Tin nhắn chị Lan Anh cố đánh đồng việc quên check-out (lỗi thủ tục của người lao động) với việc công ty không trả lương cho ngày đã làm (nghĩa vụ bắt buộc của người sử dụng lao động). Hai việc này hoàn toàn khác nhau. Liên tục đổ lỗi, lấy lý do rằng tôi nghỉ ngang nên trốn tránh việc thanh toán lương.
+              Hình 3: Tin nhắn trao đổi về việc quên check-out và quan điểm phía công ty về chi phí hàng hóa đã sản xuất
             </h4>
           </div>
 
@@ -504,8 +504,8 @@ export const DocumentEightPages: React.FC<DocumentEightPagesProps> = ({
               </div>
 
               {/* The "Shopping" speech bubble */}
-              <div className="bg-white p-3 rounded-2xl rounded-tl-none border-2 border-red-500 space-y-1 text-zinc-900">
-                <span className="text-[10px] font-bold text-red-600 uppercase">Đoạn so sánh phản cảm:</span>
+              <div className="bg-white p-3 rounded-2xl rounded-tl-none border-2 border-amber-500 space-y-1 text-zinc-900">
+                <span className="text-[10px] font-bold text-amber-600 uppercase">Đoạn trao đổi đáng lưu ý:</span>
                 <p className="font-bold text-red-950 text-sm">
                   "lần đầu chị gặp trường hợp như em á, tưởng đâu em đi làm mà như đi shopping tính tiền t trả lại @@, đăng ký đi làm thì hàng đã sản xuất cho em đi làm, em nói nghỉ là nghỉ thì bất công cho phía doanh nghiệp quá"
                 </p>
@@ -513,7 +513,7 @@ export const DocumentEightPages: React.FC<DocumentEightPagesProps> = ({
             </div>
 
             <div className="p-2.5 bg-zinc-100 border-t border-zinc-200 text-xs text-zinc-700 text-center font-sans">
-              <strong>Phân tích pháp lý:</strong> Quên check-out không thể là căn cứ hợp pháp để doanh nghiệp tước đoạt 100% tiền công người lao động đã làm việc.
+              <strong>Lưu ý pháp lý:</strong> Hai bên có góc nhìn khác nhau giữa lỗi hành chính quên check-out và nghĩa vụ chi trả tiền công cho thời gian đã làm việc thực tế (Điều 102 BLLĐ 2019).
             </div>
           </div>
         </div>
@@ -562,8 +562,8 @@ export const DocumentEightPages: React.FC<DocumentEightPagesProps> = ({
 
                   <div className="p-2 rounded bg-white border border-blue-300 text-xs font-semibold text-blue-900 space-y-1">
                     <p>• Việc không ký HĐLĐ bằng văn bản không làm mất quyền được trả lương cho thời gian Vàng đã làm việc.</p>
-                    <p>• Công ty không được tự ý chiếm dụng hoặc trừ hết lương bằng cách tự tính thiệt hại hàng hóa khi chưa chứng minh được lỗi theo quy định.</p>
-                    <p className="text-red-800 font-bold">• Vi phạm Điều 102 Bộ luật Lao động 2019 về khấu trừ tiền lương.</p>
+                    <p>• Việc khấu trừ tiền lương phải tuân thủ đúng trình tự, thủ tục theo Điều 102 và Điều 129 Bộ luật Lao động 2019.</p>
+                    <p className="text-amber-800 font-bold">• Cần chứng minh lỗi, mức thiệt hại thực tế và mối quan hệ nhân quả trước khi khấu trừ.</p>
                   </div>
 
                   {/* Attached PDF Icon in chat */}
@@ -640,8 +640,8 @@ export const DocumentEightPages: React.FC<DocumentEightPagesProps> = ({
                 </div>
 
                 {/* THE RED HIGHLIGHT BOX AS IN THE ORIGINAL PDF */}
-                <div className="bg-red-50 p-3 rounded-xl border-2 border-red-600 shadow-sm space-y-1">
-                  <span className="text-[10px] font-bold text-red-600 uppercase block">Trích xuất câu đe dọa (Đóng khung đỏ trong hồ sơ):</span>
+                <div className="bg-amber-50 p-3 rounded-xl border-2 border-amber-600 shadow-sm space-y-1">
+                  <span className="text-[10px] font-bold text-amber-600 uppercase block">Trích xuất nội dung đáng lưu ý (Đóng khung trong hồ sơ):</span>
                   <p className="font-black text-red-950 text-sm">
                     "bạn hăm dọa mình thì mình cũng cho tên bạn kia vào blacklist của các doanh nghiệp được nhé"
                   </p>
@@ -655,7 +655,7 @@ export const DocumentEightPages: React.FC<DocumentEightPagesProps> = ({
               <div className="flex justify-end pt-2">
                 <div className="bg-[#D1E8FF] p-2.5 rounded-2xl rounded-tr-none border border-blue-200 text-zinc-900 space-y-1 max-w-[85%]">
                   <p className="font-semibold text-blue-950">
-                    Đúng rồi bạn, mình làm trên emlaw.vn. Và đừng ngáo quyền lực bằng việc đem blacklist ra để dọa người lao động.
+                    Và đừng đem blacklist ra để gây áp lực cho người lao động.
                   </p>
                   <span className="text-[9px] text-zinc-500 block text-right">12:02</span>
                 </div>
@@ -663,14 +663,14 @@ export const DocumentEightPages: React.FC<DocumentEightPagesProps> = ({
 
               <div className="flex justify-end">
                 <div className="bg-[#D1E8FF] p-2 rounded-2xl rounded-tr-none border border-blue-200 text-zinc-900 text-xs max-w-[85%]">
-                  <p>thắc mắc việc công ty làm sai = đe dọa? mình ko muốn đôi co ạ. Xin phép.</p>
+                  <p>thắc mắc việc công ty làm chưa đúng = đe dọa? mình ko muốn đôi co ạ. Xin phép.</p>
                   <span className="text-[9px] text-zinc-500 block text-right">12:06</span>
                 </div>
               </div>
             </div>
 
-            <div className="p-2.5 bg-red-100 border-t border-red-200 text-xs text-red-900 font-sans text-center font-bold">
-              Minh chứng rõ ràng cho việc sử dụng đe dọa "blacklist" để trốn tránh trả 150.000đ tiền công.
+            <div className="p-2.5 bg-amber-100 border-t border-amber-200 text-xs text-amber-900 font-sans text-center font-bold">
+              Nội dung trao đổi về phương thức nhận tiền và đề cập danh sách blacklist doanh nghiệp.
             </div>
           </div>
         </div>
