@@ -33,7 +33,7 @@ export const ScorecardSection: React.FC = () => {
           {CASE_RECOMMENDATION_POINTS.map((point, idx) => (
             <div
               key={idx}
-              className="bg-zinc-950 border border-zinc-800 hover:border-zinc-700 rounded-2xl p-6 flex flex-col justify-between transition-all"
+              className="bg-zinc-950 border border-zinc-800 hover:border-zinc-700 rounded-2xl p-4 sm:p-6 flex flex-col justify-between transition-all"
             >
               <div>
                 <div className="flex items-center justify-between gap-2 mb-3">
@@ -66,7 +66,7 @@ export const ScorecardSection: React.FC = () => {
         </div>
 
         {/* Objective Recommendation Box */}
-        <div className="p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-zinc-900 via-zinc-950 to-zinc-900 border border-zinc-700 text-center">
+        <div className="p-4 sm:p-8 rounded-2xl bg-gradient-to-r from-zinc-900 via-zinc-950 to-zinc-900 border border-zinc-700 text-center">
           <div className="w-12 h-12 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mx-auto mb-3">
             <ShieldCheck className="w-6 h-6" />
           </div>

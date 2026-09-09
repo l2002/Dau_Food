@@ -37,7 +37,7 @@ export const LegalSection: React.FC = () => {
           {LEGAL_CLAUSES.map((clause, idx) => (
             <div
               key={idx}
-              className="bg-zinc-900/90 border border-zinc-800 rounded-2xl p-5 sm:p-6 flex flex-col justify-between hover:border-zinc-700 transition-colors"
+              className="bg-zinc-900/90 border border-zinc-800 rounded-2xl p-4 sm:p-6 flex flex-col justify-between hover:border-zinc-700 transition-colors"
             >
               <div>
                 <div className="flex items-center justify-between gap-2 mb-3">
@@ -78,7 +78,7 @@ export const LegalSection: React.FC = () => {
         </div>
 
         {/* Interactive Salary Calculation Tool */}
-        <div className="p-6 sm:p-8 rounded-2xl bg-zinc-900/80 border border-zinc-800">
+        <div className="p-4 sm:p-8 rounded-2xl bg-zinc-900/80 border border-zinc-800">
           <div className="max-w-2xl mx-auto text-center mb-6">
             <div className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-400 uppercase tracking-wider mb-2">
               <Calculator className="w-4 h-4" />

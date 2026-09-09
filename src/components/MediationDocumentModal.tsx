@@ -162,26 +162,28 @@ export const MediationDocumentModal: React.FC<MediationDocumentModalProps> = ({
         )}
 
         {/* Modal Body */}
-        <div className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-6 bg-zinc-900/60">
+        <div className="flex-1 overflow-y-auto p-2 sm:p-6 space-y-6 bg-zinc-900/60">
           <div className="max-w-3xl mx-auto">
             {isContinuous ? (
               <div className="space-y-6">
                 {[1, 2, 3, 4, 5, 6, 7, 8].map((pNum) => (
                   <div
                     key={pNum}
-                    className="bg-white rounded-xl p-6 sm:p-10 text-zinc-900 shadow-xl border border-zinc-200 relative"
+                    className="bg-white rounded-xl p-3.5 sm:p-10 text-zinc-900 shadow-xl border border-zinc-200 relative"
                   >
-                    <div className="absolute top-3 right-4 text-[11px] font-mono text-zinc-400">
-                      Trang {pNum} / 8
+                    <div className="flex items-center justify-between border-b border-zinc-200 pb-2 mb-3 text-[11px] font-mono text-zinc-500">
+                      <span>Đơn đề nghị hòa giải tranh chấp</span>
+                      <span className="font-bold">Trang {pNum} / 8</span>
                     </div>
                     <DocumentEightPages activePage={pNum} />
                   </div>
                 ))}
               </div>
             ) : (
-              <div className="bg-white rounded-xl p-6 sm:p-10 text-zinc-900 shadow-xl border border-zinc-200 relative min-h-[500px]">
-                <div className="absolute top-3 right-4 text-[11px] font-mono text-zinc-400">
-                  {pageLabels[currentPage - 1]}
+              <div className="bg-white rounded-xl p-3.5 sm:p-10 text-zinc-900 shadow-xl border border-zinc-200 relative min-h-[450px]">
+                <div className="flex items-center justify-between border-b border-zinc-200 pb-2 mb-3 text-[11px] font-mono text-zinc-500">
+                  <span className="truncate pr-2">{pageLabels[currentPage - 1]}</span>
+                  <span className="shrink-0 font-bold">{currentPage} / 8</span>
                 </div>
                 <DocumentEightPages activePage={currentPage} />
               </div>

@@ -58,10 +58,10 @@ export const EvidenceSection: React.FC = () => {
         </div>
 
         {/* Tab Filters */}
-        <div className="flex flex-wrap items-center justify-center gap-2 mb-8">
+        <div className="flex items-center sm:justify-center gap-1.5 sm:gap-2 mb-6 sm:mb-8 overflow-x-auto no-scrollbar py-1 px-1">
           <button
             onClick={() => setActiveTab(0)}
-            className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
+            className={`min-h-[38px] px-3 sm:px-3.5 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-all cursor-pointer shrink-0 ${
               activeTab === 0
                 ? 'bg-red-600 text-white shadow-md shadow-red-900/40'
                 : 'bg-zinc-800 text-zinc-400 hover:text-zinc-200 hover:bg-zinc-700'
@@ -73,7 +73,7 @@ export const EvidenceSection: React.FC = () => {
             <button
               key={item.id}
               onClick={() => setActiveTab(item.number)}
-              className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
+              className={`min-h-[38px] px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-all cursor-pointer shrink-0 ${
                 activeTab === item.number
                   ? 'bg-red-600 text-white shadow-md shadow-red-900/40'
                   : 'bg-zinc-800 text-zinc-400 hover:text-zinc-200 hover:bg-zinc-700'
@@ -85,42 +85,42 @@ export const EvidenceSection: React.FC = () => {
         </div>
 
         {/* Evidence Cards List */}
-        <div className="space-y-8">
+        <div className="space-y-6 sm:space-y-8">
           {displayedEvidence.map((item) => (
             <div
               key={item.id}
               className="bg-zinc-950 border border-zinc-800 rounded-2xl overflow-hidden shadow-lg transition-all hover:border-zinc-700"
             >
               {/* Card Header */}
-              <div className="p-5 sm:p-6 border-b border-zinc-800/80 bg-zinc-900/60 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                <div className="flex items-center gap-3">
-                  <span className="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 font-bold text-sm shrink-0">
+              <div className="p-4 sm:p-6 border-b border-zinc-800/80 bg-zinc-900/60 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3">
+                <div className="flex items-start sm:items-center gap-3">
+                  <span className="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 font-bold text-sm shrink-0 mt-0.5 sm:mt-0">
                     #{item.number}
                   </span>
                   <div>
-                    <h3 className="text-base sm:text-lg font-bold text-white">
+                    <h3 className="text-sm sm:text-lg font-bold text-white">
                       {item.title}
                     </h3>
-                    <p className="text-xs text-zinc-400 mt-0.5">{item.summary}</p>
+                    <p className="text-xs text-zinc-400 mt-0.5 leading-relaxed">{item.summary}</p>
                   </div>
                 </div>
-                <div className="shrink-0">
-                  <span className="text-[11px] font-mono text-zinc-400 bg-zinc-800 px-2.5 py-1 rounded-md border border-zinc-700">
+                <div className="shrink-0 self-start sm:self-auto">
+                  <span className="text-[10px] sm:text-[11px] font-mono text-zinc-400 bg-zinc-800 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md border border-zinc-700">
                     Trích xuất tài liệu đính kèm
                   </span>
                 </div>
               </div>
 
               {/* Card Body: Simulated Zalo UI */}
-              <div className="p-5 sm:p-6 grid grid-cols-1 lg:grid-cols-12 gap-6">
+              <div className="p-3.5 sm:p-6 grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6">
                 {/* Zalo Simulated Chat Screen */}
-                <div className="lg:col-span-7 bg-zinc-900/90 border border-zinc-800 rounded-xl p-4 flex flex-col justify-between">
-                  <div className="flex items-center justify-between pb-3 mb-3 border-b border-zinc-800 text-xs text-zinc-400">
+                <div className="lg:col-span-7 bg-zinc-900/90 border border-zinc-800 rounded-xl p-3.5 sm:p-4 flex flex-col justify-between">
+                  <div className="flex items-center justify-between pb-2.5 mb-3 border-b border-zinc-800 text-xs text-zinc-400">
                     <span className="font-semibold text-zinc-300 flex items-center gap-1.5">
                       <span className="w-2 h-2 rounded-full bg-emerald-500" />
                       Nhật ký tin nhắn đối chứng
                     </span>
-                    <span className="text-[11px] font-mono text-zinc-500">Kèm Đơn hòa giải</span>
+                    <span className="text-[10px] sm:text-[11px] font-mono text-zinc-500">Kèm Đơn hòa giải</span>
                   </div>
 
                   {/* Messages Bubble List */}
