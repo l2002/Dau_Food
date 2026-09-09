@@ -131,7 +131,7 @@ export const WarningCallToAction: React.FC<WarningCallToActionProps> = ({ onOpen
             </div>
 
             <div className="mt-6 pt-4 border-t border-zinc-800 text-xs text-zinc-400">
-              * Ghi nhớ: Dù số tiền chỉ là vài trăm nghìn đồng (như 153.000đ), đó là mồ hôi công sức hợp pháp của bạn!
+              * Ghi nhớ: Dù số tiền chỉ là vài trăm nghìn đồng (như 150.000đ), đó là mồ hôi công sức hợp pháp của bạn!
             </div>
           </div>
 

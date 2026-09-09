@@ -35,7 +35,7 @@ export function generateStandaloneHtml(): string {
 
   <!-- Top Alert Banner -->
   <div class="bg-red-600 text-white text-xs font-semibold px-4 py-1.5 text-center flex items-center justify-center gap-2">
-    <span>⚠️ CẢNH BÁO TRANH CHẤP TIỀN LƯƠNG LAO ĐỘNG • HỒ SƠ CÔNG TY TNHH ĐẬU FOOD (296 Võ Thành Trang, P11, Tân Bình)</span>
+    <span>⚠️ CẢNH BÁO TRANH CHẤP TIỀN LƯƠNG LAO ĐỘNG • HỒ SƠ CÔNG TY TNHH ĐẬU FOOD (296 Võ Thành Trang, Phường Bảy Hiền, Thành phố Hồ Chí Minh, Việt Nam)</span>
   </div>
 
   <!-- Header -->
@@ -77,7 +77,7 @@ export function generateStandaloneHtml(): string {
       </h1>
 
       <p class="text-sm sm:text-base md:text-lg text-zinc-300 max-w-2xl mx-auto leading-relaxed mb-6">
-        Phơi bày trải nghiệm làm việc thực tế của người lao động part-time bị doanh nghiệp từ chối trả 153.000đ tiền công sau khi đã làm việc, tự ý quy kết “nghỉ ngang”, lấy cớ “tiền hàng thiệt hại cao hơn lương”, kick khỏi group và đe dọa đưa vào blacklist.
+        Phơi bày trải nghiệm làm việc thực tế của người lao động part-time bị doanh nghiệp từ chối trả 150.000đ tiền công sau khi đã làm việc, tự ý quy kết “nghỉ ngang”, lấy cớ “tiền hàng thiệt hại cao hơn lương”, kick khỏi group và đe dọa đưa vào blacklist.
       </p>
 
       <!-- Trending Hashtags -->
@@ -103,7 +103,7 @@ export function generateStandaloneHtml(): string {
         <div class="p-4 rounded-xl bg-zinc-900 border border-zinc-800">
           <div class="text-xs font-bold text-zinc-400 uppercase mb-1">Doanh nghiệp</div>
           <div class="text-sm font-bold text-white">Công ty TNHH Đậu Food</div>
-          <div class="text-xs text-zinc-400 mt-1">296 Võ Thành Trang, P11, Tân Bình</div>
+          <div class="text-xs text-zinc-400 mt-1">296 Võ Thành Trang, Phường Bảy Hiền, Thành phố Hồ Chí Minh, Việt Nam</div>
         </div>
         <div class="p-4 rounded-xl bg-zinc-900 border border-zinc-800">
           <div class="text-xs font-bold text-zinc-400 uppercase mb-1">Thời gian làm</div>
@@ -112,8 +112,8 @@ export function generateStandaloneHtml(): string {
         </div>
         <div class="p-4 rounded-xl bg-zinc-900 border border-zinc-800">
           <div class="text-xs font-bold text-zinc-400 uppercase mb-1">Tiền công chưa trả</div>
-          <div class="text-base font-black text-red-400">153.000 VNĐ</div>
-          <div class="text-xs text-zinc-400 mt-1">Mức thỏa thuận: 25.500đ/giờ</div>
+          <div class="text-base font-black text-red-400">150.000 VNĐ</div>
+          <div class="text-xs text-zinc-400 mt-1">Mức thỏa thuận: 25.000đ/giờ</div>
         </div>
         <div class="p-4 rounded-xl bg-zinc-900 border border-zinc-800">
           <div class="text-xs font-bold text-zinc-400 uppercase mb-1">Pháp lý vi phạm</div>
@@ -137,7 +137,7 @@ export function generateStandaloneHtml(): string {
           <span class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-emerald-500 ring-4 ring-zinc-950"></span>
           <div class="text-xs font-mono text-zinc-400">20/08 – 21/08/2026</div>
           <h3 class="text-base font-bold text-white mt-1">Làm việc 2 ngày (mỗi ngày 3 tiếng)</h3>
-          <p class="text-xs sm:text-sm text-zinc-300 mt-1">Mức lương thỏa thuận 25.500đ/giờ. Người lao động hoàn thành nghiêm túc 6 giờ làm việc tại quầy Đậu Food (Tổng tiền công: 153.000đ).</p>
+          <p class="text-xs sm:text-sm text-zinc-300 mt-1">Mức lương thỏa thuận 25.000đ/giờ. Người lao động hoàn thành nghiêm túc 6 giờ làm việc tại quầy Đậu Food (Tổng tiền công: 150.000đ).</p>
         </div>
 
         <div class="relative group">
@@ -203,8 +203,8 @@ export function generateStandaloneHtml(): string {
           <div class="text-center font-bold text-white uppercase text-xs">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM — Độc lập - Tự do - Hạnh phúc</div>
           <div class="text-center text-red-400 font-bold pt-1">ĐƠN ĐỀ NGHỊ HÒA GIẢI TRANH CHẤP LAO ĐỘNG (FILE PDF ĐÃ CHE THÔNG TIN CÁ NHÂN)</div>
           <p>• <strong>Bên yêu cầu:</strong> Lư Kim Vàng (Sinh năm 2004) - [Số CCCD, Hộ khẩu & SĐT đã được che bảo mật]</p>
-          <p>• <strong>Bên bị yêu cầu:</strong> Công ty TNHH Đậu Food (296 Võ Thành Trang, P11, Tân Bình, TPHCM)</p>
-          <p>• <strong>Thời gian làm việc:</strong> 20/08 - 21/08/2026 (6 giờ thực tế x 25.500 đ/giờ = 153.000 VNĐ)</p>
+          <p>• <strong>Bên bị yêu cầu:</strong> Công ty TNHH Đậu Food (296 Võ Thành Trang, Phường Bảy Hiền, Thành phố Hồ Chí Minh, Việt Nam)</p>
+          <p>• <strong>Thời gian làm việc:</strong> 20/08 - 21/08/2026 (6 giờ thực tế x 25.000 đ/giờ = 150.000 VNĐ)</p>
           <p>• <strong>Căn cứ:</strong> Điều 13, 27, 102 Bộ luật Lao động 2019 (Nghiêm cấm tự ý cấn trừ tiền lương, thử việc có quyền nghỉ không cần báo trước)</p>
           <p>• <strong>Tài liệu đính kèm:</strong> 5 tệp hình ảnh thực tế trích xuất từ tin nhắn đối chất.</p>
         </div>
@@ -242,7 +242,7 @@ export function generateStandaloneHtml(): string {
           <div class="p-2.5 bg-zinc-950 rounded text-xs text-rose-400 font-mono">
             ⚠️ Bị kick khỏi nhóm SX-SALES
           </div>
-          <p class="text-xs text-zinc-400">Gửi STK nhận 153.000đ thì bị xóa khỏi nhóm trò chuyện.</p>
+          <p class="text-xs text-zinc-400">Gửi STK nhận 150.000đ thì bị xóa khỏi nhóm trò chuyện.</p>
         </div>
 
         <div class="p-4 rounded-xl bg-zinc-900 border border-zinc-800 space-y-2">
@@ -322,7 +322,7 @@ export function generateStandaloneHtml(): string {
             <div class="text-zinc-400"><strong class="text-zinc-200">Đại diện người lao động:</strong> Trích dẫn Điều 102 BLLĐ 2019 và gửi kèm văn bản Đơn đề nghị hòa giải tranh chấp lao động.</div>
             <div class="text-zinc-400"><strong class="text-red-400">Lan Anhh (Đậu Food):</strong> "bạn hăm dọa mình thì mình cũng cho tên bạn kia vào blacklist của các doanh nghiệp được nhé. ko nói chứ ko phải ko có cách nhé bạn"</div>
           </div>
-          <p class="text-xs text-zinc-400 mt-2">→ Hành vi đe dọa chèn ép quyền tìm việc của người lao động nhằm mục đích quỵt 153.000đ tiền công.</p>
+          <p class="text-xs text-zinc-400 mt-2">→ Hành vi đe dọa chèn ép quyền tìm việc của người lao động nhằm mục đích quỵt 150.000đ tiền công.</p>
         </div>
       </div>
     </div>

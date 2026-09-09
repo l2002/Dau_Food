@@ -56,7 +56,7 @@ export const EvidenceSection: React.FC = () => {
               </h3>
               <p className="text-sm text-zinc-300 leading-relaxed">
                 Người sử dụng lao động có trách nhiệm phải ký kết hợp đồng bằng văn bản. Việc công ty không giao kết hợp đồng là vi phạm của chính công ty. 
-                <strong className="text-white"> Người lao động đã bỏ sức lao động thực tế (2 ca, 6 giờ) thì tuyệt đối có quyền được hưởng đủ tiền công 153.000 VNĐ</strong> theo thỏa thuận, không một lý do nào được phép cướp đi quyền lợi này.
+                <strong className="text-white"> Người lao động đã bỏ sức lao động thực tế (2 ca, 6 giờ) thì tuyệt đối có quyền được hưởng đủ tiền công 150.000 VNĐ</strong> theo thỏa thuận, không một lý do nào được phép cướp đi quyền lợi này.
               </p>
             </div>
           </div>

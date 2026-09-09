@@ -65,12 +65,12 @@ Tôi làm đơn này đề nghị cơ quan có thẩm quyền cử Hòa giải v
 
 1. Thông tin về bên bị yêu cầu hòa giải
 – Tên đơn vị/công ty: CÔNG TY TNHH ĐẬU FOOD
-– Địa chỉ trụ sở/địa điểm làm việc: 296 Võ Thành Trang, P11, quận Tân Bình
+– Địa chỉ trụ sở/địa điểm làm việc: 296 Võ Thành Trang, Phường Bảy Hiền, Thành phố Hồ Chí Minh, Việt Nam
 – Người quản lý/phụ trách trực tiếp: chị Lan Anh (nhân sự/quản lý ca) – liên hệ qua Zalo/tin nhắn.
 – Hình thức làm việc: Part-time, thử việc; không ký hợp đồng lao động bằng văn bản (thỏa thuận bằng lời nói/tin nhắn).
 
 2. Nội dung vụ việc và quá trình diễn biến
-Tôi được tiếp nhận vào làm việc part-time, vị trí thử việc tại đơn vị nêu trên thông qua thỏa thuận bằng lời nói/tin nhắn, không được giao kết hợp đồng lao động bằng văn bản. Mức lương/tiền công thỏa thuận: Giai đoạn thử việc là 25.500 đồng/giờ; Giai đoạn chính thức là 35.000 đồng/giờ.
+Tôi được tiếp nhận vào làm việc part-time, vị trí thử việc tại đơn vị nêu trên thông qua thỏa thuận bằng lời nói/tin nhắn, không được giao kết hợp đồng lao động bằng văn bản. Mức lương/tiền công thỏa thuận: Giai đoạn thử việc là 25.000 đồng/giờ; Giai đoạn chính thức là 35.000 đồng/giờ.
 Quá trình làm việc thực tế của tôi: từ ngày 20/08/2026 đến hết ngày 21/08/2026, tổng số ngày công đã làm: 2 ngày (có điểm danh/ảnh chụp/lịch làm việc và tin nhắn phân công làm căn cứ).
 
 Vào khoảng 18:56 ngày 23/08/2026, phía nhân sự (chị Lan Anh) gửi lịch làm và vị trí địa điểm làm việc (điểm B16, kèm vị trí Google Maps và hình ảnh quầy). Lúc 19:11 cùng ngày, tôi phản hồi “Dạ chị”. Sau khi xem xét địa điểm, nhận thấy nơi làm việc xa, không thuận tiện để gắn bó lâu dài, tôi đã chủ động nhắn tin xin nghỉ việc lúc 19:55 ngày 23/08/2026 (chưa quá 01 giờ kể từ khi nhận lịch/địa điểm), với nội dung xin lỗi và mong được thông cảm. Đến 13:03 ngày 24/08/2026, chị Lan Anh phản hồi “oke em nha”.
@@ -89,9 +89,9 @@ Tôi khẳng định: Việc không giao kết hợp đồng lao động bằng 
 
 4. Yêu cầu giải quyết
 1) Thanh toán đầy đủ tiền lương/tiền công cho thời gian tôi đã làm việc thực tế:
-– Mức lương/công thỏa thuận: 25.500 đồng/giờ;
+– Mức lương/công thỏa thuận: 25.000 đồng/giờ;
 – Số ngày đã làm: 2 ngày (mỗi ngày 3 tiếng);
-– Số tiền phải trả: 2 x (25.500 x 3) = 153.000 đồng (Bằng chữ: Một trăm năm mươi ba nghìn đồng).
+– Số tiền phải trả: 2 x (25.000 x 3) = 150.000 đồng (Bằng chữ: Một trăm năm mươi ba nghìn đồng).
 2) Chấm dứt ngay việc trì hoãn, đùn đẩy, tự ý khấu trừ/chiếm dụng lương dưới danh nghĩa “thiệt hại hàng hóa” khi chưa chứng minh được lỗi, thiệt hại thực tế và chưa đúng trình tự, thủ tục theo pháp luật;
 3) Xin lỗi và chấm dứt các quy kết sai trái mang tính xúc phạm uy tín, ảnh hưởng đến quyền lợi chính đáng của tôi (nếu có);
 4) Hỗ trợ, tạo điều kiện thanh toán một lần qua tài khoản do tôi cung cấp ngay sau khi hòa giải thành hoặc theo thỏa thuận tại biên bản hòa giải.
@@ -193,7 +193,7 @@ LƯ KIM VÀNG
                 </span>
               </div>
               <p className="text-zinc-300 leading-relaxed pt-1">
-                Bên người lao động <strong>chưa nộp lên cơ quan nhà nước</strong>. Bộ hồ sơ 8 trang đầy đủ chứng cứ này hiện đã gửi trực tiếp cho đại diện Công ty TNHH Đậu Food kèm thời hạn thiện chí để công ty tự thanh toán 153.000đ trước khi chính thức nộp lên cơ quan có thẩm quyền.
+                Bên người lao động <strong>chưa nộp lên cơ quan nhà nước</strong>. Bộ hồ sơ 8 trang đầy đủ chứng cứ này hiện đã gửi trực tiếp cho đại diện Công ty TNHH Đậu Food kèm thời hạn thiện chí để công ty tự thanh toán 150.000đ trước khi chính thức nộp lên cơ quan có thẩm quyền.
               </p>
             </div>
           </div>

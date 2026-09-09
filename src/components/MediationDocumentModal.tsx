@@ -41,10 +41,10 @@ Hộ khẩu: [Đã che thông tin], Phường Long Phú, Tỉnh An Giang
 Chỗ ở hiện tại: [Đã che thông tin], TP.HCM
 SĐT: [Đã che thông tin]
 
-Bên bị yêu cầu: CÔNG TY TNHH ĐẬU FOOD (296 Võ Thành Trang, P11, Tân Bình)
+Bên bị yêu cầu: CÔNG TY TNHH ĐẬU FOOD (296 Võ Thành Trang, Phường Bảy Hiền, Thành phố Hồ Chí Minh, Việt Nam)
 Quản lý: Chị Lan Anh
-Mức lương: 25.500đ/giờ thử việc. Đã làm 2 ngày: 20/08 và 21/08/2026 (mỗi ngày 3h = 6h).
-Tổng tiền lương: 153.000 đồng.
+Mức lương: 25.000đ/giờ thử việc. Đã làm 2 ngày: 20/08 và 21/08/2026 (mỗi ngày 3h = 6h).
+Tổng tiền lương: 150.000 đồng.
 `;
     const blob = new Blob([docContent], { type: 'text/plain;charset=utf-8' });
     const url = URL.createObjectURL(blob);

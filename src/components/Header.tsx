@@ -18,7 +18,7 @@ export const Header: React.FC<HeaderProps> = ({
       <div className="bg-red-600 text-white text-xs font-semibold px-4 py-1.5 text-center flex items-center justify-center gap-2">
         <AlertTriangle className="w-3.5 h-3.5 animate-pulse" />
         <span>CẢNH BÁO TRANH CHẤP LAO ĐỘNG PART-TIME • HỒ SƠ THỰC TẾ CÔNG TY TNHH ĐẬU FOOD</span>
-        <span className="hidden md:inline text-red-200">| Địa chỉ: 296 Võ Thành Trang, P11, Tân Bình</span>
+        <span className="hidden md:inline text-red-200">| Địa chỉ: 296 Võ Thành Trang, Phường Bảy Hiền, Thành phố Hồ Chí Minh, Việt Nam</span>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">

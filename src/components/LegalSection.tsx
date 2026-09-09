@@ -138,7 +138,7 @@ export const LegalSection: React.FC = () => {
                 {calculatedTotal.toLocaleString('vi-VN')} VNĐ
               </div>
               <div className="text-[11px] text-zinc-500">
-                (Tương đương vụ việc Đậu Food: 6 giờ x 25.500đ = 153.000 VNĐ)
+                (Tương đương vụ việc Đậu Food: 6 giờ x 25.000đ = 150.000 VNĐ)
               </div>
             </div>
 

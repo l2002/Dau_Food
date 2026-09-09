@@ -3,12 +3,12 @@ import { TimelineEvent, EvidenceItem, LegalClause, ReviewCriterion, CommentItem 
 export const COMPANY_INFO = {
   name: 'CÔNG TY TNHH ĐẬU FOOD',
   shortName: 'Đậu Food',
-  address: '296 Võ Thành Trang, Phường 11, Quận Tân Bình, TP. Hồ Chí Minh',
+  address: '296 Võ Thành Trang, Phường Bảy Hiền, Thành phố Hồ Chí Minh, Việt Nam',
   contactPerson: 'Chị Lan Anh (Nhân sự / Quản lý ca)',
   workerRole: 'Nhân viên bán hàng part-time / thử việc quầy',
   workedPeriod: '20/08/2026 – 21/08/2026 (2 ngày, 3 giờ/ngày)',
-  wageRate: '25.500 đ/giờ (Thử việc) – 35.000 đ/giờ (Chính thức)',
-  totalWageOwed: '153.000 đ (2 ngày x 3 giờ x 25.500 đ)',
+  wageRate: '25.000 đ/giờ (Thử việc) – 35.000 đ/giờ (Chính thức)',
+  totalWageOwed: '150.000 đ (2 ngày x 3 giờ x 25.000 đ)',
   overallRating: 1.2,
 };
 
@@ -21,10 +21,10 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     actor: 'laborer',
     badge: 'Đã hoàn thành công việc',
     description:
-      'Người lao động làm việc thực tế 2 ngày tại quầy bán (mỗi ngày 3 tiếng). Mức lương thỏa thuận thử việc là 25.500đ/giờ. Có hình ảnh điểm danh, lịch làm việc và tin nhắn giao việc đầy đủ làm căn cứ xác thực.',
+      'Người lao động làm việc thực tế 2 ngày tại quầy bán (mỗi ngày 3 tiếng). Mức lương thỏa thuận thử việc là 25.000đ/giờ. Có hình ảnh điểm danh, lịch làm việc và tin nhắn giao việc đầy đủ làm căn cứ xác thực.',
     details: [
       'Tổng thời gian làm việc thực tế: 6 giờ.',
-      'Tiền công tương ứng cần thanh toán: 153.000 VNĐ.',
+      'Tiền công tương ứng cần thanh toán: 150.000 VNĐ.',
       'Người lao động chấp hành nghiêm túc sự phân công của quản lý ca.'
     ]
   },
@@ -66,7 +66,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     actor: 'company',
     badge: 'Vi phạm nghĩa vụ trả lương',
     description:
-      'Người lao động nhiều lần nhắn tin gửi số tài khoản ngân hàng và mã VietQR yêu cầu thanh toán 153.000đ tiền công đã làm. Nhân sự không giải quyết mà quanh co: quy kết "nghỉ ngang gây thất thoát", tự cho rằng "tiền hàng thiệt hại đã sản xuất cao hơn lương" và đề nghị "chia 50/50".',
+      'Người lao động nhiều lần nhắn tin gửi số tài khoản ngân hàng và mã VietQR yêu cầu thanh toán 150.000đ tiền công đã làm. Nhân sự không giải quyết mà quanh co: quy kết "nghỉ ngang gây thất thoát", tự cho rằng "tiền hàng thiệt hại đã sản xuất cao hơn lương" và đề nghị "chia 50/50".',
     evidenceRef: 'Bằng chứng 2 & 3',
     details: [
       'Đánh đồng lỗi thủ tục quên chụp ảnh check-out với việc từ chối trả toàn bộ tiền lương.',
@@ -99,7 +99,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
       'Người lao động đã hoàn thành văn bản yêu cầu thanh toán tiền lương và hồ sơ bằng chứng thực tế gửi cho đại diện Đậu Food (chưa nộp cơ quan chức năng vì ưu tiên để công ty tự giải quyết). Nếu công ty tiếp tục thoái thác hoặc thách thức, hồ sơ này sẽ được chính thức nộp lên cơ quan có thẩm quyền.',
     details: [
       'Đã gửi văn bản kèm đầy đủ hình ảnh tin nhắn đối chất cho Đậu Food.',
-      'Sẵn sàng nộp cơ quan có thẩm quyền nếu Đậu Food không hoàn trả 153.000 VNĐ.'
+      'Sẵn sàng nộp cơ quan có thẩm quyền nếu Đậu Food không hoàn trả 150.000 VNĐ.'
     ]
   }
 ];
@@ -147,11 +147,11 @@ export const REAL_DOCUMENT_INFO = {
   representative: 'Nguyễn Minh Luân (Chuyên viên SEO tại công ty MPF - Anh của Kim Vàng)',
   respondent: {
     companyName: 'CÔNG TY TNHH ĐẬU FOOD',
-    address: '296 Võ Thành Trang, P11, quận Tân Bình',
+    address: '296 Võ Thành Trang, Phường Bảy Hiền, Thành phố Hồ Chí Minh, Việt Nam',
     manager: 'chị Lan Anh (nhân sự/quản lý ca) – liên hệ qua Zalo/tin nhắn',
     workType: 'Part-time, thử việc; không ký hợp đồng lao động bằng văn bản (thỏa thuận bằng lời nói/tin nhắn)'
   },
-  totalClaim: '153.000 VNĐ (2 ngày làm việc x 3 tiếng/ngày x 25.500 đ/giờ)',
+  totalClaim: '150.000 VNĐ (2 ngày làm việc x 3 tiếng/ngày x 25.000 đ/giờ)',
   pages: [
     {
       pageNumber: 1,
@@ -187,7 +187,7 @@ export const REAL_DOCUMENT_INFO = {
       type: 'evidence_image' as const,
       evidenceFigureNumber: 2,
       evidenceTitle: 'Hình 2: Sau khi yêu cầu thanh toán lương cho những ngày đã làm việc, phía nhân sự không giải quyết mà liên tục bơ tin nhắn, đùn đẩy trách nhiệm, sau đó kick tôi khỏi group chat để tránh đối diện. Đây là hành vi né tránh nghĩa vụ trả lương.',
-      evidenceCaption: 'Người lao động gửi STK và mã VietQR nhận 153.000đ; nhân sự lấy cớ thiệt hại hàng hóa, đùn đẩy sang Từngg rồi kick khỏi group SX-SALES.'
+      evidenceCaption: 'Người lao động gửi STK và mã VietQR nhận 150.000đ; nhân sự lấy cớ thiệt hại hàng hóa, đùn đẩy sang Từngg rồi kick khỏi group SX-SALES.'
     },
     {
       pageNumber: 6,
@@ -407,7 +407,7 @@ export const EVIDENCE_ITEMS: EvidenceItem[] = [
     title: 'Đe dọa đưa tên người lao động vào "Blacklist của các doanh nghiệp"',
     summary:
       'Khi bị nhắc nhở về vi phạm pháp luật và đơn thư hòa giải, đại diện công ty không những không giải quyết mà còn có lời lẽ đe dọa chèn ép con đường tìm việc của người lao động.',
-    keyTakeaway: 'Một doanh nghiệp sẵn sàng đe dọa "cho vào blacklist các doanh nghiệp" đối với một nhân viên part-time mới đi làm 2 ngày đòi 153.000đ tiền công.',
+    keyTakeaway: 'Một doanh nghiệp sẵn sàng đe dọa "cho vào blacklist các doanh nghiệp" đối với một nhân viên part-time mới đi làm 2 ngày đòi 150.000đ tiền công.',
     lawViolationNote: 'Hành vi đe dọa, xúc phạm uy tín người lao động vi phạm nghiêm trọng chuẩn mực ứng xử nghề nghiệp và đạo đức kinh doanh.',
     messages: [
       {
@@ -449,7 +449,7 @@ export const LEGAL_CLAUSES: LegalClause[] = [
     plainExplanation:
       'Dù công ty không đưa hợp đồng bằng văn bản cho bạn ký, nhưng chỉ cần hai bên đã thỏa thuận công việc và mức lương (qua tin nhắn, lời nói), quan hệ lao động đã phát sinh. Người sử dụng lao động bắt buộc phải trả lương cho mọi giờ bạn đã làm việc.',
     applicationToCase:
-      'Đậu Food không ký HĐLĐ bằng văn bản là lỗi và vi phạm của chính công ty, hoàn toàn không làm mất đi quyền nhận 153.000đ của người lao động.'
+      'Đậu Food không ký HĐLĐ bằng văn bản là lỗi và vi phạm của chính công ty, hoàn toàn không làm mất đi quyền nhận 150.000đ của người lao động.'
   },
   {
     article: 'Điều 27',
@@ -481,7 +481,7 @@ export const REVIEW_CRITERIA: ReviewCriterion[] = [
     score: 1.0,
     maxScore: 5.0,
     critique:
-      'Từ chối thanh toán 153.000 VNĐ cho 2 ngày làm việc thực tế của nhân viên thử việc, lấy cớ tiền hàng sản xuất để quỵt lương.',
+      'Từ chối thanh toán 150.000 VNĐ cho 2 ngày làm việc thực tế của nhân viên thử việc, lấy cớ tiền hàng sản xuất để quỵt lương.',
     impact: 'critical'
   },
   {

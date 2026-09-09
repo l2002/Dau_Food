@@ -196,9 +196,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenShareModal, onOpenMediationDoc
               <DollarSign className="w-4 h-4 text-emerald-400" />
               <span>Tiền công bị từ chối</span>
             </div>
-            <div className="text-lg font-black text-red-400 mb-1">153.000 VNĐ</div>
+            <div className="text-lg font-black text-red-400 mb-1">150.000 VNĐ</div>
             <div className="text-xs text-zinc-400">
-              Thỏa thuận 25.500đ/giờ. Đậu Food thanh toán: <span className="text-red-400 font-semibold">0 VNĐ</span>.
+              Thỏa thuận 25.000đ/giờ. Đậu Food thanh toán: <span className="text-red-400 font-semibold">0 VNĐ</span>.
             </div>
           </div>
 

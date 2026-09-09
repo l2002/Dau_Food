@@ -57,7 +57,7 @@ export const ScorecardSection: React.FC = () => {
             </div>
 
             <p className="text-xs text-zinc-400 mt-4 leading-relaxed">
-              Xếp hạng dựa trên trải nghiệm thực tế bị chiếm dụng 153.000đ tiền lương và thái độ đe dọa người lao động.
+              Xếp hạng dựa trên trải nghiệm thực tế bị chiếm dụng 150.000đ tiền lương và thái độ đe dọa người lao động.
             </p>
           </div>
 

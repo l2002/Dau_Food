@@ -103,7 +103,7 @@ export const DocumentEightPages: React.FC<DocumentEightPagesProps> = ({
               1. Thông tin về bên bị yêu cầu hòa giải
             </h3>
             <p>– <strong>Tên đơn vị/công ty:</strong> <span className="font-bold text-red-800">CÔNG TY TNHH ĐẬU FOOD</span></p>
-            <p>– <strong>Địa chỉ trụ sở/địa điểm làm việc:</strong> 296 Võ Thành Trang, P11, quận Tân Bình</p>
+            <p>– <strong>Địa chỉ trụ sở/địa điểm làm việc:</strong> 296 Võ Thành Trang, Phường Bảy Hiền, Thành phố Hồ Chí Minh, Việt Nam</p>
             <p>– <strong>Người quản lý/phụ trách trực tiếp:</strong> chị Lan Anh (nhân sự/quản lý ca) – liên hệ qua Zalo/tin nhắn.</p>
             <p>– <strong>Hình thức làm việc:</strong> Part-time, thử việc; không ký hợp đồng lao động bằng văn bản (thỏa thuận bằng lời nói/tin nhắn).</p>
           </div>
@@ -114,7 +114,7 @@ export const DocumentEightPages: React.FC<DocumentEightPagesProps> = ({
               2. Nội dung vụ việc và quá trình diễn biến
             </h3>
             <p className="text-justify indent-6">
-              Tôi được tiếp nhận vào làm việc part-time, vị trí thử việc tại đơn vị nêu trên thông qua thỏa thuận bằng lời nói/tin nhắn, không được giao kết hợp đồng lao động bằng văn bản. Mức lương/tiền công thỏa thuận: Giai đoạn thử việc là <strong>25.500 đồng/giờ</strong>; Giai đoạn chính thức là <strong>35.000 đồng/giờ</strong>.
+              Tôi được tiếp nhận vào làm việc part-time, vị trí thử việc tại đơn vị nêu trên thông qua thỏa thuận bằng lời nói/tin nhắn, không được giao kết hợp đồng lao động bằng văn bản. Mức lương/tiền công thỏa thuận: Giai đoạn thử việc là <strong>25.000 đồng/giờ</strong>; Giai đoạn chính thức là <strong>35.000 đồng/giờ</strong>.
             </p>
             <p className="text-justify indent-6">
               Quá trình làm việc thực tế của tôi: từ ngày 20/08/2026 đến hết ngày 21/08/2026, tổng số ngày công đã làm: <strong>2 ngày</strong> (có điểm danh/ảnh chụp/lịch làm việc và tin nhắn phân công làm căn cứ).
@@ -195,9 +195,9 @@ export const DocumentEightPages: React.FC<DocumentEightPagesProps> = ({
           <div className="space-y-3 font-sans text-xs sm:text-sm pl-2">
             <div className="p-3 rounded-lg bg-red-50 border border-red-200">
               <strong className="text-red-900 block mb-1">1) Thanh toán đầy đủ tiền lương/tiền công cho thời gian tôi đã làm việc thực tế, số tiền cụ thể như sau:</strong>
-              <p>– Mức lương/công thỏa thuận: 25.500 đồng/giờ;</p>
+              <p>– Mức lương/công thỏa thuận: 25.000 đồng/giờ;</p>
               <p>– Số ngày đã làm: 2 ngày (mỗi ngày 3 tiếng);</p>
-              <p>– Số tiền phải trả: <strong>2 x (25.500 x 3) = 153.000 đồng</strong></p>
+              <p>– Số tiền phải trả: <strong>2 x (25.000 x 3) = 150.000 đồng</strong></p>
               <p><em>(Bằng chữ: Một trăm năm mươi ba nghìn đồng).</em></p>
             </div>
 
@@ -451,7 +451,7 @@ export const DocumentEightPages: React.FC<DocumentEightPagesProps> = ({
                 </div>
               </div>
               <div className="p-1.5 bg-zinc-200 text-zinc-700 text-[10px] text-center font-bold">
-                153.000 VNĐ tiền công mồ hôi nước mắt
+                150.000 VNĐ tiền công mồ hôi nước mắt
               </div>
             </div>
           </div>
@@ -670,7 +670,7 @@ export const DocumentEightPages: React.FC<DocumentEightPagesProps> = ({
             </div>
 
             <div className="p-2.5 bg-red-100 border-t border-red-200 text-xs text-red-900 font-sans text-center font-bold">
-              Minh chứng rõ ràng cho việc sử dụng đe dọa "blacklist" để trốn tránh trả 153.000đ tiền công.
+              Minh chứng rõ ràng cho việc sử dụng đe dọa "blacklist" để trốn tránh trả 150.000đ tiền công.
             </div>
           </div>
         </div>
